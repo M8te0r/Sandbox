@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/crystalized/cpp_project/Sandbox/sandbox/runtime -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/assimp/code/../include -I/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/code/../include
 
 CXX_FLAGSarm64 =  -Wall  -g -std=gnu++17 -arch arm64
 

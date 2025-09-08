@@ -1,4 +1,4 @@
-# Install script for directory: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty
+# Install script for directory: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/cmake_install.cmake")
+  include("/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/cmake_install.cmake")
+  include("/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/install_local_manifest.txt"
+  file(WRITE "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

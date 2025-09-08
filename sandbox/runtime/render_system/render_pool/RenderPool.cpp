@@ -24,8 +24,8 @@ namespace Elysian
         {
             
 
-            m_asset_sys->loadShader("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_light.vs",
-                                    "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_light.fs",
+            m_asset_sys->loadShader("../sandbox/assets/shaders/g_light.vs",
+                                    "../sandbox/assets/shaders/g_light.fs",
                                     nullptr,
                                     "gLightShader");
             m_asset_sys->loadMesh(static_cube_mesh,
@@ -35,12 +35,12 @@ namespace Elysian
         // 载入场景资源
         {
             // 载入地板
-            m_asset_sys->loadShader("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_floor.vs",
-                                    "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_floor.fs",
+            m_asset_sys->loadShader("../sandbox/assets/shaders/g_floor.vs",
+                                    "../sandbox/assets/shaders/g_floor.fs",
                                     nullptr,
                                     "gFloorShader");
 
-            m_asset_sys->loadTexture("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/box/marble.jpg",
+            m_asset_sys->loadTexture("../sandbox/assets/textures/box/marble.jpg",
                                      "gFloorTexture");
 
             m_asset_sys->loadMesh(static_quad_mesh, "gFloorMesh");
@@ -59,18 +59,18 @@ namespace Elysian
         // TODO 有点冗长，最好在config文件里配置好这些信息，然后用一条loadByConfig语句精简下述代码
         {
             // texture信息
-            std::vector<std::string> skyBoxFaces{"/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/right.jpg",
-                                                 "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/left.jpg",
-                                                 "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/top.jpg",
-                                                 "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/bottom.jpg",
-                                                 "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/front.jpg",
-                                                 "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/skybox/back.jpg"};
+            std::vector<std::string> skyBoxFaces{"../sandbox/assets/textures/skybox/right.jpg",
+                                                 "../sandbox/assets/textures/skybox/left.jpg",
+                                                 "../sandbox/assets/textures/skybox/top.jpg",
+                                                 "../sandbox/assets/textures/skybox/bottom.jpg",
+                                                 "../sandbox/assets/textures/skybox/front.jpg",
+                                                 "../sandbox/assets/textures/skybox/back.jpg"};
             m_asset_sys->loadTexture(skyBoxFaces,
                                      "g_skybox_texture");
 
             // shader信息
-            m_asset_sys->loadShader("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_sky_box.vs",
-                                    "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/g_sky_box.fs",
+            m_asset_sys->loadShader("../sandbox/assets/shaders/g_sky_box.vs",
+                                    "../sandbox/assets/shaders/g_sky_box.fs",
                                     nullptr,
                                     "g_skybox_shader");
             // mesh信息

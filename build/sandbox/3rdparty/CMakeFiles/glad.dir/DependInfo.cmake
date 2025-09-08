@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c" "sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o" "gcc" "sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o.d"
+  "/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src/glad.c" "sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o" "gcc" "sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

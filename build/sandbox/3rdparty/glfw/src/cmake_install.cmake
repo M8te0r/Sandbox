@@ -1,4 +1,4 @@
-# Install script for directory: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src
+# Install script for directory: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src/install_local_manifest.txt"
+  file(WRITE "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

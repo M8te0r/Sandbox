@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Utility rule file for stb.
 
@@ -77,10 +77,10 @@ sandbox/3rdparty/CMakeFiles/stb.dir/build: stb
 .PHONY : sandbox/3rdparty/CMakeFiles/stb.dir/build
 
 sandbox/3rdparty/CMakeFiles/stb.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/stb.dir/cmake_clean.cmake
 .PHONY : sandbox/3rdparty/CMakeFiles/stb.dir/clean
 
 sandbox/3rdparty/CMakeFiles/stb.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/CMakeFiles/stb.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/CMakeFiles/stb.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/3rdparty/CMakeFiles/stb.dir/depend
 

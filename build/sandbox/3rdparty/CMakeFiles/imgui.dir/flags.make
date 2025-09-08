@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include
+CXX_INCLUDES = -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/include
 
 CXX_FLAGSarm64 =  -Wall  -g -std=gnu++17 -arch arm64
 

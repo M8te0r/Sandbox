@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -85,16 +85,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"assimp-dev\" \"libassimp6.0.2-dev\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles /Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime//CMakeFiles/progress.marks
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles /Users/crystalized/cpp_project/Sandbox/build/sandbox/runtime//CMakeFiles/progress.marks
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/clean
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sandbox/runtime/CMakeFiles/ElysianRuntime.dir/rule:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/CMakeFiles/ElysianRuntime.dir/rule
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/runtime/CMakeFiles/ElysianRuntime.dir/rule
 .PHONY : sandbox/runtime/CMakeFiles/ElysianRuntime.dir/rule
 
 # Convenience name for target.
@@ -128,7 +173,7 @@ ElysianRuntime: sandbox/runtime/CMakeFiles/ElysianRuntime.dir/rule
 
 # fast build rule for target.
 ElysianRuntime/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build
 .PHONY : ElysianRuntime/fast
 
 EngineRuntime.o: EngineRuntime.cpp.o
@@ -136,7 +181,7 @@ EngineRuntime.o: EngineRuntime.cpp.o
 
 # target to build an object file
 EngineRuntime.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.o
 .PHONY : EngineRuntime.cpp.o
 
 EngineRuntime.i: EngineRuntime.cpp.i
@@ -144,7 +189,7 @@ EngineRuntime.i: EngineRuntime.cpp.i
 
 # target to preprocess a source file
 EngineRuntime.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.i
 .PHONY : EngineRuntime.cpp.i
 
 EngineRuntime.s: EngineRuntime.cpp.s
@@ -152,7 +197,7 @@ EngineRuntime.s: EngineRuntime.cpp.s
 
 # target to generate assembly for a file
 EngineRuntime.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.s
 .PHONY : EngineRuntime.cpp.s
 
 asset_system/AssetSystem.o: asset_system/AssetSystem.cpp.o
@@ -160,7 +205,7 @@ asset_system/AssetSystem.o: asset_system/AssetSystem.cpp.o
 
 # target to build an object file
 asset_system/AssetSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.o
 .PHONY : asset_system/AssetSystem.cpp.o
 
 asset_system/AssetSystem.i: asset_system/AssetSystem.cpp.i
@@ -168,7 +213,7 @@ asset_system/AssetSystem.i: asset_system/AssetSystem.cpp.i
 
 # target to preprocess a source file
 asset_system/AssetSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.i
 .PHONY : asset_system/AssetSystem.cpp.i
 
 asset_system/AssetSystem.s: asset_system/AssetSystem.cpp.s
@@ -176,7 +221,7 @@ asset_system/AssetSystem.s: asset_system/AssetSystem.cpp.s
 
 # target to generate assembly for a file
 asset_system/AssetSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.s
 .PHONY : asset_system/AssetSystem.cpp.s
 
 asset_system/material/Material.o: asset_system/material/Material.cpp.o
@@ -184,7 +229,7 @@ asset_system/material/Material.o: asset_system/material/Material.cpp.o
 
 # target to build an object file
 asset_system/material/Material.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.o
 .PHONY : asset_system/material/Material.cpp.o
 
 asset_system/material/Material.i: asset_system/material/Material.cpp.i
@@ -192,7 +237,7 @@ asset_system/material/Material.i: asset_system/material/Material.cpp.i
 
 # target to preprocess a source file
 asset_system/material/Material.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.i
 .PHONY : asset_system/material/Material.cpp.i
 
 asset_system/material/Material.s: asset_system/material/Material.cpp.s
@@ -200,7 +245,7 @@ asset_system/material/Material.s: asset_system/material/Material.cpp.s
 
 # target to generate assembly for a file
 asset_system/material/Material.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.s
 .PHONY : asset_system/material/Material.cpp.s
 
 asset_system/material/PbrMaterial.o: asset_system/material/PbrMaterial.cpp.o
@@ -208,7 +253,7 @@ asset_system/material/PbrMaterial.o: asset_system/material/PbrMaterial.cpp.o
 
 # target to build an object file
 asset_system/material/PbrMaterial.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.o
 .PHONY : asset_system/material/PbrMaterial.cpp.o
 
 asset_system/material/PbrMaterial.i: asset_system/material/PbrMaterial.cpp.i
@@ -216,7 +261,7 @@ asset_system/material/PbrMaterial.i: asset_system/material/PbrMaterial.cpp.i
 
 # target to preprocess a source file
 asset_system/material/PbrMaterial.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.i
 .PHONY : asset_system/material/PbrMaterial.cpp.i
 
 asset_system/material/PbrMaterial.s: asset_system/material/PbrMaterial.cpp.s
@@ -224,7 +269,7 @@ asset_system/material/PbrMaterial.s: asset_system/material/PbrMaterial.cpp.s
 
 # target to generate assembly for a file
 asset_system/material/PbrMaterial.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.s
 .PHONY : asset_system/material/PbrMaterial.cpp.s
 
 asset_system/mesh/Mesh.o: asset_system/mesh/Mesh.cpp.o
@@ -232,7 +277,7 @@ asset_system/mesh/Mesh.o: asset_system/mesh/Mesh.cpp.o
 
 # target to build an object file
 asset_system/mesh/Mesh.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.o
 .PHONY : asset_system/mesh/Mesh.cpp.o
 
 asset_system/mesh/Mesh.i: asset_system/mesh/Mesh.cpp.i
@@ -240,7 +285,7 @@ asset_system/mesh/Mesh.i: asset_system/mesh/Mesh.cpp.i
 
 # target to preprocess a source file
 asset_system/mesh/Mesh.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.i
 .PHONY : asset_system/mesh/Mesh.cpp.i
 
 asset_system/mesh/Mesh.s: asset_system/mesh/Mesh.cpp.s
@@ -248,7 +293,7 @@ asset_system/mesh/Mesh.s: asset_system/mesh/Mesh.cpp.s
 
 # target to generate assembly for a file
 asset_system/mesh/Mesh.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.s
 .PHONY : asset_system/mesh/Mesh.cpp.s
 
 asset_system/mesh/inner_mesh/Cube.o: asset_system/mesh/inner_mesh/Cube.cpp.o
@@ -256,7 +301,7 @@ asset_system/mesh/inner_mesh/Cube.o: asset_system/mesh/inner_mesh/Cube.cpp.o
 
 # target to build an object file
 asset_system/mesh/inner_mesh/Cube.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.o
 .PHONY : asset_system/mesh/inner_mesh/Cube.cpp.o
 
 asset_system/mesh/inner_mesh/Cube.i: asset_system/mesh/inner_mesh/Cube.cpp.i
@@ -264,7 +309,7 @@ asset_system/mesh/inner_mesh/Cube.i: asset_system/mesh/inner_mesh/Cube.cpp.i
 
 # target to preprocess a source file
 asset_system/mesh/inner_mesh/Cube.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.i
 .PHONY : asset_system/mesh/inner_mesh/Cube.cpp.i
 
 asset_system/mesh/inner_mesh/Cube.s: asset_system/mesh/inner_mesh/Cube.cpp.s
@@ -272,7 +317,7 @@ asset_system/mesh/inner_mesh/Cube.s: asset_system/mesh/inner_mesh/Cube.cpp.s
 
 # target to generate assembly for a file
 asset_system/mesh/inner_mesh/Cube.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.s
 .PHONY : asset_system/mesh/inner_mesh/Cube.cpp.s
 
 asset_system/mesh/inner_mesh/Quad.o: asset_system/mesh/inner_mesh/Quad.cpp.o
@@ -280,7 +325,7 @@ asset_system/mesh/inner_mesh/Quad.o: asset_system/mesh/inner_mesh/Quad.cpp.o
 
 # target to build an object file
 asset_system/mesh/inner_mesh/Quad.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.o
 .PHONY : asset_system/mesh/inner_mesh/Quad.cpp.o
 
 asset_system/mesh/inner_mesh/Quad.i: asset_system/mesh/inner_mesh/Quad.cpp.i
@@ -288,7 +333,7 @@ asset_system/mesh/inner_mesh/Quad.i: asset_system/mesh/inner_mesh/Quad.cpp.i
 
 # target to preprocess a source file
 asset_system/mesh/inner_mesh/Quad.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.i
 .PHONY : asset_system/mesh/inner_mesh/Quad.cpp.i
 
 asset_system/mesh/inner_mesh/Quad.s: asset_system/mesh/inner_mesh/Quad.cpp.s
@@ -296,7 +341,7 @@ asset_system/mesh/inner_mesh/Quad.s: asset_system/mesh/inner_mesh/Quad.cpp.s
 
 # target to generate assembly for a file
 asset_system/mesh/inner_mesh/Quad.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.s
 .PHONY : asset_system/mesh/inner_mesh/Quad.cpp.s
 
 asset_system/mesh/inner_mesh/Triangle.o: asset_system/mesh/inner_mesh/Triangle.cpp.o
@@ -304,7 +349,7 @@ asset_system/mesh/inner_mesh/Triangle.o: asset_system/mesh/inner_mesh/Triangle.c
 
 # target to build an object file
 asset_system/mesh/inner_mesh/Triangle.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.o
 .PHONY : asset_system/mesh/inner_mesh/Triangle.cpp.o
 
 asset_system/mesh/inner_mesh/Triangle.i: asset_system/mesh/inner_mesh/Triangle.cpp.i
@@ -312,7 +357,7 @@ asset_system/mesh/inner_mesh/Triangle.i: asset_system/mesh/inner_mesh/Triangle.c
 
 # target to preprocess a source file
 asset_system/mesh/inner_mesh/Triangle.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.i
 .PHONY : asset_system/mesh/inner_mesh/Triangle.cpp.i
 
 asset_system/mesh/inner_mesh/Triangle.s: asset_system/mesh/inner_mesh/Triangle.cpp.s
@@ -320,7 +365,7 @@ asset_system/mesh/inner_mesh/Triangle.s: asset_system/mesh/inner_mesh/Triangle.c
 
 # target to generate assembly for a file
 asset_system/mesh/inner_mesh/Triangle.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.s
 .PHONY : asset_system/mesh/inner_mesh/Triangle.cpp.s
 
 asset_system/model/Model.o: asset_system/model/Model.cpp.o
@@ -328,7 +373,7 @@ asset_system/model/Model.o: asset_system/model/Model.cpp.o
 
 # target to build an object file
 asset_system/model/Model.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.o
 .PHONY : asset_system/model/Model.cpp.o
 
 asset_system/model/Model.i: asset_system/model/Model.cpp.i
@@ -336,7 +381,7 @@ asset_system/model/Model.i: asset_system/model/Model.cpp.i
 
 # target to preprocess a source file
 asset_system/model/Model.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.i
 .PHONY : asset_system/model/Model.cpp.i
 
 asset_system/model/Model.s: asset_system/model/Model.cpp.s
@@ -344,7 +389,7 @@ asset_system/model/Model.s: asset_system/model/Model.cpp.s
 
 # target to generate assembly for a file
 asset_system/model/Model.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.s
 .PHONY : asset_system/model/Model.cpp.s
 
 asset_system/shader/Shader.o: asset_system/shader/Shader.cpp.o
@@ -352,7 +397,7 @@ asset_system/shader/Shader.o: asset_system/shader/Shader.cpp.o
 
 # target to build an object file
 asset_system/shader/Shader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.o
 .PHONY : asset_system/shader/Shader.cpp.o
 
 asset_system/shader/Shader.i: asset_system/shader/Shader.cpp.i
@@ -360,7 +405,7 @@ asset_system/shader/Shader.i: asset_system/shader/Shader.cpp.i
 
 # target to preprocess a source file
 asset_system/shader/Shader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.i
 .PHONY : asset_system/shader/Shader.cpp.i
 
 asset_system/shader/Shader.s: asset_system/shader/Shader.cpp.s
@@ -368,7 +413,7 @@ asset_system/shader/Shader.s: asset_system/shader/Shader.cpp.s
 
 # target to generate assembly for a file
 asset_system/shader/Shader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.s
 .PHONY : asset_system/shader/Shader.cpp.s
 
 asset_system/texture/Texture.o: asset_system/texture/Texture.cpp.o
@@ -376,7 +421,7 @@ asset_system/texture/Texture.o: asset_system/texture/Texture.cpp.o
 
 # target to build an object file
 asset_system/texture/Texture.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.o
 .PHONY : asset_system/texture/Texture.cpp.o
 
 asset_system/texture/Texture.i: asset_system/texture/Texture.cpp.i
@@ -384,7 +429,7 @@ asset_system/texture/Texture.i: asset_system/texture/Texture.cpp.i
 
 # target to preprocess a source file
 asset_system/texture/Texture.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.i
 .PHONY : asset_system/texture/Texture.cpp.i
 
 asset_system/texture/Texture.s: asset_system/texture/Texture.cpp.s
@@ -392,7 +437,7 @@ asset_system/texture/Texture.s: asset_system/texture/Texture.cpp.s
 
 # target to generate assembly for a file
 asset_system/texture/Texture.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.s
 .PHONY : asset_system/texture/Texture.cpp.s
 
 camera_system/CameraSystem.o: camera_system/CameraSystem.cpp.o
@@ -400,7 +445,7 @@ camera_system/CameraSystem.o: camera_system/CameraSystem.cpp.o
 
 # target to build an object file
 camera_system/CameraSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.o
 .PHONY : camera_system/CameraSystem.cpp.o
 
 camera_system/CameraSystem.i: camera_system/CameraSystem.cpp.i
@@ -408,7 +453,7 @@ camera_system/CameraSystem.i: camera_system/CameraSystem.cpp.i
 
 # target to preprocess a source file
 camera_system/CameraSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.i
 .PHONY : camera_system/CameraSystem.cpp.i
 
 camera_system/CameraSystem.s: camera_system/CameraSystem.cpp.s
@@ -416,7 +461,7 @@ camera_system/CameraSystem.s: camera_system/CameraSystem.cpp.s
 
 # target to generate assembly for a file
 camera_system/CameraSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.s
 .PHONY : camera_system/CameraSystem.cpp.s
 
 core/log/LogSystem.o: core/log/LogSystem.cpp.o
@@ -424,7 +469,7 @@ core/log/LogSystem.o: core/log/LogSystem.cpp.o
 
 # target to build an object file
 core/log/LogSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.o
 .PHONY : core/log/LogSystem.cpp.o
 
 core/log/LogSystem.i: core/log/LogSystem.cpp.i
@@ -432,7 +477,7 @@ core/log/LogSystem.i: core/log/LogSystem.cpp.i
 
 # target to preprocess a source file
 core/log/LogSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.i
 .PHONY : core/log/LogSystem.cpp.i
 
 core/log/LogSystem.s: core/log/LogSystem.cpp.s
@@ -440,7 +485,7 @@ core/log/LogSystem.s: core/log/LogSystem.cpp.s
 
 # target to generate assembly for a file
 core/log/LogSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.s
 .PHONY : core/log/LogSystem.cpp.s
 
 input_system/InputSystem.o: input_system/InputSystem.cpp.o
@@ -448,7 +493,7 @@ input_system/InputSystem.o: input_system/InputSystem.cpp.o
 
 # target to build an object file
 input_system/InputSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.o
 .PHONY : input_system/InputSystem.cpp.o
 
 input_system/InputSystem.i: input_system/InputSystem.cpp.i
@@ -456,7 +501,7 @@ input_system/InputSystem.i: input_system/InputSystem.cpp.i
 
 # target to preprocess a source file
 input_system/InputSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.i
 .PHONY : input_system/InputSystem.cpp.i
 
 input_system/InputSystem.s: input_system/InputSystem.cpp.s
@@ -464,7 +509,7 @@ input_system/InputSystem.s: input_system/InputSystem.cpp.s
 
 # target to generate assembly for a file
 input_system/InputSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.s
 .PHONY : input_system/InputSystem.cpp.s
 
 render_system/RenderSystem.o: render_system/RenderSystem.cpp.o
@@ -472,7 +517,7 @@ render_system/RenderSystem.o: render_system/RenderSystem.cpp.o
 
 # target to build an object file
 render_system/RenderSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.o
 .PHONY : render_system/RenderSystem.cpp.o
 
 render_system/RenderSystem.i: render_system/RenderSystem.cpp.i
@@ -480,7 +525,7 @@ render_system/RenderSystem.i: render_system/RenderSystem.cpp.i
 
 # target to preprocess a source file
 render_system/RenderSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.i
 .PHONY : render_system/RenderSystem.cpp.i
 
 render_system/RenderSystem.s: render_system/RenderSystem.cpp.s
@@ -488,7 +533,7 @@ render_system/RenderSystem.s: render_system/RenderSystem.cpp.s
 
 # target to generate assembly for a file
 render_system/RenderSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.s
 .PHONY : render_system/RenderSystem.cpp.s
 
 render_system/interface/opengl_rhi/RHI.o: render_system/interface/opengl_rhi/RHI.cpp.o
@@ -496,7 +541,7 @@ render_system/interface/opengl_rhi/RHI.o: render_system/interface/opengl_rhi/RHI
 
 # target to build an object file
 render_system/interface/opengl_rhi/RHI.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.o
 .PHONY : render_system/interface/opengl_rhi/RHI.cpp.o
 
 render_system/interface/opengl_rhi/RHI.i: render_system/interface/opengl_rhi/RHI.cpp.i
@@ -504,7 +549,7 @@ render_system/interface/opengl_rhi/RHI.i: render_system/interface/opengl_rhi/RHI
 
 # target to preprocess a source file
 render_system/interface/opengl_rhi/RHI.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.i
 .PHONY : render_system/interface/opengl_rhi/RHI.cpp.i
 
 render_system/interface/opengl_rhi/RHI.s: render_system/interface/opengl_rhi/RHI.cpp.s
@@ -512,7 +557,7 @@ render_system/interface/opengl_rhi/RHI.s: render_system/interface/opengl_rhi/RHI
 
 # target to generate assembly for a file
 render_system/interface/opengl_rhi/RHI.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.s
 .PHONY : render_system/interface/opengl_rhi/RHI.cpp.s
 
 render_system/render_pipeline/Pipeline.o: render_system/render_pipeline/Pipeline.cpp.o
@@ -520,7 +565,7 @@ render_system/render_pipeline/Pipeline.o: render_system/render_pipeline/Pipeline
 
 # target to build an object file
 render_system/render_pipeline/Pipeline.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.o
 .PHONY : render_system/render_pipeline/Pipeline.cpp.o
 
 render_system/render_pipeline/Pipeline.i: render_system/render_pipeline/Pipeline.cpp.i
@@ -528,7 +573,7 @@ render_system/render_pipeline/Pipeline.i: render_system/render_pipeline/Pipeline
 
 # target to preprocess a source file
 render_system/render_pipeline/Pipeline.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.i
 .PHONY : render_system/render_pipeline/Pipeline.cpp.i
 
 render_system/render_pipeline/Pipeline.s: render_system/render_pipeline/Pipeline.cpp.s
@@ -536,7 +581,7 @@ render_system/render_pipeline/Pipeline.s: render_system/render_pipeline/Pipeline
 
 # target to generate assembly for a file
 render_system/render_pipeline/Pipeline.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.s
 .PHONY : render_system/render_pipeline/Pipeline.cpp.s
 
 render_system/render_pipeline/passes/MainCameraPass.o: render_system/render_pipeline/passes/MainCameraPass.cpp.o
@@ -544,7 +589,7 @@ render_system/render_pipeline/passes/MainCameraPass.o: render_system/render_pipe
 
 # target to build an object file
 render_system/render_pipeline/passes/MainCameraPass.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.o
 .PHONY : render_system/render_pipeline/passes/MainCameraPass.cpp.o
 
 render_system/render_pipeline/passes/MainCameraPass.i: render_system/render_pipeline/passes/MainCameraPass.cpp.i
@@ -552,7 +597,7 @@ render_system/render_pipeline/passes/MainCameraPass.i: render_system/render_pipe
 
 # target to preprocess a source file
 render_system/render_pipeline/passes/MainCameraPass.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.i
 .PHONY : render_system/render_pipeline/passes/MainCameraPass.cpp.i
 
 render_system/render_pipeline/passes/MainCameraPass.s: render_system/render_pipeline/passes/MainCameraPass.cpp.s
@@ -560,7 +605,7 @@ render_system/render_pipeline/passes/MainCameraPass.s: render_system/render_pipe
 
 # target to generate assembly for a file
 render_system/render_pipeline/passes/MainCameraPass.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.s
 .PHONY : render_system/render_pipeline/passes/MainCameraPass.cpp.s
 
 render_system/render_pipeline/passes/PassBase.o: render_system/render_pipeline/passes/PassBase.cpp.o
@@ -568,7 +613,7 @@ render_system/render_pipeline/passes/PassBase.o: render_system/render_pipeline/p
 
 # target to build an object file
 render_system/render_pipeline/passes/PassBase.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.o
 .PHONY : render_system/render_pipeline/passes/PassBase.cpp.o
 
 render_system/render_pipeline/passes/PassBase.i: render_system/render_pipeline/passes/PassBase.cpp.i
@@ -576,7 +621,7 @@ render_system/render_pipeline/passes/PassBase.i: render_system/render_pipeline/p
 
 # target to preprocess a source file
 render_system/render_pipeline/passes/PassBase.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.i
 .PHONY : render_system/render_pipeline/passes/PassBase.cpp.i
 
 render_system/render_pipeline/passes/PassBase.s: render_system/render_pipeline/passes/PassBase.cpp.s
@@ -584,7 +629,7 @@ render_system/render_pipeline/passes/PassBase.s: render_system/render_pipeline/p
 
 # target to generate assembly for a file
 render_system/render_pipeline/passes/PassBase.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.s
 .PHONY : render_system/render_pipeline/passes/PassBase.cpp.s
 
 render_system/render_pool/RenderPool.o: render_system/render_pool/RenderPool.cpp.o
@@ -592,7 +637,7 @@ render_system/render_pool/RenderPool.o: render_system/render_pool/RenderPool.cpp
 
 # target to build an object file
 render_system/render_pool/RenderPool.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.o
 .PHONY : render_system/render_pool/RenderPool.cpp.o
 
 render_system/render_pool/RenderPool.i: render_system/render_pool/RenderPool.cpp.i
@@ -600,7 +645,7 @@ render_system/render_pool/RenderPool.i: render_system/render_pool/RenderPool.cpp
 
 # target to preprocess a source file
 render_system/render_pool/RenderPool.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.i
 .PHONY : render_system/render_pool/RenderPool.cpp.i
 
 render_system/render_pool/RenderPool.s: render_system/render_pool/RenderPool.cpp.s
@@ -608,7 +653,7 @@ render_system/render_pool/RenderPool.s: render_system/render_pool/RenderPool.cpp
 
 # target to generate assembly for a file
 render_system/render_pool/RenderPool.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.s
 .PHONY : render_system/render_pool/RenderPool.cpp.s
 
 render_system/render_target/RenderTarget.o: render_system/render_target/RenderTarget.cpp.o
@@ -616,7 +661,7 @@ render_system/render_target/RenderTarget.o: render_system/render_target/RenderTa
 
 # target to build an object file
 render_system/render_target/RenderTarget.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.o
 .PHONY : render_system/render_target/RenderTarget.cpp.o
 
 render_system/render_target/RenderTarget.i: render_system/render_target/RenderTarget.cpp.i
@@ -624,7 +669,7 @@ render_system/render_target/RenderTarget.i: render_system/render_target/RenderTa
 
 # target to preprocess a source file
 render_system/render_target/RenderTarget.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.i
 .PHONY : render_system/render_target/RenderTarget.cpp.i
 
 render_system/render_target/RenderTarget.s: render_system/render_target/RenderTarget.cpp.s
@@ -632,7 +677,7 @@ render_system/render_target/RenderTarget.s: render_system/render_target/RenderTa
 
 # target to generate assembly for a file
 render_system/render_target/RenderTarget.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.s
 .PHONY : render_system/render_target/RenderTarget.cpp.s
 
 runtime_global/RuntimeGlobal.o: runtime_global/RuntimeGlobal.cpp.o
@@ -640,7 +685,7 @@ runtime_global/RuntimeGlobal.o: runtime_global/RuntimeGlobal.cpp.o
 
 # target to build an object file
 runtime_global/RuntimeGlobal.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.o
 .PHONY : runtime_global/RuntimeGlobal.cpp.o
 
 runtime_global/RuntimeGlobal.i: runtime_global/RuntimeGlobal.cpp.i
@@ -648,7 +693,7 @@ runtime_global/RuntimeGlobal.i: runtime_global/RuntimeGlobal.cpp.i
 
 # target to preprocess a source file
 runtime_global/RuntimeGlobal.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.i
 .PHONY : runtime_global/RuntimeGlobal.cpp.i
 
 runtime_global/RuntimeGlobal.s: runtime_global/RuntimeGlobal.cpp.s
@@ -656,7 +701,7 @@ runtime_global/RuntimeGlobal.s: runtime_global/RuntimeGlobal.cpp.s
 
 # target to generate assembly for a file
 runtime_global/RuntimeGlobal.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.s
 .PHONY : runtime_global/RuntimeGlobal.cpp.s
 
 window_system/WindowSystem.o: window_system/WindowSystem.cpp.o
@@ -664,7 +709,7 @@ window_system/WindowSystem.o: window_system/WindowSystem.cpp.o
 
 # target to build an object file
 window_system/WindowSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o
 .PHONY : window_system/WindowSystem.cpp.o
 
 window_system/WindowSystem.i: window_system/WindowSystem.cpp.i
@@ -672,7 +717,7 @@ window_system/WindowSystem.i: window_system/WindowSystem.cpp.i
 
 # target to preprocess a source file
 window_system/WindowSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.i
 .PHONY : window_system/WindowSystem.cpp.i
 
 window_system/WindowSystem.s: window_system/WindowSystem.cpp.s
@@ -680,7 +725,7 @@ window_system/WindowSystem.s: window_system/WindowSystem.cpp.s
 
 # target to generate assembly for a file
 window_system/WindowSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/runtime/CMakeFiles/ElysianRuntime.dir/build.make sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.s
 .PHONY : window_system/WindowSystem.cpp.s
 
 # Help Target
@@ -690,6 +735,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... ElysianRuntime"
 	@echo "... EngineRuntime.o"
@@ -772,7 +821,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

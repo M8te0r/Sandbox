@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp" "sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o" "gcc" "sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o.d"
+  "/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp" "sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o" "gcc" "sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

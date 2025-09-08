@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Include any dependencies generated for this target.
 include sandbox/3rdparty/CMakeFiles/imgui.dir/depend.make
@@ -73,102 +73,102 @@ sandbox/3rdparty/CMakeFiles/imgui.dir/codegen:
 .PHONY : sandbox/3rdparty/CMakeFiles/imgui.dir/codegen
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui/imgui.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui/imgui.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui/imgui.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui/imgui.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_demo.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_demo.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp > CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_demo.cpp > CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_demo.cpp -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_draw.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_draw.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp > CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_draw.cpp > CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_draw.cpp -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_tables.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_tables.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp > CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_tables.cpp > CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_tables.cpp -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp > CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp > CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/flags.make
-sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp
+sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o: sandbox/3rdparty/CMakeFiles/imgui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target imgui
 imgui_OBJECTS = \
@@ -183,28 +183,28 @@ imgui_OBJECTS = \
 # External object files for target imgui
 imgui_EXTERNAL_OBJECTS =
 
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/build.make
-sandbox/3rdparty/libimgui.a: sandbox/3rdparty/CMakeFiles/imgui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libimgui.a"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean_target.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgui.dir/link.txt --verbose=$(VERBOSE)
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/build.make
+sandbox/3rdparty/libimguid.a: sandbox/3rdparty/CMakeFiles/imgui.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libimguid.a"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean_target.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sandbox/3rdparty/CMakeFiles/imgui.dir/build: sandbox/3rdparty/libimgui.a
+sandbox/3rdparty/CMakeFiles/imgui.dir/build: sandbox/3rdparty/libimguid.a
 .PHONY : sandbox/3rdparty/CMakeFiles/imgui.dir/build
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean.cmake
 .PHONY : sandbox/3rdparty/CMakeFiles/imgui.dir/clean
 
 sandbox/3rdparty/CMakeFiles/imgui.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/CMakeFiles/imgui.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/CMakeFiles/imgui.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/3rdparty/CMakeFiles/imgui.dir/depend
 

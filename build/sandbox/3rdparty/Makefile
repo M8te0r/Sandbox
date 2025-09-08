@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -85,16 +85,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"assimp-dev\" \"libassimp6.0.2-dev\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty//CMakeFiles/progress.marks
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty//CMakeFiles/progress.marks
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/clean
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sandbox/3rdparty/CMakeFiles/imgui.dir/rule:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/CMakeFiles/imgui.dir/rule
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/CMakeFiles/imgui.dir/rule
 .PHONY : sandbox/3rdparty/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
@@ -128,12 +173,12 @@ imgui: sandbox/3rdparty/CMakeFiles/imgui.dir/rule
 
 # fast build rule for target.
 imgui/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/build
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 # Convenience name for target.
 sandbox/3rdparty/CMakeFiles/glad.dir/rule:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/CMakeFiles/glad.dir/rule
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/CMakeFiles/glad.dir/rule
 .PHONY : sandbox/3rdparty/CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -142,7 +187,7 @@ glad: sandbox/3rdparty/CMakeFiles/glad.dir/rule
 
 # fast build rule for target.
 glad/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/build
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
 glad/src/glad.o: glad/src/glad.c.o
@@ -150,7 +195,7 @@ glad/src/glad.o: glad/src/glad.c.o
 
 # target to build an object file
 glad/src/glad.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o
 .PHONY : glad/src/glad.c.o
 
 glad/src/glad.i: glad/src/glad.c.i
@@ -158,7 +203,7 @@ glad/src/glad.i: glad/src/glad.c.i
 
 # target to preprocess a source file
 glad/src/glad.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.i
 .PHONY : glad/src/glad.c.i
 
 glad/src/glad.s: glad/src/glad.c.s
@@ -166,7 +211,7 @@ glad/src/glad.s: glad/src/glad.c.s
 
 # target to generate assembly for a file
 glad/src/glad.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/glad.dir/build.make sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.s
 .PHONY : glad/src/glad.c.s
 
 imgui/backends/imgui_impl_glfw.o: imgui/backends/imgui_impl_glfw.cpp.o
@@ -174,7 +219,7 @@ imgui/backends/imgui_impl_glfw.o: imgui/backends/imgui_impl_glfw.cpp.o
 
 # target to build an object file
 imgui/backends/imgui_impl_glfw.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.o
 
 imgui/backends/imgui_impl_glfw.i: imgui/backends/imgui_impl_glfw.cpp.i
@@ -182,7 +227,7 @@ imgui/backends/imgui_impl_glfw.i: imgui/backends/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 imgui/backends/imgui_impl_glfw.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.i
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.i
 
 imgui/backends/imgui_impl_glfw.s: imgui/backends/imgui_impl_glfw.cpp.s
@@ -190,7 +235,7 @@ imgui/backends/imgui_impl_glfw.s: imgui/backends/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 imgui/backends/imgui_impl_glfw.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.s
 .PHONY : imgui/backends/imgui_impl_glfw.cpp.s
 
 imgui/backends/imgui_impl_opengl3.o: imgui/backends/imgui_impl_opengl3.cpp.o
@@ -198,7 +243,7 @@ imgui/backends/imgui_impl_opengl3.o: imgui/backends/imgui_impl_opengl3.cpp.o
 
 # target to build an object file
 imgui/backends/imgui_impl_opengl3.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.o
 
 imgui/backends/imgui_impl_opengl3.i: imgui/backends/imgui_impl_opengl3.cpp.i
@@ -206,7 +251,7 @@ imgui/backends/imgui_impl_opengl3.i: imgui/backends/imgui_impl_opengl3.cpp.i
 
 # target to preprocess a source file
 imgui/backends/imgui_impl_opengl3.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.i
 
 imgui/backends/imgui_impl_opengl3.s: imgui/backends/imgui_impl_opengl3.cpp.s
@@ -214,7 +259,7 @@ imgui/backends/imgui_impl_opengl3.s: imgui/backends/imgui_impl_opengl3.cpp.s
 
 # target to generate assembly for a file
 imgui/backends/imgui_impl_opengl3.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : imgui/backends/imgui_impl_opengl3.cpp.s
 
 imgui/imgui.o: imgui/imgui.cpp.o
@@ -222,7 +267,7 @@ imgui/imgui.o: imgui/imgui.cpp.o
 
 # target to build an object file
 imgui/imgui.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o
 .PHONY : imgui/imgui.cpp.o
 
 imgui/imgui.i: imgui/imgui.cpp.i
@@ -230,7 +275,7 @@ imgui/imgui.i: imgui/imgui.cpp.i
 
 # target to preprocess a source file
 imgui/imgui.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.i
 .PHONY : imgui/imgui.cpp.i
 
 imgui/imgui.s: imgui/imgui.cpp.s
@@ -238,7 +283,7 @@ imgui/imgui.s: imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.s
 .PHONY : imgui/imgui.cpp.s
 
 imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
@@ -246,7 +291,7 @@ imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
 
 # target to build an object file
 imgui/imgui_demo.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
 .PHONY : imgui/imgui_demo.cpp.o
 
 imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
@@ -254,7 +299,7 @@ imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_demo.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
 .PHONY : imgui/imgui_demo.cpp.i
 
 imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
@@ -262,7 +307,7 @@ imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_demo.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
 .PHONY : imgui/imgui_demo.cpp.s
 
 imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
@@ -270,7 +315,7 @@ imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
 
 # target to build an object file
 imgui/imgui_draw.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
 .PHONY : imgui/imgui_draw.cpp.o
 
 imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
@@ -278,7 +323,7 @@ imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_draw.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
 .PHONY : imgui/imgui_draw.cpp.i
 
 imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
@@ -286,7 +331,7 @@ imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_draw.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
 .PHONY : imgui/imgui_draw.cpp.s
 
 imgui/imgui_tables.o: imgui/imgui_tables.cpp.o
@@ -294,7 +339,7 @@ imgui/imgui_tables.o: imgui/imgui_tables.cpp.o
 
 # target to build an object file
 imgui/imgui_tables.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o
 .PHONY : imgui/imgui_tables.cpp.o
 
 imgui/imgui_tables.i: imgui/imgui_tables.cpp.i
@@ -302,7 +347,7 @@ imgui/imgui_tables.i: imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_tables.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.i
 .PHONY : imgui/imgui_tables.cpp.i
 
 imgui/imgui_tables.s: imgui/imgui_tables.cpp.s
@@ -310,7 +355,7 @@ imgui/imgui_tables.s: imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_tables.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.s
 .PHONY : imgui/imgui_tables.cpp.s
 
 imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
@@ -318,7 +363,7 @@ imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 imgui/imgui_widgets.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
 .PHONY : imgui/imgui_widgets.cpp.o
 
 imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
@@ -326,7 +371,7 @@ imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 imgui/imgui_widgets.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
 .PHONY : imgui/imgui_widgets.cpp.i
 
 imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
@@ -334,7 +379,7 @@ imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 imgui/imgui_widgets.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/CMakeFiles/imgui.dir/build.make sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
 # Help Target
@@ -344,6 +389,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... glad"
 	@echo "... imgui"
@@ -383,7 +432,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

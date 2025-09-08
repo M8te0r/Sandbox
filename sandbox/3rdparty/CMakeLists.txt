@@ -13,6 +13,16 @@ option(GLFW_INSTALL "" OFF)
 add_subdirectory(glfw)
 # 编译的时候自动链接opengl
 
+# Assimp
+set(BUILD_SHARED_LIBS OFF)
+if(APPLE)
+    set(BUILD_FRAMEWORK ON)
+endif()
+set(ASSIMP_DOUBLE_PRECISION ON)
+set(ASSIMP_BUILD_TESTS OFF)
+set(INJECT_DEBUG_POSTFIX ON)
+set(ASSIMP_INSTALL_PDB ON)
+add_subdirectory(assimp)
 
 
 # stb
@@ -51,4 +61,4 @@ target_include_directories(glad PUBLIC ${glad_src_dir} ${glad_include_dir})
 
 
 # 导出
-target_link_libraries(glad PUBLIC glfw glew_s glm stb imgui)
+target_link_libraries(glad PUBLIC glfw glm stb imgui assimp)

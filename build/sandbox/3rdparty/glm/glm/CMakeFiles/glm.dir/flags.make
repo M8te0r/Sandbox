@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm
+CXX_INCLUDES = -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm
 
 CXX_FLAGSarm64 =  -Wall  -g -std=c++17 -arch arm64 -Wno-c++98-compat -Wno-c++98-compat-pedantic
 

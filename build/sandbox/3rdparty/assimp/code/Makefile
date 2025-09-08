@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"assimp-dev\" \"libassimp5.2.5-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"assimp-dev\" \"libassimp6.0.2-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/assimp/code//CMakeFiles/progress.marks
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/code//CMakeFiles/progress.marks
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/clean
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/rule:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/rule
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/rule
 .PHONY : sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ assimp: sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/rule
 
 # fast build rule for target.
 assimp/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build
 .PHONY : assimp/fast
 
 AssetLib/3DS/3DSConverter.o: AssetLib/3DS/3DSConverter.cpp.o
@@ -181,7 +181,7 @@ AssetLib/3DS/3DSConverter.o: AssetLib/3DS/3DSConverter.cpp.o
 
 # target to build an object file
 AssetLib/3DS/3DSConverter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.o
 .PHONY : AssetLib/3DS/3DSConverter.cpp.o
 
 AssetLib/3DS/3DSConverter.i: AssetLib/3DS/3DSConverter.cpp.i
@@ -189,7 +189,7 @@ AssetLib/3DS/3DSConverter.i: AssetLib/3DS/3DSConverter.cpp.i
 
 # target to preprocess a source file
 AssetLib/3DS/3DSConverter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.i
 .PHONY : AssetLib/3DS/3DSConverter.cpp.i
 
 AssetLib/3DS/3DSConverter.s: AssetLib/3DS/3DSConverter.cpp.s
@@ -197,7 +197,7 @@ AssetLib/3DS/3DSConverter.s: AssetLib/3DS/3DSConverter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3DS/3DSConverter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSConverter.cpp.s
 .PHONY : AssetLib/3DS/3DSConverter.cpp.s
 
 AssetLib/3DS/3DSExporter.o: AssetLib/3DS/3DSExporter.cpp.o
@@ -205,7 +205,7 @@ AssetLib/3DS/3DSExporter.o: AssetLib/3DS/3DSExporter.cpp.o
 
 # target to build an object file
 AssetLib/3DS/3DSExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.o
 .PHONY : AssetLib/3DS/3DSExporter.cpp.o
 
 AssetLib/3DS/3DSExporter.i: AssetLib/3DS/3DSExporter.cpp.i
@@ -213,7 +213,7 @@ AssetLib/3DS/3DSExporter.i: AssetLib/3DS/3DSExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/3DS/3DSExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.i
 .PHONY : AssetLib/3DS/3DSExporter.cpp.i
 
 AssetLib/3DS/3DSExporter.s: AssetLib/3DS/3DSExporter.cpp.s
@@ -221,7 +221,7 @@ AssetLib/3DS/3DSExporter.s: AssetLib/3DS/3DSExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3DS/3DSExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSExporter.cpp.s
 .PHONY : AssetLib/3DS/3DSExporter.cpp.s
 
 AssetLib/3DS/3DSLoader.o: AssetLib/3DS/3DSLoader.cpp.o
@@ -229,7 +229,7 @@ AssetLib/3DS/3DSLoader.o: AssetLib/3DS/3DSLoader.cpp.o
 
 # target to build an object file
 AssetLib/3DS/3DSLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.o
 .PHONY : AssetLib/3DS/3DSLoader.cpp.o
 
 AssetLib/3DS/3DSLoader.i: AssetLib/3DS/3DSLoader.cpp.i
@@ -237,7 +237,7 @@ AssetLib/3DS/3DSLoader.i: AssetLib/3DS/3DSLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/3DS/3DSLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.i
 .PHONY : AssetLib/3DS/3DSLoader.cpp.i
 
 AssetLib/3DS/3DSLoader.s: AssetLib/3DS/3DSLoader.cpp.s
@@ -245,7 +245,7 @@ AssetLib/3DS/3DSLoader.s: AssetLib/3DS/3DSLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3DS/3DSLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3DS/3DSLoader.cpp.s
 .PHONY : AssetLib/3DS/3DSLoader.cpp.s
 
 AssetLib/3MF/D3MFExporter.o: AssetLib/3MF/D3MFExporter.cpp.o
@@ -253,7 +253,7 @@ AssetLib/3MF/D3MFExporter.o: AssetLib/3MF/D3MFExporter.cpp.o
 
 # target to build an object file
 AssetLib/3MF/D3MFExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.o
 .PHONY : AssetLib/3MF/D3MFExporter.cpp.o
 
 AssetLib/3MF/D3MFExporter.i: AssetLib/3MF/D3MFExporter.cpp.i
@@ -261,7 +261,7 @@ AssetLib/3MF/D3MFExporter.i: AssetLib/3MF/D3MFExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/3MF/D3MFExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.i
 .PHONY : AssetLib/3MF/D3MFExporter.cpp.i
 
 AssetLib/3MF/D3MFExporter.s: AssetLib/3MF/D3MFExporter.cpp.s
@@ -269,7 +269,7 @@ AssetLib/3MF/D3MFExporter.s: AssetLib/3MF/D3MFExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3MF/D3MFExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFExporter.cpp.s
 .PHONY : AssetLib/3MF/D3MFExporter.cpp.s
 
 AssetLib/3MF/D3MFImporter.o: AssetLib/3MF/D3MFImporter.cpp.o
@@ -277,7 +277,7 @@ AssetLib/3MF/D3MFImporter.o: AssetLib/3MF/D3MFImporter.cpp.o
 
 # target to build an object file
 AssetLib/3MF/D3MFImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.o
 .PHONY : AssetLib/3MF/D3MFImporter.cpp.o
 
 AssetLib/3MF/D3MFImporter.i: AssetLib/3MF/D3MFImporter.cpp.i
@@ -285,7 +285,7 @@ AssetLib/3MF/D3MFImporter.i: AssetLib/3MF/D3MFImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/3MF/D3MFImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.i
 .PHONY : AssetLib/3MF/D3MFImporter.cpp.i
 
 AssetLib/3MF/D3MFImporter.s: AssetLib/3MF/D3MFImporter.cpp.s
@@ -293,7 +293,7 @@ AssetLib/3MF/D3MFImporter.s: AssetLib/3MF/D3MFImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3MF/D3MFImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFImporter.cpp.s
 .PHONY : AssetLib/3MF/D3MFImporter.cpp.s
 
 AssetLib/3MF/D3MFOpcPackage.o: AssetLib/3MF/D3MFOpcPackage.cpp.o
@@ -301,7 +301,7 @@ AssetLib/3MF/D3MFOpcPackage.o: AssetLib/3MF/D3MFOpcPackage.cpp.o
 
 # target to build an object file
 AssetLib/3MF/D3MFOpcPackage.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.o
 .PHONY : AssetLib/3MF/D3MFOpcPackage.cpp.o
 
 AssetLib/3MF/D3MFOpcPackage.i: AssetLib/3MF/D3MFOpcPackage.cpp.i
@@ -309,7 +309,7 @@ AssetLib/3MF/D3MFOpcPackage.i: AssetLib/3MF/D3MFOpcPackage.cpp.i
 
 # target to preprocess a source file
 AssetLib/3MF/D3MFOpcPackage.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.i
 .PHONY : AssetLib/3MF/D3MFOpcPackage.cpp.i
 
 AssetLib/3MF/D3MFOpcPackage.s: AssetLib/3MF/D3MFOpcPackage.cpp.s
@@ -317,7 +317,7 @@ AssetLib/3MF/D3MFOpcPackage.s: AssetLib/3MF/D3MFOpcPackage.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3MF/D3MFOpcPackage.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/D3MFOpcPackage.cpp.s
 .PHONY : AssetLib/3MF/D3MFOpcPackage.cpp.s
 
 AssetLib/3MF/XmlSerializer.o: AssetLib/3MF/XmlSerializer.cpp.o
@@ -325,7 +325,7 @@ AssetLib/3MF/XmlSerializer.o: AssetLib/3MF/XmlSerializer.cpp.o
 
 # target to build an object file
 AssetLib/3MF/XmlSerializer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.o
 .PHONY : AssetLib/3MF/XmlSerializer.cpp.o
 
 AssetLib/3MF/XmlSerializer.i: AssetLib/3MF/XmlSerializer.cpp.i
@@ -333,7 +333,7 @@ AssetLib/3MF/XmlSerializer.i: AssetLib/3MF/XmlSerializer.cpp.i
 
 # target to preprocess a source file
 AssetLib/3MF/XmlSerializer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.i
 .PHONY : AssetLib/3MF/XmlSerializer.cpp.i
 
 AssetLib/3MF/XmlSerializer.s: AssetLib/3MF/XmlSerializer.cpp.s
@@ -341,7 +341,7 @@ AssetLib/3MF/XmlSerializer.s: AssetLib/3MF/XmlSerializer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/3MF/XmlSerializer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/3MF/XmlSerializer.cpp.s
 .PHONY : AssetLib/3MF/XmlSerializer.cpp.s
 
 AssetLib/AC/ACLoader.o: AssetLib/AC/ACLoader.cpp.o
@@ -349,7 +349,7 @@ AssetLib/AC/ACLoader.o: AssetLib/AC/ACLoader.cpp.o
 
 # target to build an object file
 AssetLib/AC/ACLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.o
 .PHONY : AssetLib/AC/ACLoader.cpp.o
 
 AssetLib/AC/ACLoader.i: AssetLib/AC/ACLoader.cpp.i
@@ -357,7 +357,7 @@ AssetLib/AC/ACLoader.i: AssetLib/AC/ACLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/AC/ACLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.i
 .PHONY : AssetLib/AC/ACLoader.cpp.i
 
 AssetLib/AC/ACLoader.s: AssetLib/AC/ACLoader.cpp.s
@@ -365,7 +365,7 @@ AssetLib/AC/ACLoader.s: AssetLib/AC/ACLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/AC/ACLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AC/ACLoader.cpp.s
 .PHONY : AssetLib/AC/ACLoader.cpp.s
 
 AssetLib/AMF/AMFImporter.o: AssetLib/AMF/AMFImporter.cpp.o
@@ -373,7 +373,7 @@ AssetLib/AMF/AMFImporter.o: AssetLib/AMF/AMFImporter.cpp.o
 
 # target to build an object file
 AssetLib/AMF/AMFImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.o
 .PHONY : AssetLib/AMF/AMFImporter.cpp.o
 
 AssetLib/AMF/AMFImporter.i: AssetLib/AMF/AMFImporter.cpp.i
@@ -381,7 +381,7 @@ AssetLib/AMF/AMFImporter.i: AssetLib/AMF/AMFImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/AMF/AMFImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.i
 .PHONY : AssetLib/AMF/AMFImporter.cpp.i
 
 AssetLib/AMF/AMFImporter.s: AssetLib/AMF/AMFImporter.cpp.s
@@ -389,7 +389,7 @@ AssetLib/AMF/AMFImporter.s: AssetLib/AMF/AMFImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/AMF/AMFImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter.cpp.s
 .PHONY : AssetLib/AMF/AMFImporter.cpp.s
 
 AssetLib/AMF/AMFImporter_Geometry.o: AssetLib/AMF/AMFImporter_Geometry.cpp.o
@@ -397,7 +397,7 @@ AssetLib/AMF/AMFImporter_Geometry.o: AssetLib/AMF/AMFImporter_Geometry.cpp.o
 
 # target to build an object file
 AssetLib/AMF/AMFImporter_Geometry.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.o
 .PHONY : AssetLib/AMF/AMFImporter_Geometry.cpp.o
 
 AssetLib/AMF/AMFImporter_Geometry.i: AssetLib/AMF/AMFImporter_Geometry.cpp.i
@@ -405,7 +405,7 @@ AssetLib/AMF/AMFImporter_Geometry.i: AssetLib/AMF/AMFImporter_Geometry.cpp.i
 
 # target to preprocess a source file
 AssetLib/AMF/AMFImporter_Geometry.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.i
 .PHONY : AssetLib/AMF/AMFImporter_Geometry.cpp.i
 
 AssetLib/AMF/AMFImporter_Geometry.s: AssetLib/AMF/AMFImporter_Geometry.cpp.s
@@ -413,7 +413,7 @@ AssetLib/AMF/AMFImporter_Geometry.s: AssetLib/AMF/AMFImporter_Geometry.cpp.s
 
 # target to generate assembly for a file
 AssetLib/AMF/AMFImporter_Geometry.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Geometry.cpp.s
 .PHONY : AssetLib/AMF/AMFImporter_Geometry.cpp.s
 
 AssetLib/AMF/AMFImporter_Material.o: AssetLib/AMF/AMFImporter_Material.cpp.o
@@ -421,7 +421,7 @@ AssetLib/AMF/AMFImporter_Material.o: AssetLib/AMF/AMFImporter_Material.cpp.o
 
 # target to build an object file
 AssetLib/AMF/AMFImporter_Material.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.o
 .PHONY : AssetLib/AMF/AMFImporter_Material.cpp.o
 
 AssetLib/AMF/AMFImporter_Material.i: AssetLib/AMF/AMFImporter_Material.cpp.i
@@ -429,7 +429,7 @@ AssetLib/AMF/AMFImporter_Material.i: AssetLib/AMF/AMFImporter_Material.cpp.i
 
 # target to preprocess a source file
 AssetLib/AMF/AMFImporter_Material.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.i
 .PHONY : AssetLib/AMF/AMFImporter_Material.cpp.i
 
 AssetLib/AMF/AMFImporter_Material.s: AssetLib/AMF/AMFImporter_Material.cpp.s
@@ -437,7 +437,7 @@ AssetLib/AMF/AMFImporter_Material.s: AssetLib/AMF/AMFImporter_Material.cpp.s
 
 # target to generate assembly for a file
 AssetLib/AMF/AMFImporter_Material.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Material.cpp.s
 .PHONY : AssetLib/AMF/AMFImporter_Material.cpp.s
 
 AssetLib/AMF/AMFImporter_Postprocess.o: AssetLib/AMF/AMFImporter_Postprocess.cpp.o
@@ -445,7 +445,7 @@ AssetLib/AMF/AMFImporter_Postprocess.o: AssetLib/AMF/AMFImporter_Postprocess.cpp
 
 # target to build an object file
 AssetLib/AMF/AMFImporter_Postprocess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.o
 .PHONY : AssetLib/AMF/AMFImporter_Postprocess.cpp.o
 
 AssetLib/AMF/AMFImporter_Postprocess.i: AssetLib/AMF/AMFImporter_Postprocess.cpp.i
@@ -453,7 +453,7 @@ AssetLib/AMF/AMFImporter_Postprocess.i: AssetLib/AMF/AMFImporter_Postprocess.cpp
 
 # target to preprocess a source file
 AssetLib/AMF/AMFImporter_Postprocess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.i
 .PHONY : AssetLib/AMF/AMFImporter_Postprocess.cpp.i
 
 AssetLib/AMF/AMFImporter_Postprocess.s: AssetLib/AMF/AMFImporter_Postprocess.cpp.s
@@ -461,7 +461,7 @@ AssetLib/AMF/AMFImporter_Postprocess.s: AssetLib/AMF/AMFImporter_Postprocess.cpp
 
 # target to generate assembly for a file
 AssetLib/AMF/AMFImporter_Postprocess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/AMF/AMFImporter_Postprocess.cpp.s
 .PHONY : AssetLib/AMF/AMFImporter_Postprocess.cpp.s
 
 AssetLib/ASE/ASELoader.o: AssetLib/ASE/ASELoader.cpp.o
@@ -469,7 +469,7 @@ AssetLib/ASE/ASELoader.o: AssetLib/ASE/ASELoader.cpp.o
 
 # target to build an object file
 AssetLib/ASE/ASELoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.o
 .PHONY : AssetLib/ASE/ASELoader.cpp.o
 
 AssetLib/ASE/ASELoader.i: AssetLib/ASE/ASELoader.cpp.i
@@ -477,7 +477,7 @@ AssetLib/ASE/ASELoader.i: AssetLib/ASE/ASELoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/ASE/ASELoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.i
 .PHONY : AssetLib/ASE/ASELoader.cpp.i
 
 AssetLib/ASE/ASELoader.s: AssetLib/ASE/ASELoader.cpp.s
@@ -485,7 +485,7 @@ AssetLib/ASE/ASELoader.s: AssetLib/ASE/ASELoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/ASE/ASELoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASELoader.cpp.s
 .PHONY : AssetLib/ASE/ASELoader.cpp.s
 
 AssetLib/ASE/ASEParser.o: AssetLib/ASE/ASEParser.cpp.o
@@ -493,7 +493,7 @@ AssetLib/ASE/ASEParser.o: AssetLib/ASE/ASEParser.cpp.o
 
 # target to build an object file
 AssetLib/ASE/ASEParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.o
 .PHONY : AssetLib/ASE/ASEParser.cpp.o
 
 AssetLib/ASE/ASEParser.i: AssetLib/ASE/ASEParser.cpp.i
@@ -501,7 +501,7 @@ AssetLib/ASE/ASEParser.i: AssetLib/ASE/ASEParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/ASE/ASEParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.i
 .PHONY : AssetLib/ASE/ASEParser.cpp.i
 
 AssetLib/ASE/ASEParser.s: AssetLib/ASE/ASEParser.cpp.s
@@ -509,7 +509,7 @@ AssetLib/ASE/ASEParser.s: AssetLib/ASE/ASEParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/ASE/ASEParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/ASE/ASEParser.cpp.s
 .PHONY : AssetLib/ASE/ASEParser.cpp.s
 
 AssetLib/Assbin/AssbinExporter.o: AssetLib/Assbin/AssbinExporter.cpp.o
@@ -517,7 +517,7 @@ AssetLib/Assbin/AssbinExporter.o: AssetLib/Assbin/AssbinExporter.cpp.o
 
 # target to build an object file
 AssetLib/Assbin/AssbinExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.o
 .PHONY : AssetLib/Assbin/AssbinExporter.cpp.o
 
 AssetLib/Assbin/AssbinExporter.i: AssetLib/Assbin/AssbinExporter.cpp.i
@@ -525,7 +525,7 @@ AssetLib/Assbin/AssbinExporter.i: AssetLib/Assbin/AssbinExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assbin/AssbinExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.i
 .PHONY : AssetLib/Assbin/AssbinExporter.cpp.i
 
 AssetLib/Assbin/AssbinExporter.s: AssetLib/Assbin/AssbinExporter.cpp.s
@@ -533,7 +533,7 @@ AssetLib/Assbin/AssbinExporter.s: AssetLib/Assbin/AssbinExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assbin/AssbinExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinExporter.cpp.s
 .PHONY : AssetLib/Assbin/AssbinExporter.cpp.s
 
 AssetLib/Assbin/AssbinFileWriter.o: AssetLib/Assbin/AssbinFileWriter.cpp.o
@@ -541,7 +541,7 @@ AssetLib/Assbin/AssbinFileWriter.o: AssetLib/Assbin/AssbinFileWriter.cpp.o
 
 # target to build an object file
 AssetLib/Assbin/AssbinFileWriter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.o
 .PHONY : AssetLib/Assbin/AssbinFileWriter.cpp.o
 
 AssetLib/Assbin/AssbinFileWriter.i: AssetLib/Assbin/AssbinFileWriter.cpp.i
@@ -549,7 +549,7 @@ AssetLib/Assbin/AssbinFileWriter.i: AssetLib/Assbin/AssbinFileWriter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assbin/AssbinFileWriter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.i
 .PHONY : AssetLib/Assbin/AssbinFileWriter.cpp.i
 
 AssetLib/Assbin/AssbinFileWriter.s: AssetLib/Assbin/AssbinFileWriter.cpp.s
@@ -557,7 +557,7 @@ AssetLib/Assbin/AssbinFileWriter.s: AssetLib/Assbin/AssbinFileWriter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assbin/AssbinFileWriter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinFileWriter.cpp.s
 .PHONY : AssetLib/Assbin/AssbinFileWriter.cpp.s
 
 AssetLib/Assbin/AssbinLoader.o: AssetLib/Assbin/AssbinLoader.cpp.o
@@ -565,7 +565,7 @@ AssetLib/Assbin/AssbinLoader.o: AssetLib/Assbin/AssbinLoader.cpp.o
 
 # target to build an object file
 AssetLib/Assbin/AssbinLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.o
 .PHONY : AssetLib/Assbin/AssbinLoader.cpp.o
 
 AssetLib/Assbin/AssbinLoader.i: AssetLib/Assbin/AssbinLoader.cpp.i
@@ -573,7 +573,7 @@ AssetLib/Assbin/AssbinLoader.i: AssetLib/Assbin/AssbinLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assbin/AssbinLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.i
 .PHONY : AssetLib/Assbin/AssbinLoader.cpp.i
 
 AssetLib/Assbin/AssbinLoader.s: AssetLib/Assbin/AssbinLoader.cpp.s
@@ -581,7 +581,7 @@ AssetLib/Assbin/AssbinLoader.s: AssetLib/Assbin/AssbinLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assbin/AssbinLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assbin/AssbinLoader.cpp.s
 .PHONY : AssetLib/Assbin/AssbinLoader.cpp.s
 
 AssetLib/Assjson/cencode.o: AssetLib/Assjson/cencode.c.o
@@ -589,7 +589,7 @@ AssetLib/Assjson/cencode.o: AssetLib/Assjson/cencode.c.o
 
 # target to build an object file
 AssetLib/Assjson/cencode.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.o
 .PHONY : AssetLib/Assjson/cencode.c.o
 
 AssetLib/Assjson/cencode.i: AssetLib/Assjson/cencode.c.i
@@ -597,7 +597,7 @@ AssetLib/Assjson/cencode.i: AssetLib/Assjson/cencode.c.i
 
 # target to preprocess a source file
 AssetLib/Assjson/cencode.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.i
 .PHONY : AssetLib/Assjson/cencode.c.i
 
 AssetLib/Assjson/cencode.s: AssetLib/Assjson/cencode.c.s
@@ -605,7 +605,7 @@ AssetLib/Assjson/cencode.s: AssetLib/Assjson/cencode.c.s
 
 # target to generate assembly for a file
 AssetLib/Assjson/cencode.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/cencode.c.s
 .PHONY : AssetLib/Assjson/cencode.c.s
 
 AssetLib/Assjson/json_exporter.o: AssetLib/Assjson/json_exporter.cpp.o
@@ -613,7 +613,7 @@ AssetLib/Assjson/json_exporter.o: AssetLib/Assjson/json_exporter.cpp.o
 
 # target to build an object file
 AssetLib/Assjson/json_exporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.o
 .PHONY : AssetLib/Assjson/json_exporter.cpp.o
 
 AssetLib/Assjson/json_exporter.i: AssetLib/Assjson/json_exporter.cpp.i
@@ -621,7 +621,7 @@ AssetLib/Assjson/json_exporter.i: AssetLib/Assjson/json_exporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assjson/json_exporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.i
 .PHONY : AssetLib/Assjson/json_exporter.cpp.i
 
 AssetLib/Assjson/json_exporter.s: AssetLib/Assjson/json_exporter.cpp.s
@@ -629,7 +629,7 @@ AssetLib/Assjson/json_exporter.s: AssetLib/Assjson/json_exporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assjson/json_exporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/json_exporter.cpp.s
 .PHONY : AssetLib/Assjson/json_exporter.cpp.s
 
 AssetLib/Assjson/mesh_splitter.o: AssetLib/Assjson/mesh_splitter.cpp.o
@@ -637,7 +637,7 @@ AssetLib/Assjson/mesh_splitter.o: AssetLib/Assjson/mesh_splitter.cpp.o
 
 # target to build an object file
 AssetLib/Assjson/mesh_splitter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.o
 .PHONY : AssetLib/Assjson/mesh_splitter.cpp.o
 
 AssetLib/Assjson/mesh_splitter.i: AssetLib/Assjson/mesh_splitter.cpp.i
@@ -645,7 +645,7 @@ AssetLib/Assjson/mesh_splitter.i: AssetLib/Assjson/mesh_splitter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assjson/mesh_splitter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.i
 .PHONY : AssetLib/Assjson/mesh_splitter.cpp.i
 
 AssetLib/Assjson/mesh_splitter.s: AssetLib/Assjson/mesh_splitter.cpp.s
@@ -653,7 +653,7 @@ AssetLib/Assjson/mesh_splitter.s: AssetLib/Assjson/mesh_splitter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assjson/mesh_splitter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assjson/mesh_splitter.cpp.s
 .PHONY : AssetLib/Assjson/mesh_splitter.cpp.s
 
 AssetLib/Assxml/AssxmlExporter.o: AssetLib/Assxml/AssxmlExporter.cpp.o
@@ -661,7 +661,7 @@ AssetLib/Assxml/AssxmlExporter.o: AssetLib/Assxml/AssxmlExporter.cpp.o
 
 # target to build an object file
 AssetLib/Assxml/AssxmlExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.o
 .PHONY : AssetLib/Assxml/AssxmlExporter.cpp.o
 
 AssetLib/Assxml/AssxmlExporter.i: AssetLib/Assxml/AssxmlExporter.cpp.i
@@ -669,7 +669,7 @@ AssetLib/Assxml/AssxmlExporter.i: AssetLib/Assxml/AssxmlExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assxml/AssxmlExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.i
 .PHONY : AssetLib/Assxml/AssxmlExporter.cpp.i
 
 AssetLib/Assxml/AssxmlExporter.s: AssetLib/Assxml/AssxmlExporter.cpp.s
@@ -677,7 +677,7 @@ AssetLib/Assxml/AssxmlExporter.s: AssetLib/Assxml/AssxmlExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assxml/AssxmlExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlExporter.cpp.s
 .PHONY : AssetLib/Assxml/AssxmlExporter.cpp.s
 
 AssetLib/Assxml/AssxmlFileWriter.o: AssetLib/Assxml/AssxmlFileWriter.cpp.o
@@ -685,7 +685,7 @@ AssetLib/Assxml/AssxmlFileWriter.o: AssetLib/Assxml/AssxmlFileWriter.cpp.o
 
 # target to build an object file
 AssetLib/Assxml/AssxmlFileWriter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.o
 .PHONY : AssetLib/Assxml/AssxmlFileWriter.cpp.o
 
 AssetLib/Assxml/AssxmlFileWriter.i: AssetLib/Assxml/AssxmlFileWriter.cpp.i
@@ -693,7 +693,7 @@ AssetLib/Assxml/AssxmlFileWriter.i: AssetLib/Assxml/AssxmlFileWriter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Assxml/AssxmlFileWriter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.i
 .PHONY : AssetLib/Assxml/AssxmlFileWriter.cpp.i
 
 AssetLib/Assxml/AssxmlFileWriter.s: AssetLib/Assxml/AssxmlFileWriter.cpp.s
@@ -701,7 +701,7 @@ AssetLib/Assxml/AssxmlFileWriter.s: AssetLib/Assxml/AssxmlFileWriter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Assxml/AssxmlFileWriter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Assxml/AssxmlFileWriter.cpp.s
 .PHONY : AssetLib/Assxml/AssxmlFileWriter.cpp.s
 
 AssetLib/B3D/B3DImporter.o: AssetLib/B3D/B3DImporter.cpp.o
@@ -709,7 +709,7 @@ AssetLib/B3D/B3DImporter.o: AssetLib/B3D/B3DImporter.cpp.o
 
 # target to build an object file
 AssetLib/B3D/B3DImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.o
 .PHONY : AssetLib/B3D/B3DImporter.cpp.o
 
 AssetLib/B3D/B3DImporter.i: AssetLib/B3D/B3DImporter.cpp.i
@@ -717,7 +717,7 @@ AssetLib/B3D/B3DImporter.i: AssetLib/B3D/B3DImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/B3D/B3DImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.i
 .PHONY : AssetLib/B3D/B3DImporter.cpp.i
 
 AssetLib/B3D/B3DImporter.s: AssetLib/B3D/B3DImporter.cpp.s
@@ -725,7 +725,7 @@ AssetLib/B3D/B3DImporter.s: AssetLib/B3D/B3DImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/B3D/B3DImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/B3D/B3DImporter.cpp.s
 .PHONY : AssetLib/B3D/B3DImporter.cpp.s
 
 AssetLib/BVH/BVHLoader.o: AssetLib/BVH/BVHLoader.cpp.o
@@ -733,7 +733,7 @@ AssetLib/BVH/BVHLoader.o: AssetLib/BVH/BVHLoader.cpp.o
 
 # target to build an object file
 AssetLib/BVH/BVHLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.o
 .PHONY : AssetLib/BVH/BVHLoader.cpp.o
 
 AssetLib/BVH/BVHLoader.i: AssetLib/BVH/BVHLoader.cpp.i
@@ -741,7 +741,7 @@ AssetLib/BVH/BVHLoader.i: AssetLib/BVH/BVHLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/BVH/BVHLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.i
 .PHONY : AssetLib/BVH/BVHLoader.cpp.i
 
 AssetLib/BVH/BVHLoader.s: AssetLib/BVH/BVHLoader.cpp.s
@@ -749,7 +749,7 @@ AssetLib/BVH/BVHLoader.s: AssetLib/BVH/BVHLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/BVH/BVHLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/BVH/BVHLoader.cpp.s
 .PHONY : AssetLib/BVH/BVHLoader.cpp.s
 
 AssetLib/Blender/BlenderBMesh.o: AssetLib/Blender/BlenderBMesh.cpp.o
@@ -757,7 +757,7 @@ AssetLib/Blender/BlenderBMesh.o: AssetLib/Blender/BlenderBMesh.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderBMesh.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.o
 .PHONY : AssetLib/Blender/BlenderBMesh.cpp.o
 
 AssetLib/Blender/BlenderBMesh.i: AssetLib/Blender/BlenderBMesh.cpp.i
@@ -765,7 +765,7 @@ AssetLib/Blender/BlenderBMesh.i: AssetLib/Blender/BlenderBMesh.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderBMesh.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.i
 .PHONY : AssetLib/Blender/BlenderBMesh.cpp.i
 
 AssetLib/Blender/BlenderBMesh.s: AssetLib/Blender/BlenderBMesh.cpp.s
@@ -773,7 +773,7 @@ AssetLib/Blender/BlenderBMesh.s: AssetLib/Blender/BlenderBMesh.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderBMesh.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderBMesh.cpp.s
 .PHONY : AssetLib/Blender/BlenderBMesh.cpp.s
 
 AssetLib/Blender/BlenderCustomData.o: AssetLib/Blender/BlenderCustomData.cpp.o
@@ -781,7 +781,7 @@ AssetLib/Blender/BlenderCustomData.o: AssetLib/Blender/BlenderCustomData.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderCustomData.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.o
 .PHONY : AssetLib/Blender/BlenderCustomData.cpp.o
 
 AssetLib/Blender/BlenderCustomData.i: AssetLib/Blender/BlenderCustomData.cpp.i
@@ -789,7 +789,7 @@ AssetLib/Blender/BlenderCustomData.i: AssetLib/Blender/BlenderCustomData.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderCustomData.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.i
 .PHONY : AssetLib/Blender/BlenderCustomData.cpp.i
 
 AssetLib/Blender/BlenderCustomData.s: AssetLib/Blender/BlenderCustomData.cpp.s
@@ -797,7 +797,7 @@ AssetLib/Blender/BlenderCustomData.s: AssetLib/Blender/BlenderCustomData.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderCustomData.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderCustomData.cpp.s
 .PHONY : AssetLib/Blender/BlenderCustomData.cpp.s
 
 AssetLib/Blender/BlenderDNA.o: AssetLib/Blender/BlenderDNA.cpp.o
@@ -805,7 +805,7 @@ AssetLib/Blender/BlenderDNA.o: AssetLib/Blender/BlenderDNA.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderDNA.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.o
 .PHONY : AssetLib/Blender/BlenderDNA.cpp.o
 
 AssetLib/Blender/BlenderDNA.i: AssetLib/Blender/BlenderDNA.cpp.i
@@ -813,7 +813,7 @@ AssetLib/Blender/BlenderDNA.i: AssetLib/Blender/BlenderDNA.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderDNA.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.i
 .PHONY : AssetLib/Blender/BlenderDNA.cpp.i
 
 AssetLib/Blender/BlenderDNA.s: AssetLib/Blender/BlenderDNA.cpp.s
@@ -821,7 +821,7 @@ AssetLib/Blender/BlenderDNA.s: AssetLib/Blender/BlenderDNA.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderDNA.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderDNA.cpp.s
 .PHONY : AssetLib/Blender/BlenderDNA.cpp.s
 
 AssetLib/Blender/BlenderLoader.o: AssetLib/Blender/BlenderLoader.cpp.o
@@ -829,7 +829,7 @@ AssetLib/Blender/BlenderLoader.o: AssetLib/Blender/BlenderLoader.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.o
 .PHONY : AssetLib/Blender/BlenderLoader.cpp.o
 
 AssetLib/Blender/BlenderLoader.i: AssetLib/Blender/BlenderLoader.cpp.i
@@ -837,7 +837,7 @@ AssetLib/Blender/BlenderLoader.i: AssetLib/Blender/BlenderLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.i
 .PHONY : AssetLib/Blender/BlenderLoader.cpp.i
 
 AssetLib/Blender/BlenderLoader.s: AssetLib/Blender/BlenderLoader.cpp.s
@@ -845,7 +845,7 @@ AssetLib/Blender/BlenderLoader.s: AssetLib/Blender/BlenderLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderLoader.cpp.s
 .PHONY : AssetLib/Blender/BlenderLoader.cpp.s
 
 AssetLib/Blender/BlenderModifier.o: AssetLib/Blender/BlenderModifier.cpp.o
@@ -853,7 +853,7 @@ AssetLib/Blender/BlenderModifier.o: AssetLib/Blender/BlenderModifier.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderModifier.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.o
 .PHONY : AssetLib/Blender/BlenderModifier.cpp.o
 
 AssetLib/Blender/BlenderModifier.i: AssetLib/Blender/BlenderModifier.cpp.i
@@ -861,7 +861,7 @@ AssetLib/Blender/BlenderModifier.i: AssetLib/Blender/BlenderModifier.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderModifier.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.i
 .PHONY : AssetLib/Blender/BlenderModifier.cpp.i
 
 AssetLib/Blender/BlenderModifier.s: AssetLib/Blender/BlenderModifier.cpp.s
@@ -869,7 +869,7 @@ AssetLib/Blender/BlenderModifier.s: AssetLib/Blender/BlenderModifier.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderModifier.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderModifier.cpp.s
 .PHONY : AssetLib/Blender/BlenderModifier.cpp.s
 
 AssetLib/Blender/BlenderScene.o: AssetLib/Blender/BlenderScene.cpp.o
@@ -877,7 +877,7 @@ AssetLib/Blender/BlenderScene.o: AssetLib/Blender/BlenderScene.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderScene.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.o
 .PHONY : AssetLib/Blender/BlenderScene.cpp.o
 
 AssetLib/Blender/BlenderScene.i: AssetLib/Blender/BlenderScene.cpp.i
@@ -885,7 +885,7 @@ AssetLib/Blender/BlenderScene.i: AssetLib/Blender/BlenderScene.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderScene.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.i
 .PHONY : AssetLib/Blender/BlenderScene.cpp.i
 
 AssetLib/Blender/BlenderScene.s: AssetLib/Blender/BlenderScene.cpp.s
@@ -893,7 +893,7 @@ AssetLib/Blender/BlenderScene.s: AssetLib/Blender/BlenderScene.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderScene.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderScene.cpp.s
 .PHONY : AssetLib/Blender/BlenderScene.cpp.s
 
 AssetLib/Blender/BlenderTessellator.o: AssetLib/Blender/BlenderTessellator.cpp.o
@@ -901,7 +901,7 @@ AssetLib/Blender/BlenderTessellator.o: AssetLib/Blender/BlenderTessellator.cpp.o
 
 # target to build an object file
 AssetLib/Blender/BlenderTessellator.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.o
 .PHONY : AssetLib/Blender/BlenderTessellator.cpp.o
 
 AssetLib/Blender/BlenderTessellator.i: AssetLib/Blender/BlenderTessellator.cpp.i
@@ -909,7 +909,7 @@ AssetLib/Blender/BlenderTessellator.i: AssetLib/Blender/BlenderTessellator.cpp.i
 
 # target to preprocess a source file
 AssetLib/Blender/BlenderTessellator.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.i
 .PHONY : AssetLib/Blender/BlenderTessellator.cpp.i
 
 AssetLib/Blender/BlenderTessellator.s: AssetLib/Blender/BlenderTessellator.cpp.s
@@ -917,7 +917,7 @@ AssetLib/Blender/BlenderTessellator.s: AssetLib/Blender/BlenderTessellator.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Blender/BlenderTessellator.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Blender/BlenderTessellator.cpp.s
 .PHONY : AssetLib/Blender/BlenderTessellator.cpp.s
 
 AssetLib/COB/COBLoader.o: AssetLib/COB/COBLoader.cpp.o
@@ -925,7 +925,7 @@ AssetLib/COB/COBLoader.o: AssetLib/COB/COBLoader.cpp.o
 
 # target to build an object file
 AssetLib/COB/COBLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.o
 .PHONY : AssetLib/COB/COBLoader.cpp.o
 
 AssetLib/COB/COBLoader.i: AssetLib/COB/COBLoader.cpp.i
@@ -933,7 +933,7 @@ AssetLib/COB/COBLoader.i: AssetLib/COB/COBLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/COB/COBLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.i
 .PHONY : AssetLib/COB/COBLoader.cpp.i
 
 AssetLib/COB/COBLoader.s: AssetLib/COB/COBLoader.cpp.s
@@ -941,7 +941,7 @@ AssetLib/COB/COBLoader.s: AssetLib/COB/COBLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/COB/COBLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/COB/COBLoader.cpp.s
 .PHONY : AssetLib/COB/COBLoader.cpp.s
 
 AssetLib/CSM/CSMLoader.o: AssetLib/CSM/CSMLoader.cpp.o
@@ -949,7 +949,7 @@ AssetLib/CSM/CSMLoader.o: AssetLib/CSM/CSMLoader.cpp.o
 
 # target to build an object file
 AssetLib/CSM/CSMLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.o
 .PHONY : AssetLib/CSM/CSMLoader.cpp.o
 
 AssetLib/CSM/CSMLoader.i: AssetLib/CSM/CSMLoader.cpp.i
@@ -957,7 +957,7 @@ AssetLib/CSM/CSMLoader.i: AssetLib/CSM/CSMLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/CSM/CSMLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.i
 .PHONY : AssetLib/CSM/CSMLoader.cpp.i
 
 AssetLib/CSM/CSMLoader.s: AssetLib/CSM/CSMLoader.cpp.s
@@ -965,7 +965,7 @@ AssetLib/CSM/CSMLoader.s: AssetLib/CSM/CSMLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/CSM/CSMLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/CSM/CSMLoader.cpp.s
 .PHONY : AssetLib/CSM/CSMLoader.cpp.s
 
 AssetLib/Collada/ColladaExporter.o: AssetLib/Collada/ColladaExporter.cpp.o
@@ -973,7 +973,7 @@ AssetLib/Collada/ColladaExporter.o: AssetLib/Collada/ColladaExporter.cpp.o
 
 # target to build an object file
 AssetLib/Collada/ColladaExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.o
 .PHONY : AssetLib/Collada/ColladaExporter.cpp.o
 
 AssetLib/Collada/ColladaExporter.i: AssetLib/Collada/ColladaExporter.cpp.i
@@ -981,7 +981,7 @@ AssetLib/Collada/ColladaExporter.i: AssetLib/Collada/ColladaExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Collada/ColladaExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.i
 .PHONY : AssetLib/Collada/ColladaExporter.cpp.i
 
 AssetLib/Collada/ColladaExporter.s: AssetLib/Collada/ColladaExporter.cpp.s
@@ -989,7 +989,7 @@ AssetLib/Collada/ColladaExporter.s: AssetLib/Collada/ColladaExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Collada/ColladaExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaExporter.cpp.s
 .PHONY : AssetLib/Collada/ColladaExporter.cpp.s
 
 AssetLib/Collada/ColladaHelper.o: AssetLib/Collada/ColladaHelper.cpp.o
@@ -997,7 +997,7 @@ AssetLib/Collada/ColladaHelper.o: AssetLib/Collada/ColladaHelper.cpp.o
 
 # target to build an object file
 AssetLib/Collada/ColladaHelper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.o
 .PHONY : AssetLib/Collada/ColladaHelper.cpp.o
 
 AssetLib/Collada/ColladaHelper.i: AssetLib/Collada/ColladaHelper.cpp.i
@@ -1005,7 +1005,7 @@ AssetLib/Collada/ColladaHelper.i: AssetLib/Collada/ColladaHelper.cpp.i
 
 # target to preprocess a source file
 AssetLib/Collada/ColladaHelper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.i
 .PHONY : AssetLib/Collada/ColladaHelper.cpp.i
 
 AssetLib/Collada/ColladaHelper.s: AssetLib/Collada/ColladaHelper.cpp.s
@@ -1013,7 +1013,7 @@ AssetLib/Collada/ColladaHelper.s: AssetLib/Collada/ColladaHelper.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Collada/ColladaHelper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaHelper.cpp.s
 .PHONY : AssetLib/Collada/ColladaHelper.cpp.s
 
 AssetLib/Collada/ColladaLoader.o: AssetLib/Collada/ColladaLoader.cpp.o
@@ -1021,7 +1021,7 @@ AssetLib/Collada/ColladaLoader.o: AssetLib/Collada/ColladaLoader.cpp.o
 
 # target to build an object file
 AssetLib/Collada/ColladaLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.o
 .PHONY : AssetLib/Collada/ColladaLoader.cpp.o
 
 AssetLib/Collada/ColladaLoader.i: AssetLib/Collada/ColladaLoader.cpp.i
@@ -1029,7 +1029,7 @@ AssetLib/Collada/ColladaLoader.i: AssetLib/Collada/ColladaLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Collada/ColladaLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.i
 .PHONY : AssetLib/Collada/ColladaLoader.cpp.i
 
 AssetLib/Collada/ColladaLoader.s: AssetLib/Collada/ColladaLoader.cpp.s
@@ -1037,7 +1037,7 @@ AssetLib/Collada/ColladaLoader.s: AssetLib/Collada/ColladaLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Collada/ColladaLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaLoader.cpp.s
 .PHONY : AssetLib/Collada/ColladaLoader.cpp.s
 
 AssetLib/Collada/ColladaParser.o: AssetLib/Collada/ColladaParser.cpp.o
@@ -1045,7 +1045,7 @@ AssetLib/Collada/ColladaParser.o: AssetLib/Collada/ColladaParser.cpp.o
 
 # target to build an object file
 AssetLib/Collada/ColladaParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.o
 .PHONY : AssetLib/Collada/ColladaParser.cpp.o
 
 AssetLib/Collada/ColladaParser.i: AssetLib/Collada/ColladaParser.cpp.i
@@ -1053,7 +1053,7 @@ AssetLib/Collada/ColladaParser.i: AssetLib/Collada/ColladaParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/Collada/ColladaParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.i
 .PHONY : AssetLib/Collada/ColladaParser.cpp.i
 
 AssetLib/Collada/ColladaParser.s: AssetLib/Collada/ColladaParser.cpp.s
@@ -1061,7 +1061,7 @@ AssetLib/Collada/ColladaParser.s: AssetLib/Collada/ColladaParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Collada/ColladaParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Collada/ColladaParser.cpp.s
 .PHONY : AssetLib/Collada/ColladaParser.cpp.s
 
 AssetLib/DXF/DXFLoader.o: AssetLib/DXF/DXFLoader.cpp.o
@@ -1069,7 +1069,7 @@ AssetLib/DXF/DXFLoader.o: AssetLib/DXF/DXFLoader.cpp.o
 
 # target to build an object file
 AssetLib/DXF/DXFLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.o
 .PHONY : AssetLib/DXF/DXFLoader.cpp.o
 
 AssetLib/DXF/DXFLoader.i: AssetLib/DXF/DXFLoader.cpp.i
@@ -1077,7 +1077,7 @@ AssetLib/DXF/DXFLoader.i: AssetLib/DXF/DXFLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/DXF/DXFLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.i
 .PHONY : AssetLib/DXF/DXFLoader.cpp.i
 
 AssetLib/DXF/DXFLoader.s: AssetLib/DXF/DXFLoader.cpp.s
@@ -1085,7 +1085,7 @@ AssetLib/DXF/DXFLoader.s: AssetLib/DXF/DXFLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/DXF/DXFLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/DXF/DXFLoader.cpp.s
 .PHONY : AssetLib/DXF/DXFLoader.cpp.s
 
 AssetLib/FBX/FBXAnimation.o: AssetLib/FBX/FBXAnimation.cpp.o
@@ -1093,7 +1093,7 @@ AssetLib/FBX/FBXAnimation.o: AssetLib/FBX/FBXAnimation.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXAnimation.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.o
 .PHONY : AssetLib/FBX/FBXAnimation.cpp.o
 
 AssetLib/FBX/FBXAnimation.i: AssetLib/FBX/FBXAnimation.cpp.i
@@ -1101,7 +1101,7 @@ AssetLib/FBX/FBXAnimation.i: AssetLib/FBX/FBXAnimation.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXAnimation.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.i
 .PHONY : AssetLib/FBX/FBXAnimation.cpp.i
 
 AssetLib/FBX/FBXAnimation.s: AssetLib/FBX/FBXAnimation.cpp.s
@@ -1109,7 +1109,7 @@ AssetLib/FBX/FBXAnimation.s: AssetLib/FBX/FBXAnimation.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXAnimation.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXAnimation.cpp.s
 .PHONY : AssetLib/FBX/FBXAnimation.cpp.s
 
 AssetLib/FBX/FBXBinaryTokenizer.o: AssetLib/FBX/FBXBinaryTokenizer.cpp.o
@@ -1117,7 +1117,7 @@ AssetLib/FBX/FBXBinaryTokenizer.o: AssetLib/FBX/FBXBinaryTokenizer.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXBinaryTokenizer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.o
 .PHONY : AssetLib/FBX/FBXBinaryTokenizer.cpp.o
 
 AssetLib/FBX/FBXBinaryTokenizer.i: AssetLib/FBX/FBXBinaryTokenizer.cpp.i
@@ -1125,7 +1125,7 @@ AssetLib/FBX/FBXBinaryTokenizer.i: AssetLib/FBX/FBXBinaryTokenizer.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXBinaryTokenizer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.i
 .PHONY : AssetLib/FBX/FBXBinaryTokenizer.cpp.i
 
 AssetLib/FBX/FBXBinaryTokenizer.s: AssetLib/FBX/FBXBinaryTokenizer.cpp.s
@@ -1133,7 +1133,7 @@ AssetLib/FBX/FBXBinaryTokenizer.s: AssetLib/FBX/FBXBinaryTokenizer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXBinaryTokenizer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXBinaryTokenizer.cpp.s
 .PHONY : AssetLib/FBX/FBXBinaryTokenizer.cpp.s
 
 AssetLib/FBX/FBXConverter.o: AssetLib/FBX/FBXConverter.cpp.o
@@ -1141,7 +1141,7 @@ AssetLib/FBX/FBXConverter.o: AssetLib/FBX/FBXConverter.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXConverter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.o
 .PHONY : AssetLib/FBX/FBXConverter.cpp.o
 
 AssetLib/FBX/FBXConverter.i: AssetLib/FBX/FBXConverter.cpp.i
@@ -1149,7 +1149,7 @@ AssetLib/FBX/FBXConverter.i: AssetLib/FBX/FBXConverter.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXConverter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.i
 .PHONY : AssetLib/FBX/FBXConverter.cpp.i
 
 AssetLib/FBX/FBXConverter.s: AssetLib/FBX/FBXConverter.cpp.s
@@ -1157,7 +1157,7 @@ AssetLib/FBX/FBXConverter.s: AssetLib/FBX/FBXConverter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXConverter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXConverter.cpp.s
 .PHONY : AssetLib/FBX/FBXConverter.cpp.s
 
 AssetLib/FBX/FBXDeformer.o: AssetLib/FBX/FBXDeformer.cpp.o
@@ -1165,7 +1165,7 @@ AssetLib/FBX/FBXDeformer.o: AssetLib/FBX/FBXDeformer.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXDeformer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.o
 .PHONY : AssetLib/FBX/FBXDeformer.cpp.o
 
 AssetLib/FBX/FBXDeformer.i: AssetLib/FBX/FBXDeformer.cpp.i
@@ -1173,7 +1173,7 @@ AssetLib/FBX/FBXDeformer.i: AssetLib/FBX/FBXDeformer.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXDeformer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.i
 .PHONY : AssetLib/FBX/FBXDeformer.cpp.i
 
 AssetLib/FBX/FBXDeformer.s: AssetLib/FBX/FBXDeformer.cpp.s
@@ -1181,7 +1181,7 @@ AssetLib/FBX/FBXDeformer.s: AssetLib/FBX/FBXDeformer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXDeformer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDeformer.cpp.s
 .PHONY : AssetLib/FBX/FBXDeformer.cpp.s
 
 AssetLib/FBX/FBXDocument.o: AssetLib/FBX/FBXDocument.cpp.o
@@ -1189,7 +1189,7 @@ AssetLib/FBX/FBXDocument.o: AssetLib/FBX/FBXDocument.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXDocument.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.o
 .PHONY : AssetLib/FBX/FBXDocument.cpp.o
 
 AssetLib/FBX/FBXDocument.i: AssetLib/FBX/FBXDocument.cpp.i
@@ -1197,7 +1197,7 @@ AssetLib/FBX/FBXDocument.i: AssetLib/FBX/FBXDocument.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXDocument.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.i
 .PHONY : AssetLib/FBX/FBXDocument.cpp.i
 
 AssetLib/FBX/FBXDocument.s: AssetLib/FBX/FBXDocument.cpp.s
@@ -1205,7 +1205,7 @@ AssetLib/FBX/FBXDocument.s: AssetLib/FBX/FBXDocument.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXDocument.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocument.cpp.s
 .PHONY : AssetLib/FBX/FBXDocument.cpp.s
 
 AssetLib/FBX/FBXDocumentUtil.o: AssetLib/FBX/FBXDocumentUtil.cpp.o
@@ -1213,7 +1213,7 @@ AssetLib/FBX/FBXDocumentUtil.o: AssetLib/FBX/FBXDocumentUtil.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXDocumentUtil.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.o
 .PHONY : AssetLib/FBX/FBXDocumentUtil.cpp.o
 
 AssetLib/FBX/FBXDocumentUtil.i: AssetLib/FBX/FBXDocumentUtil.cpp.i
@@ -1221,7 +1221,7 @@ AssetLib/FBX/FBXDocumentUtil.i: AssetLib/FBX/FBXDocumentUtil.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXDocumentUtil.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.i
 .PHONY : AssetLib/FBX/FBXDocumentUtil.cpp.i
 
 AssetLib/FBX/FBXDocumentUtil.s: AssetLib/FBX/FBXDocumentUtil.cpp.s
@@ -1229,7 +1229,7 @@ AssetLib/FBX/FBXDocumentUtil.s: AssetLib/FBX/FBXDocumentUtil.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXDocumentUtil.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXDocumentUtil.cpp.s
 .PHONY : AssetLib/FBX/FBXDocumentUtil.cpp.s
 
 AssetLib/FBX/FBXExportNode.o: AssetLib/FBX/FBXExportNode.cpp.o
@@ -1237,7 +1237,7 @@ AssetLib/FBX/FBXExportNode.o: AssetLib/FBX/FBXExportNode.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXExportNode.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.o
 .PHONY : AssetLib/FBX/FBXExportNode.cpp.o
 
 AssetLib/FBX/FBXExportNode.i: AssetLib/FBX/FBXExportNode.cpp.i
@@ -1245,7 +1245,7 @@ AssetLib/FBX/FBXExportNode.i: AssetLib/FBX/FBXExportNode.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXExportNode.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.i
 .PHONY : AssetLib/FBX/FBXExportNode.cpp.i
 
 AssetLib/FBX/FBXExportNode.s: AssetLib/FBX/FBXExportNode.cpp.s
@@ -1253,7 +1253,7 @@ AssetLib/FBX/FBXExportNode.s: AssetLib/FBX/FBXExportNode.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXExportNode.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportNode.cpp.s
 .PHONY : AssetLib/FBX/FBXExportNode.cpp.s
 
 AssetLib/FBX/FBXExportProperty.o: AssetLib/FBX/FBXExportProperty.cpp.o
@@ -1261,7 +1261,7 @@ AssetLib/FBX/FBXExportProperty.o: AssetLib/FBX/FBXExportProperty.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXExportProperty.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.o
 .PHONY : AssetLib/FBX/FBXExportProperty.cpp.o
 
 AssetLib/FBX/FBXExportProperty.i: AssetLib/FBX/FBXExportProperty.cpp.i
@@ -1269,7 +1269,7 @@ AssetLib/FBX/FBXExportProperty.i: AssetLib/FBX/FBXExportProperty.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXExportProperty.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.i
 .PHONY : AssetLib/FBX/FBXExportProperty.cpp.i
 
 AssetLib/FBX/FBXExportProperty.s: AssetLib/FBX/FBXExportProperty.cpp.s
@@ -1277,7 +1277,7 @@ AssetLib/FBX/FBXExportProperty.s: AssetLib/FBX/FBXExportProperty.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXExportProperty.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExportProperty.cpp.s
 .PHONY : AssetLib/FBX/FBXExportProperty.cpp.s
 
 AssetLib/FBX/FBXExporter.o: AssetLib/FBX/FBXExporter.cpp.o
@@ -1285,7 +1285,7 @@ AssetLib/FBX/FBXExporter.o: AssetLib/FBX/FBXExporter.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.o
 .PHONY : AssetLib/FBX/FBXExporter.cpp.o
 
 AssetLib/FBX/FBXExporter.i: AssetLib/FBX/FBXExporter.cpp.i
@@ -1293,7 +1293,7 @@ AssetLib/FBX/FBXExporter.i: AssetLib/FBX/FBXExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.i
 .PHONY : AssetLib/FBX/FBXExporter.cpp.i
 
 AssetLib/FBX/FBXExporter.s: AssetLib/FBX/FBXExporter.cpp.s
@@ -1301,7 +1301,7 @@ AssetLib/FBX/FBXExporter.s: AssetLib/FBX/FBXExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXExporter.cpp.s
 .PHONY : AssetLib/FBX/FBXExporter.cpp.s
 
 AssetLib/FBX/FBXImporter.o: AssetLib/FBX/FBXImporter.cpp.o
@@ -1309,7 +1309,7 @@ AssetLib/FBX/FBXImporter.o: AssetLib/FBX/FBXImporter.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.o
 .PHONY : AssetLib/FBX/FBXImporter.cpp.o
 
 AssetLib/FBX/FBXImporter.i: AssetLib/FBX/FBXImporter.cpp.i
@@ -1317,7 +1317,7 @@ AssetLib/FBX/FBXImporter.i: AssetLib/FBX/FBXImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.i
 .PHONY : AssetLib/FBX/FBXImporter.cpp.i
 
 AssetLib/FBX/FBXImporter.s: AssetLib/FBX/FBXImporter.cpp.s
@@ -1325,7 +1325,7 @@ AssetLib/FBX/FBXImporter.s: AssetLib/FBX/FBXImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXImporter.cpp.s
 .PHONY : AssetLib/FBX/FBXImporter.cpp.s
 
 AssetLib/FBX/FBXMaterial.o: AssetLib/FBX/FBXMaterial.cpp.o
@@ -1333,7 +1333,7 @@ AssetLib/FBX/FBXMaterial.o: AssetLib/FBX/FBXMaterial.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXMaterial.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.o
 .PHONY : AssetLib/FBX/FBXMaterial.cpp.o
 
 AssetLib/FBX/FBXMaterial.i: AssetLib/FBX/FBXMaterial.cpp.i
@@ -1341,7 +1341,7 @@ AssetLib/FBX/FBXMaterial.i: AssetLib/FBX/FBXMaterial.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXMaterial.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.i
 .PHONY : AssetLib/FBX/FBXMaterial.cpp.i
 
 AssetLib/FBX/FBXMaterial.s: AssetLib/FBX/FBXMaterial.cpp.s
@@ -1349,7 +1349,7 @@ AssetLib/FBX/FBXMaterial.s: AssetLib/FBX/FBXMaterial.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXMaterial.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMaterial.cpp.s
 .PHONY : AssetLib/FBX/FBXMaterial.cpp.s
 
 AssetLib/FBX/FBXMeshGeometry.o: AssetLib/FBX/FBXMeshGeometry.cpp.o
@@ -1357,7 +1357,7 @@ AssetLib/FBX/FBXMeshGeometry.o: AssetLib/FBX/FBXMeshGeometry.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXMeshGeometry.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.o
 .PHONY : AssetLib/FBX/FBXMeshGeometry.cpp.o
 
 AssetLib/FBX/FBXMeshGeometry.i: AssetLib/FBX/FBXMeshGeometry.cpp.i
@@ -1365,7 +1365,7 @@ AssetLib/FBX/FBXMeshGeometry.i: AssetLib/FBX/FBXMeshGeometry.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXMeshGeometry.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.i
 .PHONY : AssetLib/FBX/FBXMeshGeometry.cpp.i
 
 AssetLib/FBX/FBXMeshGeometry.s: AssetLib/FBX/FBXMeshGeometry.cpp.s
@@ -1373,7 +1373,7 @@ AssetLib/FBX/FBXMeshGeometry.s: AssetLib/FBX/FBXMeshGeometry.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXMeshGeometry.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXMeshGeometry.cpp.s
 .PHONY : AssetLib/FBX/FBXMeshGeometry.cpp.s
 
 AssetLib/FBX/FBXModel.o: AssetLib/FBX/FBXModel.cpp.o
@@ -1381,7 +1381,7 @@ AssetLib/FBX/FBXModel.o: AssetLib/FBX/FBXModel.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXModel.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.o
 .PHONY : AssetLib/FBX/FBXModel.cpp.o
 
 AssetLib/FBX/FBXModel.i: AssetLib/FBX/FBXModel.cpp.i
@@ -1389,7 +1389,7 @@ AssetLib/FBX/FBXModel.i: AssetLib/FBX/FBXModel.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXModel.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.i
 .PHONY : AssetLib/FBX/FBXModel.cpp.i
 
 AssetLib/FBX/FBXModel.s: AssetLib/FBX/FBXModel.cpp.s
@@ -1397,7 +1397,7 @@ AssetLib/FBX/FBXModel.s: AssetLib/FBX/FBXModel.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXModel.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXModel.cpp.s
 .PHONY : AssetLib/FBX/FBXModel.cpp.s
 
 AssetLib/FBX/FBXNodeAttribute.o: AssetLib/FBX/FBXNodeAttribute.cpp.o
@@ -1405,7 +1405,7 @@ AssetLib/FBX/FBXNodeAttribute.o: AssetLib/FBX/FBXNodeAttribute.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXNodeAttribute.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.o
 .PHONY : AssetLib/FBX/FBXNodeAttribute.cpp.o
 
 AssetLib/FBX/FBXNodeAttribute.i: AssetLib/FBX/FBXNodeAttribute.cpp.i
@@ -1413,7 +1413,7 @@ AssetLib/FBX/FBXNodeAttribute.i: AssetLib/FBX/FBXNodeAttribute.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXNodeAttribute.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.i
 .PHONY : AssetLib/FBX/FBXNodeAttribute.cpp.i
 
 AssetLib/FBX/FBXNodeAttribute.s: AssetLib/FBX/FBXNodeAttribute.cpp.s
@@ -1421,7 +1421,7 @@ AssetLib/FBX/FBXNodeAttribute.s: AssetLib/FBX/FBXNodeAttribute.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXNodeAttribute.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXNodeAttribute.cpp.s
 .PHONY : AssetLib/FBX/FBXNodeAttribute.cpp.s
 
 AssetLib/FBX/FBXParser.o: AssetLib/FBX/FBXParser.cpp.o
@@ -1429,7 +1429,7 @@ AssetLib/FBX/FBXParser.o: AssetLib/FBX/FBXParser.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.o
 .PHONY : AssetLib/FBX/FBXParser.cpp.o
 
 AssetLib/FBX/FBXParser.i: AssetLib/FBX/FBXParser.cpp.i
@@ -1437,7 +1437,7 @@ AssetLib/FBX/FBXParser.i: AssetLib/FBX/FBXParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.i
 .PHONY : AssetLib/FBX/FBXParser.cpp.i
 
 AssetLib/FBX/FBXParser.s: AssetLib/FBX/FBXParser.cpp.s
@@ -1445,7 +1445,7 @@ AssetLib/FBX/FBXParser.s: AssetLib/FBX/FBXParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXParser.cpp.s
 .PHONY : AssetLib/FBX/FBXParser.cpp.s
 
 AssetLib/FBX/FBXProperties.o: AssetLib/FBX/FBXProperties.cpp.o
@@ -1453,7 +1453,7 @@ AssetLib/FBX/FBXProperties.o: AssetLib/FBX/FBXProperties.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXProperties.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.o
 .PHONY : AssetLib/FBX/FBXProperties.cpp.o
 
 AssetLib/FBX/FBXProperties.i: AssetLib/FBX/FBXProperties.cpp.i
@@ -1461,7 +1461,7 @@ AssetLib/FBX/FBXProperties.i: AssetLib/FBX/FBXProperties.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXProperties.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.i
 .PHONY : AssetLib/FBX/FBXProperties.cpp.i
 
 AssetLib/FBX/FBXProperties.s: AssetLib/FBX/FBXProperties.cpp.s
@@ -1469,7 +1469,7 @@ AssetLib/FBX/FBXProperties.s: AssetLib/FBX/FBXProperties.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXProperties.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXProperties.cpp.s
 .PHONY : AssetLib/FBX/FBXProperties.cpp.s
 
 AssetLib/FBX/FBXTokenizer.o: AssetLib/FBX/FBXTokenizer.cpp.o
@@ -1477,7 +1477,7 @@ AssetLib/FBX/FBXTokenizer.o: AssetLib/FBX/FBXTokenizer.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXTokenizer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.o
 .PHONY : AssetLib/FBX/FBXTokenizer.cpp.o
 
 AssetLib/FBX/FBXTokenizer.i: AssetLib/FBX/FBXTokenizer.cpp.i
@@ -1485,7 +1485,7 @@ AssetLib/FBX/FBXTokenizer.i: AssetLib/FBX/FBXTokenizer.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXTokenizer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.i
 .PHONY : AssetLib/FBX/FBXTokenizer.cpp.i
 
 AssetLib/FBX/FBXTokenizer.s: AssetLib/FBX/FBXTokenizer.cpp.s
@@ -1493,7 +1493,7 @@ AssetLib/FBX/FBXTokenizer.s: AssetLib/FBX/FBXTokenizer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXTokenizer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXTokenizer.cpp.s
 .PHONY : AssetLib/FBX/FBXTokenizer.cpp.s
 
 AssetLib/FBX/FBXUtil.o: AssetLib/FBX/FBXUtil.cpp.o
@@ -1501,7 +1501,7 @@ AssetLib/FBX/FBXUtil.o: AssetLib/FBX/FBXUtil.cpp.o
 
 # target to build an object file
 AssetLib/FBX/FBXUtil.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.o
 .PHONY : AssetLib/FBX/FBXUtil.cpp.o
 
 AssetLib/FBX/FBXUtil.i: AssetLib/FBX/FBXUtil.cpp.i
@@ -1509,7 +1509,7 @@ AssetLib/FBX/FBXUtil.i: AssetLib/FBX/FBXUtil.cpp.i
 
 # target to preprocess a source file
 AssetLib/FBX/FBXUtil.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.i
 .PHONY : AssetLib/FBX/FBXUtil.cpp.i
 
 AssetLib/FBX/FBXUtil.s: AssetLib/FBX/FBXUtil.cpp.s
@@ -1517,7 +1517,7 @@ AssetLib/FBX/FBXUtil.s: AssetLib/FBX/FBXUtil.cpp.s
 
 # target to generate assembly for a file
 AssetLib/FBX/FBXUtil.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/FBX/FBXUtil.cpp.s
 .PHONY : AssetLib/FBX/FBXUtil.cpp.s
 
 AssetLib/HMP/HMPLoader.o: AssetLib/HMP/HMPLoader.cpp.o
@@ -1525,7 +1525,7 @@ AssetLib/HMP/HMPLoader.o: AssetLib/HMP/HMPLoader.cpp.o
 
 # target to build an object file
 AssetLib/HMP/HMPLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.o
 .PHONY : AssetLib/HMP/HMPLoader.cpp.o
 
 AssetLib/HMP/HMPLoader.i: AssetLib/HMP/HMPLoader.cpp.i
@@ -1533,7 +1533,7 @@ AssetLib/HMP/HMPLoader.i: AssetLib/HMP/HMPLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/HMP/HMPLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.i
 .PHONY : AssetLib/HMP/HMPLoader.cpp.i
 
 AssetLib/HMP/HMPLoader.s: AssetLib/HMP/HMPLoader.cpp.s
@@ -1541,7 +1541,7 @@ AssetLib/HMP/HMPLoader.s: AssetLib/HMP/HMPLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/HMP/HMPLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/HMP/HMPLoader.cpp.s
 .PHONY : AssetLib/HMP/HMPLoader.cpp.s
 
 AssetLib/IFC/IFCBoolean.o: AssetLib/IFC/IFCBoolean.cpp.o
@@ -1549,7 +1549,7 @@ AssetLib/IFC/IFCBoolean.o: AssetLib/IFC/IFCBoolean.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCBoolean.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.o
 .PHONY : AssetLib/IFC/IFCBoolean.cpp.o
 
 AssetLib/IFC/IFCBoolean.i: AssetLib/IFC/IFCBoolean.cpp.i
@@ -1557,7 +1557,7 @@ AssetLib/IFC/IFCBoolean.i: AssetLib/IFC/IFCBoolean.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCBoolean.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.i
 .PHONY : AssetLib/IFC/IFCBoolean.cpp.i
 
 AssetLib/IFC/IFCBoolean.s: AssetLib/IFC/IFCBoolean.cpp.s
@@ -1565,7 +1565,7 @@ AssetLib/IFC/IFCBoolean.s: AssetLib/IFC/IFCBoolean.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCBoolean.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCBoolean.cpp.s
 .PHONY : AssetLib/IFC/IFCBoolean.cpp.s
 
 AssetLib/IFC/IFCCurve.o: AssetLib/IFC/IFCCurve.cpp.o
@@ -1573,7 +1573,7 @@ AssetLib/IFC/IFCCurve.o: AssetLib/IFC/IFCCurve.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCCurve.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.o
 .PHONY : AssetLib/IFC/IFCCurve.cpp.o
 
 AssetLib/IFC/IFCCurve.i: AssetLib/IFC/IFCCurve.cpp.i
@@ -1581,7 +1581,7 @@ AssetLib/IFC/IFCCurve.i: AssetLib/IFC/IFCCurve.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCCurve.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.i
 .PHONY : AssetLib/IFC/IFCCurve.cpp.i
 
 AssetLib/IFC/IFCCurve.s: AssetLib/IFC/IFCCurve.cpp.s
@@ -1589,7 +1589,7 @@ AssetLib/IFC/IFCCurve.s: AssetLib/IFC/IFCCurve.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCCurve.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCCurve.cpp.s
 .PHONY : AssetLib/IFC/IFCCurve.cpp.s
 
 AssetLib/IFC/IFCGeometry.o: AssetLib/IFC/IFCGeometry.cpp.o
@@ -1597,7 +1597,7 @@ AssetLib/IFC/IFCGeometry.o: AssetLib/IFC/IFCGeometry.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCGeometry.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.o
 .PHONY : AssetLib/IFC/IFCGeometry.cpp.o
 
 AssetLib/IFC/IFCGeometry.i: AssetLib/IFC/IFCGeometry.cpp.i
@@ -1605,7 +1605,7 @@ AssetLib/IFC/IFCGeometry.i: AssetLib/IFC/IFCGeometry.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCGeometry.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.i
 .PHONY : AssetLib/IFC/IFCGeometry.cpp.i
 
 AssetLib/IFC/IFCGeometry.s: AssetLib/IFC/IFCGeometry.cpp.s
@@ -1613,7 +1613,7 @@ AssetLib/IFC/IFCGeometry.s: AssetLib/IFC/IFCGeometry.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCGeometry.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCGeometry.cpp.s
 .PHONY : AssetLib/IFC/IFCGeometry.cpp.s
 
 AssetLib/IFC/IFCLoader.o: AssetLib/IFC/IFCLoader.cpp.o
@@ -1621,7 +1621,7 @@ AssetLib/IFC/IFCLoader.o: AssetLib/IFC/IFCLoader.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.o
 .PHONY : AssetLib/IFC/IFCLoader.cpp.o
 
 AssetLib/IFC/IFCLoader.i: AssetLib/IFC/IFCLoader.cpp.i
@@ -1629,7 +1629,7 @@ AssetLib/IFC/IFCLoader.i: AssetLib/IFC/IFCLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.i
 .PHONY : AssetLib/IFC/IFCLoader.cpp.i
 
 AssetLib/IFC/IFCLoader.s: AssetLib/IFC/IFCLoader.cpp.s
@@ -1637,7 +1637,7 @@ AssetLib/IFC/IFCLoader.s: AssetLib/IFC/IFCLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCLoader.cpp.s
 .PHONY : AssetLib/IFC/IFCLoader.cpp.s
 
 AssetLib/IFC/IFCMaterial.o: AssetLib/IFC/IFCMaterial.cpp.o
@@ -1645,7 +1645,7 @@ AssetLib/IFC/IFCMaterial.o: AssetLib/IFC/IFCMaterial.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCMaterial.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.o
 .PHONY : AssetLib/IFC/IFCMaterial.cpp.o
 
 AssetLib/IFC/IFCMaterial.i: AssetLib/IFC/IFCMaterial.cpp.i
@@ -1653,7 +1653,7 @@ AssetLib/IFC/IFCMaterial.i: AssetLib/IFC/IFCMaterial.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCMaterial.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.i
 .PHONY : AssetLib/IFC/IFCMaterial.cpp.i
 
 AssetLib/IFC/IFCMaterial.s: AssetLib/IFC/IFCMaterial.cpp.s
@@ -1661,7 +1661,7 @@ AssetLib/IFC/IFCMaterial.s: AssetLib/IFC/IFCMaterial.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCMaterial.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCMaterial.cpp.s
 .PHONY : AssetLib/IFC/IFCMaterial.cpp.s
 
 AssetLib/IFC/IFCOpenings.o: AssetLib/IFC/IFCOpenings.cpp.o
@@ -1669,7 +1669,7 @@ AssetLib/IFC/IFCOpenings.o: AssetLib/IFC/IFCOpenings.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCOpenings.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.o
 .PHONY : AssetLib/IFC/IFCOpenings.cpp.o
 
 AssetLib/IFC/IFCOpenings.i: AssetLib/IFC/IFCOpenings.cpp.i
@@ -1677,7 +1677,7 @@ AssetLib/IFC/IFCOpenings.i: AssetLib/IFC/IFCOpenings.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCOpenings.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.i
 .PHONY : AssetLib/IFC/IFCOpenings.cpp.i
 
 AssetLib/IFC/IFCOpenings.s: AssetLib/IFC/IFCOpenings.cpp.s
@@ -1685,7 +1685,7 @@ AssetLib/IFC/IFCOpenings.s: AssetLib/IFC/IFCOpenings.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCOpenings.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCOpenings.cpp.s
 .PHONY : AssetLib/IFC/IFCOpenings.cpp.s
 
 AssetLib/IFC/IFCProfile.o: AssetLib/IFC/IFCProfile.cpp.o
@@ -1693,7 +1693,7 @@ AssetLib/IFC/IFCProfile.o: AssetLib/IFC/IFCProfile.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCProfile.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.o
 .PHONY : AssetLib/IFC/IFCProfile.cpp.o
 
 AssetLib/IFC/IFCProfile.i: AssetLib/IFC/IFCProfile.cpp.i
@@ -1701,7 +1701,7 @@ AssetLib/IFC/IFCProfile.i: AssetLib/IFC/IFCProfile.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCProfile.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.i
 .PHONY : AssetLib/IFC/IFCProfile.cpp.i
 
 AssetLib/IFC/IFCProfile.s: AssetLib/IFC/IFCProfile.cpp.s
@@ -1709,7 +1709,7 @@ AssetLib/IFC/IFCProfile.s: AssetLib/IFC/IFCProfile.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCProfile.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCProfile.cpp.s
 .PHONY : AssetLib/IFC/IFCProfile.cpp.s
 
 AssetLib/IFC/IFCReaderGen1_2x3.o: AssetLib/IFC/IFCReaderGen1_2x3.cpp.o
@@ -1717,7 +1717,7 @@ AssetLib/IFC/IFCReaderGen1_2x3.o: AssetLib/IFC/IFCReaderGen1_2x3.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCReaderGen1_2x3.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.o
 .PHONY : AssetLib/IFC/IFCReaderGen1_2x3.cpp.o
 
 AssetLib/IFC/IFCReaderGen1_2x3.i: AssetLib/IFC/IFCReaderGen1_2x3.cpp.i
@@ -1725,7 +1725,7 @@ AssetLib/IFC/IFCReaderGen1_2x3.i: AssetLib/IFC/IFCReaderGen1_2x3.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCReaderGen1_2x3.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.i
 .PHONY : AssetLib/IFC/IFCReaderGen1_2x3.cpp.i
 
 AssetLib/IFC/IFCReaderGen1_2x3.s: AssetLib/IFC/IFCReaderGen1_2x3.cpp.s
@@ -1733,7 +1733,7 @@ AssetLib/IFC/IFCReaderGen1_2x3.s: AssetLib/IFC/IFCReaderGen1_2x3.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCReaderGen1_2x3.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen1_2x3.cpp.s
 .PHONY : AssetLib/IFC/IFCReaderGen1_2x3.cpp.s
 
 AssetLib/IFC/IFCReaderGen2_2x3.o: AssetLib/IFC/IFCReaderGen2_2x3.cpp.o
@@ -1741,7 +1741,7 @@ AssetLib/IFC/IFCReaderGen2_2x3.o: AssetLib/IFC/IFCReaderGen2_2x3.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCReaderGen2_2x3.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.o
 .PHONY : AssetLib/IFC/IFCReaderGen2_2x3.cpp.o
 
 AssetLib/IFC/IFCReaderGen2_2x3.i: AssetLib/IFC/IFCReaderGen2_2x3.cpp.i
@@ -1749,7 +1749,7 @@ AssetLib/IFC/IFCReaderGen2_2x3.i: AssetLib/IFC/IFCReaderGen2_2x3.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCReaderGen2_2x3.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.i
 .PHONY : AssetLib/IFC/IFCReaderGen2_2x3.cpp.i
 
 AssetLib/IFC/IFCReaderGen2_2x3.s: AssetLib/IFC/IFCReaderGen2_2x3.cpp.s
@@ -1757,7 +1757,7 @@ AssetLib/IFC/IFCReaderGen2_2x3.s: AssetLib/IFC/IFCReaderGen2_2x3.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCReaderGen2_2x3.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCReaderGen2_2x3.cpp.s
 .PHONY : AssetLib/IFC/IFCReaderGen2_2x3.cpp.s
 
 AssetLib/IFC/IFCUtil.o: AssetLib/IFC/IFCUtil.cpp.o
@@ -1765,7 +1765,7 @@ AssetLib/IFC/IFCUtil.o: AssetLib/IFC/IFCUtil.cpp.o
 
 # target to build an object file
 AssetLib/IFC/IFCUtil.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.o
 .PHONY : AssetLib/IFC/IFCUtil.cpp.o
 
 AssetLib/IFC/IFCUtil.i: AssetLib/IFC/IFCUtil.cpp.i
@@ -1773,7 +1773,7 @@ AssetLib/IFC/IFCUtil.i: AssetLib/IFC/IFCUtil.cpp.i
 
 # target to preprocess a source file
 AssetLib/IFC/IFCUtil.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.i
 .PHONY : AssetLib/IFC/IFCUtil.cpp.i
 
 AssetLib/IFC/IFCUtil.s: AssetLib/IFC/IFCUtil.cpp.s
@@ -1781,7 +1781,7 @@ AssetLib/IFC/IFCUtil.s: AssetLib/IFC/IFCUtil.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IFC/IFCUtil.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IFC/IFCUtil.cpp.s
 .PHONY : AssetLib/IFC/IFCUtil.cpp.s
 
 AssetLib/IQM/IQMImporter.o: AssetLib/IQM/IQMImporter.cpp.o
@@ -1789,7 +1789,7 @@ AssetLib/IQM/IQMImporter.o: AssetLib/IQM/IQMImporter.cpp.o
 
 # target to build an object file
 AssetLib/IQM/IQMImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.o
 .PHONY : AssetLib/IQM/IQMImporter.cpp.o
 
 AssetLib/IQM/IQMImporter.i: AssetLib/IQM/IQMImporter.cpp.i
@@ -1797,7 +1797,7 @@ AssetLib/IQM/IQMImporter.i: AssetLib/IQM/IQMImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/IQM/IQMImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.i
 .PHONY : AssetLib/IQM/IQMImporter.cpp.i
 
 AssetLib/IQM/IQMImporter.s: AssetLib/IQM/IQMImporter.cpp.s
@@ -1805,7 +1805,7 @@ AssetLib/IQM/IQMImporter.s: AssetLib/IQM/IQMImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/IQM/IQMImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/IQM/IQMImporter.cpp.s
 .PHONY : AssetLib/IQM/IQMImporter.cpp.s
 
 AssetLib/Irr/IRRLoader.o: AssetLib/Irr/IRRLoader.cpp.o
@@ -1813,7 +1813,7 @@ AssetLib/Irr/IRRLoader.o: AssetLib/Irr/IRRLoader.cpp.o
 
 # target to build an object file
 AssetLib/Irr/IRRLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.o
 .PHONY : AssetLib/Irr/IRRLoader.cpp.o
 
 AssetLib/Irr/IRRLoader.i: AssetLib/Irr/IRRLoader.cpp.i
@@ -1821,7 +1821,7 @@ AssetLib/Irr/IRRLoader.i: AssetLib/Irr/IRRLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Irr/IRRLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.i
 .PHONY : AssetLib/Irr/IRRLoader.cpp.i
 
 AssetLib/Irr/IRRLoader.s: AssetLib/Irr/IRRLoader.cpp.s
@@ -1829,7 +1829,7 @@ AssetLib/Irr/IRRLoader.s: AssetLib/Irr/IRRLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Irr/IRRLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRLoader.cpp.s
 .PHONY : AssetLib/Irr/IRRLoader.cpp.s
 
 AssetLib/Irr/IRRMeshLoader.o: AssetLib/Irr/IRRMeshLoader.cpp.o
@@ -1837,7 +1837,7 @@ AssetLib/Irr/IRRMeshLoader.o: AssetLib/Irr/IRRMeshLoader.cpp.o
 
 # target to build an object file
 AssetLib/Irr/IRRMeshLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.o
 .PHONY : AssetLib/Irr/IRRMeshLoader.cpp.o
 
 AssetLib/Irr/IRRMeshLoader.i: AssetLib/Irr/IRRMeshLoader.cpp.i
@@ -1845,7 +1845,7 @@ AssetLib/Irr/IRRMeshLoader.i: AssetLib/Irr/IRRMeshLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Irr/IRRMeshLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.i
 .PHONY : AssetLib/Irr/IRRMeshLoader.cpp.i
 
 AssetLib/Irr/IRRMeshLoader.s: AssetLib/Irr/IRRMeshLoader.cpp.s
@@ -1853,7 +1853,7 @@ AssetLib/Irr/IRRMeshLoader.s: AssetLib/Irr/IRRMeshLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Irr/IRRMeshLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRMeshLoader.cpp.s
 .PHONY : AssetLib/Irr/IRRMeshLoader.cpp.s
 
 AssetLib/Irr/IRRShared.o: AssetLib/Irr/IRRShared.cpp.o
@@ -1861,7 +1861,7 @@ AssetLib/Irr/IRRShared.o: AssetLib/Irr/IRRShared.cpp.o
 
 # target to build an object file
 AssetLib/Irr/IRRShared.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.o
 .PHONY : AssetLib/Irr/IRRShared.cpp.o
 
 AssetLib/Irr/IRRShared.i: AssetLib/Irr/IRRShared.cpp.i
@@ -1869,7 +1869,7 @@ AssetLib/Irr/IRRShared.i: AssetLib/Irr/IRRShared.cpp.i
 
 # target to preprocess a source file
 AssetLib/Irr/IRRShared.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.i
 .PHONY : AssetLib/Irr/IRRShared.cpp.i
 
 AssetLib/Irr/IRRShared.s: AssetLib/Irr/IRRShared.cpp.s
@@ -1877,7 +1877,7 @@ AssetLib/Irr/IRRShared.s: AssetLib/Irr/IRRShared.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Irr/IRRShared.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Irr/IRRShared.cpp.s
 .PHONY : AssetLib/Irr/IRRShared.cpp.s
 
 AssetLib/LWO/LWOAnimation.o: AssetLib/LWO/LWOAnimation.cpp.o
@@ -1885,7 +1885,7 @@ AssetLib/LWO/LWOAnimation.o: AssetLib/LWO/LWOAnimation.cpp.o
 
 # target to build an object file
 AssetLib/LWO/LWOAnimation.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.o
 .PHONY : AssetLib/LWO/LWOAnimation.cpp.o
 
 AssetLib/LWO/LWOAnimation.i: AssetLib/LWO/LWOAnimation.cpp.i
@@ -1893,7 +1893,7 @@ AssetLib/LWO/LWOAnimation.i: AssetLib/LWO/LWOAnimation.cpp.i
 
 # target to preprocess a source file
 AssetLib/LWO/LWOAnimation.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.i
 .PHONY : AssetLib/LWO/LWOAnimation.cpp.i
 
 AssetLib/LWO/LWOAnimation.s: AssetLib/LWO/LWOAnimation.cpp.s
@@ -1901,7 +1901,7 @@ AssetLib/LWO/LWOAnimation.s: AssetLib/LWO/LWOAnimation.cpp.s
 
 # target to generate assembly for a file
 AssetLib/LWO/LWOAnimation.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOAnimation.cpp.s
 .PHONY : AssetLib/LWO/LWOAnimation.cpp.s
 
 AssetLib/LWO/LWOBLoader.o: AssetLib/LWO/LWOBLoader.cpp.o
@@ -1909,7 +1909,7 @@ AssetLib/LWO/LWOBLoader.o: AssetLib/LWO/LWOBLoader.cpp.o
 
 # target to build an object file
 AssetLib/LWO/LWOBLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.o
 .PHONY : AssetLib/LWO/LWOBLoader.cpp.o
 
 AssetLib/LWO/LWOBLoader.i: AssetLib/LWO/LWOBLoader.cpp.i
@@ -1917,7 +1917,7 @@ AssetLib/LWO/LWOBLoader.i: AssetLib/LWO/LWOBLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/LWO/LWOBLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.i
 .PHONY : AssetLib/LWO/LWOBLoader.cpp.i
 
 AssetLib/LWO/LWOBLoader.s: AssetLib/LWO/LWOBLoader.cpp.s
@@ -1925,7 +1925,7 @@ AssetLib/LWO/LWOBLoader.s: AssetLib/LWO/LWOBLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/LWO/LWOBLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOBLoader.cpp.s
 .PHONY : AssetLib/LWO/LWOBLoader.cpp.s
 
 AssetLib/LWO/LWOLoader.o: AssetLib/LWO/LWOLoader.cpp.o
@@ -1933,7 +1933,7 @@ AssetLib/LWO/LWOLoader.o: AssetLib/LWO/LWOLoader.cpp.o
 
 # target to build an object file
 AssetLib/LWO/LWOLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.o
 .PHONY : AssetLib/LWO/LWOLoader.cpp.o
 
 AssetLib/LWO/LWOLoader.i: AssetLib/LWO/LWOLoader.cpp.i
@@ -1941,7 +1941,7 @@ AssetLib/LWO/LWOLoader.i: AssetLib/LWO/LWOLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/LWO/LWOLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.i
 .PHONY : AssetLib/LWO/LWOLoader.cpp.i
 
 AssetLib/LWO/LWOLoader.s: AssetLib/LWO/LWOLoader.cpp.s
@@ -1949,7 +1949,7 @@ AssetLib/LWO/LWOLoader.s: AssetLib/LWO/LWOLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/LWO/LWOLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOLoader.cpp.s
 .PHONY : AssetLib/LWO/LWOLoader.cpp.s
 
 AssetLib/LWO/LWOMaterial.o: AssetLib/LWO/LWOMaterial.cpp.o
@@ -1957,7 +1957,7 @@ AssetLib/LWO/LWOMaterial.o: AssetLib/LWO/LWOMaterial.cpp.o
 
 # target to build an object file
 AssetLib/LWO/LWOMaterial.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.o
 .PHONY : AssetLib/LWO/LWOMaterial.cpp.o
 
 AssetLib/LWO/LWOMaterial.i: AssetLib/LWO/LWOMaterial.cpp.i
@@ -1965,7 +1965,7 @@ AssetLib/LWO/LWOMaterial.i: AssetLib/LWO/LWOMaterial.cpp.i
 
 # target to preprocess a source file
 AssetLib/LWO/LWOMaterial.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.i
 .PHONY : AssetLib/LWO/LWOMaterial.cpp.i
 
 AssetLib/LWO/LWOMaterial.s: AssetLib/LWO/LWOMaterial.cpp.s
@@ -1973,7 +1973,7 @@ AssetLib/LWO/LWOMaterial.s: AssetLib/LWO/LWOMaterial.cpp.s
 
 # target to generate assembly for a file
 AssetLib/LWO/LWOMaterial.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWO/LWOMaterial.cpp.s
 .PHONY : AssetLib/LWO/LWOMaterial.cpp.s
 
 AssetLib/LWS/LWSLoader.o: AssetLib/LWS/LWSLoader.cpp.o
@@ -1981,7 +1981,7 @@ AssetLib/LWS/LWSLoader.o: AssetLib/LWS/LWSLoader.cpp.o
 
 # target to build an object file
 AssetLib/LWS/LWSLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.o
 .PHONY : AssetLib/LWS/LWSLoader.cpp.o
 
 AssetLib/LWS/LWSLoader.i: AssetLib/LWS/LWSLoader.cpp.i
@@ -1989,7 +1989,7 @@ AssetLib/LWS/LWSLoader.i: AssetLib/LWS/LWSLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/LWS/LWSLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.i
 .PHONY : AssetLib/LWS/LWSLoader.cpp.i
 
 AssetLib/LWS/LWSLoader.s: AssetLib/LWS/LWSLoader.cpp.s
@@ -1997,87 +1997,15 @@ AssetLib/LWS/LWSLoader.s: AssetLib/LWS/LWSLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/LWS/LWSLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/LWS/LWSLoader.cpp.s
 .PHONY : AssetLib/LWS/LWSLoader.cpp.s
-
-AssetLib/M3D/M3DExporter.o: AssetLib/M3D/M3DExporter.cpp.o
-.PHONY : AssetLib/M3D/M3DExporter.o
-
-# target to build an object file
-AssetLib/M3D/M3DExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DExporter.cpp.o
-.PHONY : AssetLib/M3D/M3DExporter.cpp.o
-
-AssetLib/M3D/M3DExporter.i: AssetLib/M3D/M3DExporter.cpp.i
-.PHONY : AssetLib/M3D/M3DExporter.i
-
-# target to preprocess a source file
-AssetLib/M3D/M3DExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DExporter.cpp.i
-.PHONY : AssetLib/M3D/M3DExporter.cpp.i
-
-AssetLib/M3D/M3DExporter.s: AssetLib/M3D/M3DExporter.cpp.s
-.PHONY : AssetLib/M3D/M3DExporter.s
-
-# target to generate assembly for a file
-AssetLib/M3D/M3DExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DExporter.cpp.s
-.PHONY : AssetLib/M3D/M3DExporter.cpp.s
-
-AssetLib/M3D/M3DImporter.o: AssetLib/M3D/M3DImporter.cpp.o
-.PHONY : AssetLib/M3D/M3DImporter.o
-
-# target to build an object file
-AssetLib/M3D/M3DImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DImporter.cpp.o
-.PHONY : AssetLib/M3D/M3DImporter.cpp.o
-
-AssetLib/M3D/M3DImporter.i: AssetLib/M3D/M3DImporter.cpp.i
-.PHONY : AssetLib/M3D/M3DImporter.i
-
-# target to preprocess a source file
-AssetLib/M3D/M3DImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DImporter.cpp.i
-.PHONY : AssetLib/M3D/M3DImporter.cpp.i
-
-AssetLib/M3D/M3DImporter.s: AssetLib/M3D/M3DImporter.cpp.s
-.PHONY : AssetLib/M3D/M3DImporter.s
-
-# target to generate assembly for a file
-AssetLib/M3D/M3DImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DImporter.cpp.s
-.PHONY : AssetLib/M3D/M3DImporter.cpp.s
-
-AssetLib/M3D/M3DWrapper.o: AssetLib/M3D/M3DWrapper.cpp.o
-.PHONY : AssetLib/M3D/M3DWrapper.o
-
-# target to build an object file
-AssetLib/M3D/M3DWrapper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DWrapper.cpp.o
-.PHONY : AssetLib/M3D/M3DWrapper.cpp.o
-
-AssetLib/M3D/M3DWrapper.i: AssetLib/M3D/M3DWrapper.cpp.i
-.PHONY : AssetLib/M3D/M3DWrapper.i
-
-# target to preprocess a source file
-AssetLib/M3D/M3DWrapper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DWrapper.cpp.i
-.PHONY : AssetLib/M3D/M3DWrapper.cpp.i
-
-AssetLib/M3D/M3DWrapper.s: AssetLib/M3D/M3DWrapper.cpp.s
-.PHONY : AssetLib/M3D/M3DWrapper.s
-
-# target to generate assembly for a file
-AssetLib/M3D/M3DWrapper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/M3D/M3DWrapper.cpp.s
-.PHONY : AssetLib/M3D/M3DWrapper.cpp.s
 
 AssetLib/MD2/MD2Loader.o: AssetLib/MD2/MD2Loader.cpp.o
 .PHONY : AssetLib/MD2/MD2Loader.o
 
 # target to build an object file
 AssetLib/MD2/MD2Loader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.o
 .PHONY : AssetLib/MD2/MD2Loader.cpp.o
 
 AssetLib/MD2/MD2Loader.i: AssetLib/MD2/MD2Loader.cpp.i
@@ -2085,7 +2013,7 @@ AssetLib/MD2/MD2Loader.i: AssetLib/MD2/MD2Loader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MD2/MD2Loader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.i
 .PHONY : AssetLib/MD2/MD2Loader.cpp.i
 
 AssetLib/MD2/MD2Loader.s: AssetLib/MD2/MD2Loader.cpp.s
@@ -2093,7 +2021,7 @@ AssetLib/MD2/MD2Loader.s: AssetLib/MD2/MD2Loader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MD2/MD2Loader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD2/MD2Loader.cpp.s
 .PHONY : AssetLib/MD2/MD2Loader.cpp.s
 
 AssetLib/MD3/MD3Loader.o: AssetLib/MD3/MD3Loader.cpp.o
@@ -2101,7 +2029,7 @@ AssetLib/MD3/MD3Loader.o: AssetLib/MD3/MD3Loader.cpp.o
 
 # target to build an object file
 AssetLib/MD3/MD3Loader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.o
 .PHONY : AssetLib/MD3/MD3Loader.cpp.o
 
 AssetLib/MD3/MD3Loader.i: AssetLib/MD3/MD3Loader.cpp.i
@@ -2109,7 +2037,7 @@ AssetLib/MD3/MD3Loader.i: AssetLib/MD3/MD3Loader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MD3/MD3Loader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.i
 .PHONY : AssetLib/MD3/MD3Loader.cpp.i
 
 AssetLib/MD3/MD3Loader.s: AssetLib/MD3/MD3Loader.cpp.s
@@ -2117,7 +2045,7 @@ AssetLib/MD3/MD3Loader.s: AssetLib/MD3/MD3Loader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MD3/MD3Loader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD3/MD3Loader.cpp.s
 .PHONY : AssetLib/MD3/MD3Loader.cpp.s
 
 AssetLib/MD5/MD5Loader.o: AssetLib/MD5/MD5Loader.cpp.o
@@ -2125,7 +2053,7 @@ AssetLib/MD5/MD5Loader.o: AssetLib/MD5/MD5Loader.cpp.o
 
 # target to build an object file
 AssetLib/MD5/MD5Loader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.o
 .PHONY : AssetLib/MD5/MD5Loader.cpp.o
 
 AssetLib/MD5/MD5Loader.i: AssetLib/MD5/MD5Loader.cpp.i
@@ -2133,7 +2061,7 @@ AssetLib/MD5/MD5Loader.i: AssetLib/MD5/MD5Loader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MD5/MD5Loader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.i
 .PHONY : AssetLib/MD5/MD5Loader.cpp.i
 
 AssetLib/MD5/MD5Loader.s: AssetLib/MD5/MD5Loader.cpp.s
@@ -2141,7 +2069,7 @@ AssetLib/MD5/MD5Loader.s: AssetLib/MD5/MD5Loader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MD5/MD5Loader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Loader.cpp.s
 .PHONY : AssetLib/MD5/MD5Loader.cpp.s
 
 AssetLib/MD5/MD5Parser.o: AssetLib/MD5/MD5Parser.cpp.o
@@ -2149,7 +2077,7 @@ AssetLib/MD5/MD5Parser.o: AssetLib/MD5/MD5Parser.cpp.o
 
 # target to build an object file
 AssetLib/MD5/MD5Parser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.o
 .PHONY : AssetLib/MD5/MD5Parser.cpp.o
 
 AssetLib/MD5/MD5Parser.i: AssetLib/MD5/MD5Parser.cpp.i
@@ -2157,7 +2085,7 @@ AssetLib/MD5/MD5Parser.i: AssetLib/MD5/MD5Parser.cpp.i
 
 # target to preprocess a source file
 AssetLib/MD5/MD5Parser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.i
 .PHONY : AssetLib/MD5/MD5Parser.cpp.i
 
 AssetLib/MD5/MD5Parser.s: AssetLib/MD5/MD5Parser.cpp.s
@@ -2165,7 +2093,7 @@ AssetLib/MD5/MD5Parser.s: AssetLib/MD5/MD5Parser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MD5/MD5Parser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MD5/MD5Parser.cpp.s
 .PHONY : AssetLib/MD5/MD5Parser.cpp.s
 
 AssetLib/MDC/MDCLoader.o: AssetLib/MDC/MDCLoader.cpp.o
@@ -2173,7 +2101,7 @@ AssetLib/MDC/MDCLoader.o: AssetLib/MDC/MDCLoader.cpp.o
 
 # target to build an object file
 AssetLib/MDC/MDCLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.o
 .PHONY : AssetLib/MDC/MDCLoader.cpp.o
 
 AssetLib/MDC/MDCLoader.i: AssetLib/MDC/MDCLoader.cpp.i
@@ -2181,7 +2109,7 @@ AssetLib/MDC/MDCLoader.i: AssetLib/MDC/MDCLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MDC/MDCLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.i
 .PHONY : AssetLib/MDC/MDCLoader.cpp.i
 
 AssetLib/MDC/MDCLoader.s: AssetLib/MDC/MDCLoader.cpp.s
@@ -2189,7 +2117,7 @@ AssetLib/MDC/MDCLoader.s: AssetLib/MDC/MDCLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MDC/MDCLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDC/MDCLoader.cpp.s
 .PHONY : AssetLib/MDC/MDCLoader.cpp.s
 
 AssetLib/MDL/HalfLife/HL1MDLLoader.o: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o
@@ -2197,7 +2125,7 @@ AssetLib/MDL/HalfLife/HL1MDLLoader.o: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o
 
 # target to build an object file
 AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o
 .PHONY : AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.o
 
 AssetLib/MDL/HalfLife/HL1MDLLoader.i: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i
@@ -2205,7 +2133,7 @@ AssetLib/MDL/HalfLife/HL1MDLLoader.i: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i
 .PHONY : AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.i
 
 AssetLib/MDL/HalfLife/HL1MDLLoader.s: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s
@@ -2213,7 +2141,7 @@ AssetLib/MDL/HalfLife/HL1MDLLoader.s: AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s
 .PHONY : AssetLib/MDL/HalfLife/HL1MDLLoader.cpp.s
 
 AssetLib/MDL/HalfLife/UniqueNameGenerator.o: AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.o
@@ -2221,7 +2149,7 @@ AssetLib/MDL/HalfLife/UniqueNameGenerator.o: AssetLib/MDL/HalfLife/UniqueNameGen
 
 # target to build an object file
 AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.o
 .PHONY : AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.o
 
 AssetLib/MDL/HalfLife/UniqueNameGenerator.i: AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.i
@@ -2229,7 +2157,7 @@ AssetLib/MDL/HalfLife/UniqueNameGenerator.i: AssetLib/MDL/HalfLife/UniqueNameGen
 
 # target to preprocess a source file
 AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.i
 .PHONY : AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.i
 
 AssetLib/MDL/HalfLife/UniqueNameGenerator.s: AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.s
@@ -2237,7 +2165,7 @@ AssetLib/MDL/HalfLife/UniqueNameGenerator.s: AssetLib/MDL/HalfLife/UniqueNameGen
 
 # target to generate assembly for a file
 AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.s
 .PHONY : AssetLib/MDL/HalfLife/UniqueNameGenerator.cpp.s
 
 AssetLib/MDL/MDLLoader.o: AssetLib/MDL/MDLLoader.cpp.o
@@ -2245,7 +2173,7 @@ AssetLib/MDL/MDLLoader.o: AssetLib/MDL/MDLLoader.cpp.o
 
 # target to build an object file
 AssetLib/MDL/MDLLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.o
 .PHONY : AssetLib/MDL/MDLLoader.cpp.o
 
 AssetLib/MDL/MDLLoader.i: AssetLib/MDL/MDLLoader.cpp.i
@@ -2253,7 +2181,7 @@ AssetLib/MDL/MDLLoader.i: AssetLib/MDL/MDLLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MDL/MDLLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.i
 .PHONY : AssetLib/MDL/MDLLoader.cpp.i
 
 AssetLib/MDL/MDLLoader.s: AssetLib/MDL/MDLLoader.cpp.s
@@ -2261,7 +2189,7 @@ AssetLib/MDL/MDLLoader.s: AssetLib/MDL/MDLLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MDL/MDLLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLLoader.cpp.s
 .PHONY : AssetLib/MDL/MDLLoader.cpp.s
 
 AssetLib/MDL/MDLMaterialLoader.o: AssetLib/MDL/MDLMaterialLoader.cpp.o
@@ -2269,7 +2197,7 @@ AssetLib/MDL/MDLMaterialLoader.o: AssetLib/MDL/MDLMaterialLoader.cpp.o
 
 # target to build an object file
 AssetLib/MDL/MDLMaterialLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.o
 .PHONY : AssetLib/MDL/MDLMaterialLoader.cpp.o
 
 AssetLib/MDL/MDLMaterialLoader.i: AssetLib/MDL/MDLMaterialLoader.cpp.i
@@ -2277,7 +2205,7 @@ AssetLib/MDL/MDLMaterialLoader.i: AssetLib/MDL/MDLMaterialLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MDL/MDLMaterialLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.i
 .PHONY : AssetLib/MDL/MDLMaterialLoader.cpp.i
 
 AssetLib/MDL/MDLMaterialLoader.s: AssetLib/MDL/MDLMaterialLoader.cpp.s
@@ -2285,7 +2213,7 @@ AssetLib/MDL/MDLMaterialLoader.s: AssetLib/MDL/MDLMaterialLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MDL/MDLMaterialLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MDL/MDLMaterialLoader.cpp.s
 .PHONY : AssetLib/MDL/MDLMaterialLoader.cpp.s
 
 AssetLib/MMD/MMDImporter.o: AssetLib/MMD/MMDImporter.cpp.o
@@ -2293,7 +2221,7 @@ AssetLib/MMD/MMDImporter.o: AssetLib/MMD/MMDImporter.cpp.o
 
 # target to build an object file
 AssetLib/MMD/MMDImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.o
 .PHONY : AssetLib/MMD/MMDImporter.cpp.o
 
 AssetLib/MMD/MMDImporter.i: AssetLib/MMD/MMDImporter.cpp.i
@@ -2301,7 +2229,7 @@ AssetLib/MMD/MMDImporter.i: AssetLib/MMD/MMDImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/MMD/MMDImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.i
 .PHONY : AssetLib/MMD/MMDImporter.cpp.i
 
 AssetLib/MMD/MMDImporter.s: AssetLib/MMD/MMDImporter.cpp.s
@@ -2309,7 +2237,7 @@ AssetLib/MMD/MMDImporter.s: AssetLib/MMD/MMDImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MMD/MMDImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDImporter.cpp.s
 .PHONY : AssetLib/MMD/MMDImporter.cpp.s
 
 AssetLib/MMD/MMDPmxParser.o: AssetLib/MMD/MMDPmxParser.cpp.o
@@ -2317,7 +2245,7 @@ AssetLib/MMD/MMDPmxParser.o: AssetLib/MMD/MMDPmxParser.cpp.o
 
 # target to build an object file
 AssetLib/MMD/MMDPmxParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.o
 .PHONY : AssetLib/MMD/MMDPmxParser.cpp.o
 
 AssetLib/MMD/MMDPmxParser.i: AssetLib/MMD/MMDPmxParser.cpp.i
@@ -2325,7 +2253,7 @@ AssetLib/MMD/MMDPmxParser.i: AssetLib/MMD/MMDPmxParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/MMD/MMDPmxParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.i
 .PHONY : AssetLib/MMD/MMDPmxParser.cpp.i
 
 AssetLib/MMD/MMDPmxParser.s: AssetLib/MMD/MMDPmxParser.cpp.s
@@ -2333,7 +2261,7 @@ AssetLib/MMD/MMDPmxParser.s: AssetLib/MMD/MMDPmxParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MMD/MMDPmxParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MMD/MMDPmxParser.cpp.s
 .PHONY : AssetLib/MMD/MMDPmxParser.cpp.s
 
 AssetLib/MS3D/MS3DLoader.o: AssetLib/MS3D/MS3DLoader.cpp.o
@@ -2341,7 +2269,7 @@ AssetLib/MS3D/MS3DLoader.o: AssetLib/MS3D/MS3DLoader.cpp.o
 
 # target to build an object file
 AssetLib/MS3D/MS3DLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.o
 .PHONY : AssetLib/MS3D/MS3DLoader.cpp.o
 
 AssetLib/MS3D/MS3DLoader.i: AssetLib/MS3D/MS3DLoader.cpp.i
@@ -2349,7 +2277,7 @@ AssetLib/MS3D/MS3DLoader.i: AssetLib/MS3D/MS3DLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/MS3D/MS3DLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.i
 .PHONY : AssetLib/MS3D/MS3DLoader.cpp.i
 
 AssetLib/MS3D/MS3DLoader.s: AssetLib/MS3D/MS3DLoader.cpp.s
@@ -2357,7 +2285,7 @@ AssetLib/MS3D/MS3DLoader.s: AssetLib/MS3D/MS3DLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/MS3D/MS3DLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/MS3D/MS3DLoader.cpp.s
 .PHONY : AssetLib/MS3D/MS3DLoader.cpp.s
 
 AssetLib/NDO/NDOLoader.o: AssetLib/NDO/NDOLoader.cpp.o
@@ -2365,7 +2293,7 @@ AssetLib/NDO/NDOLoader.o: AssetLib/NDO/NDOLoader.cpp.o
 
 # target to build an object file
 AssetLib/NDO/NDOLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.o
 .PHONY : AssetLib/NDO/NDOLoader.cpp.o
 
 AssetLib/NDO/NDOLoader.i: AssetLib/NDO/NDOLoader.cpp.i
@@ -2373,7 +2301,7 @@ AssetLib/NDO/NDOLoader.i: AssetLib/NDO/NDOLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/NDO/NDOLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.i
 .PHONY : AssetLib/NDO/NDOLoader.cpp.i
 
 AssetLib/NDO/NDOLoader.s: AssetLib/NDO/NDOLoader.cpp.s
@@ -2381,7 +2309,7 @@ AssetLib/NDO/NDOLoader.s: AssetLib/NDO/NDOLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/NDO/NDOLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NDO/NDOLoader.cpp.s
 .PHONY : AssetLib/NDO/NDOLoader.cpp.s
 
 AssetLib/NFF/NFFLoader.o: AssetLib/NFF/NFFLoader.cpp.o
@@ -2389,7 +2317,7 @@ AssetLib/NFF/NFFLoader.o: AssetLib/NFF/NFFLoader.cpp.o
 
 # target to build an object file
 AssetLib/NFF/NFFLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.o
 .PHONY : AssetLib/NFF/NFFLoader.cpp.o
 
 AssetLib/NFF/NFFLoader.i: AssetLib/NFF/NFFLoader.cpp.i
@@ -2397,7 +2325,7 @@ AssetLib/NFF/NFFLoader.i: AssetLib/NFF/NFFLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/NFF/NFFLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.i
 .PHONY : AssetLib/NFF/NFFLoader.cpp.i
 
 AssetLib/NFF/NFFLoader.s: AssetLib/NFF/NFFLoader.cpp.s
@@ -2405,7 +2333,7 @@ AssetLib/NFF/NFFLoader.s: AssetLib/NFF/NFFLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/NFF/NFFLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/NFF/NFFLoader.cpp.s
 .PHONY : AssetLib/NFF/NFFLoader.cpp.s
 
 AssetLib/OFF/OFFLoader.o: AssetLib/OFF/OFFLoader.cpp.o
@@ -2413,7 +2341,7 @@ AssetLib/OFF/OFFLoader.o: AssetLib/OFF/OFFLoader.cpp.o
 
 # target to build an object file
 AssetLib/OFF/OFFLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.o
 .PHONY : AssetLib/OFF/OFFLoader.cpp.o
 
 AssetLib/OFF/OFFLoader.i: AssetLib/OFF/OFFLoader.cpp.i
@@ -2421,7 +2349,7 @@ AssetLib/OFF/OFFLoader.i: AssetLib/OFF/OFFLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/OFF/OFFLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.i
 .PHONY : AssetLib/OFF/OFFLoader.cpp.i
 
 AssetLib/OFF/OFFLoader.s: AssetLib/OFF/OFFLoader.cpp.s
@@ -2429,7 +2357,7 @@ AssetLib/OFF/OFFLoader.s: AssetLib/OFF/OFFLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/OFF/OFFLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OFF/OFFLoader.cpp.s
 .PHONY : AssetLib/OFF/OFFLoader.cpp.s
 
 AssetLib/Obj/ObjExporter.o: AssetLib/Obj/ObjExporter.cpp.o
@@ -2437,7 +2365,7 @@ AssetLib/Obj/ObjExporter.o: AssetLib/Obj/ObjExporter.cpp.o
 
 # target to build an object file
 AssetLib/Obj/ObjExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.o
 .PHONY : AssetLib/Obj/ObjExporter.cpp.o
 
 AssetLib/Obj/ObjExporter.i: AssetLib/Obj/ObjExporter.cpp.i
@@ -2445,7 +2373,7 @@ AssetLib/Obj/ObjExporter.i: AssetLib/Obj/ObjExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Obj/ObjExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.i
 .PHONY : AssetLib/Obj/ObjExporter.cpp.i
 
 AssetLib/Obj/ObjExporter.s: AssetLib/Obj/ObjExporter.cpp.s
@@ -2453,7 +2381,7 @@ AssetLib/Obj/ObjExporter.s: AssetLib/Obj/ObjExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Obj/ObjExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjExporter.cpp.s
 .PHONY : AssetLib/Obj/ObjExporter.cpp.s
 
 AssetLib/Obj/ObjFileImporter.o: AssetLib/Obj/ObjFileImporter.cpp.o
@@ -2461,7 +2389,7 @@ AssetLib/Obj/ObjFileImporter.o: AssetLib/Obj/ObjFileImporter.cpp.o
 
 # target to build an object file
 AssetLib/Obj/ObjFileImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.o
 .PHONY : AssetLib/Obj/ObjFileImporter.cpp.o
 
 AssetLib/Obj/ObjFileImporter.i: AssetLib/Obj/ObjFileImporter.cpp.i
@@ -2469,7 +2397,7 @@ AssetLib/Obj/ObjFileImporter.i: AssetLib/Obj/ObjFileImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Obj/ObjFileImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.i
 .PHONY : AssetLib/Obj/ObjFileImporter.cpp.i
 
 AssetLib/Obj/ObjFileImporter.s: AssetLib/Obj/ObjFileImporter.cpp.s
@@ -2477,7 +2405,7 @@ AssetLib/Obj/ObjFileImporter.s: AssetLib/Obj/ObjFileImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Obj/ObjFileImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileImporter.cpp.s
 .PHONY : AssetLib/Obj/ObjFileImporter.cpp.s
 
 AssetLib/Obj/ObjFileMtlImporter.o: AssetLib/Obj/ObjFileMtlImporter.cpp.o
@@ -2485,7 +2413,7 @@ AssetLib/Obj/ObjFileMtlImporter.o: AssetLib/Obj/ObjFileMtlImporter.cpp.o
 
 # target to build an object file
 AssetLib/Obj/ObjFileMtlImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.o
 .PHONY : AssetLib/Obj/ObjFileMtlImporter.cpp.o
 
 AssetLib/Obj/ObjFileMtlImporter.i: AssetLib/Obj/ObjFileMtlImporter.cpp.i
@@ -2493,7 +2421,7 @@ AssetLib/Obj/ObjFileMtlImporter.i: AssetLib/Obj/ObjFileMtlImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Obj/ObjFileMtlImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.i
 .PHONY : AssetLib/Obj/ObjFileMtlImporter.cpp.i
 
 AssetLib/Obj/ObjFileMtlImporter.s: AssetLib/Obj/ObjFileMtlImporter.cpp.s
@@ -2501,7 +2429,7 @@ AssetLib/Obj/ObjFileMtlImporter.s: AssetLib/Obj/ObjFileMtlImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Obj/ObjFileMtlImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileMtlImporter.cpp.s
 .PHONY : AssetLib/Obj/ObjFileMtlImporter.cpp.s
 
 AssetLib/Obj/ObjFileParser.o: AssetLib/Obj/ObjFileParser.cpp.o
@@ -2509,7 +2437,7 @@ AssetLib/Obj/ObjFileParser.o: AssetLib/Obj/ObjFileParser.cpp.o
 
 # target to build an object file
 AssetLib/Obj/ObjFileParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.o
 .PHONY : AssetLib/Obj/ObjFileParser.cpp.o
 
 AssetLib/Obj/ObjFileParser.i: AssetLib/Obj/ObjFileParser.cpp.i
@@ -2517,7 +2445,7 @@ AssetLib/Obj/ObjFileParser.i: AssetLib/Obj/ObjFileParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/Obj/ObjFileParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.i
 .PHONY : AssetLib/Obj/ObjFileParser.cpp.i
 
 AssetLib/Obj/ObjFileParser.s: AssetLib/Obj/ObjFileParser.cpp.s
@@ -2525,7 +2453,7 @@ AssetLib/Obj/ObjFileParser.s: AssetLib/Obj/ObjFileParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Obj/ObjFileParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Obj/ObjFileParser.cpp.s
 .PHONY : AssetLib/Obj/ObjFileParser.cpp.s
 
 AssetLib/Ogre/OgreBinarySerializer.o: AssetLib/Ogre/OgreBinarySerializer.cpp.o
@@ -2533,7 +2461,7 @@ AssetLib/Ogre/OgreBinarySerializer.o: AssetLib/Ogre/OgreBinarySerializer.cpp.o
 
 # target to build an object file
 AssetLib/Ogre/OgreBinarySerializer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.o
 .PHONY : AssetLib/Ogre/OgreBinarySerializer.cpp.o
 
 AssetLib/Ogre/OgreBinarySerializer.i: AssetLib/Ogre/OgreBinarySerializer.cpp.i
@@ -2541,7 +2469,7 @@ AssetLib/Ogre/OgreBinarySerializer.i: AssetLib/Ogre/OgreBinarySerializer.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ogre/OgreBinarySerializer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.i
 .PHONY : AssetLib/Ogre/OgreBinarySerializer.cpp.i
 
 AssetLib/Ogre/OgreBinarySerializer.s: AssetLib/Ogre/OgreBinarySerializer.cpp.s
@@ -2549,7 +2477,7 @@ AssetLib/Ogre/OgreBinarySerializer.s: AssetLib/Ogre/OgreBinarySerializer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ogre/OgreBinarySerializer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreBinarySerializer.cpp.s
 .PHONY : AssetLib/Ogre/OgreBinarySerializer.cpp.s
 
 AssetLib/Ogre/OgreImporter.o: AssetLib/Ogre/OgreImporter.cpp.o
@@ -2557,7 +2485,7 @@ AssetLib/Ogre/OgreImporter.o: AssetLib/Ogre/OgreImporter.cpp.o
 
 # target to build an object file
 AssetLib/Ogre/OgreImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.o
 .PHONY : AssetLib/Ogre/OgreImporter.cpp.o
 
 AssetLib/Ogre/OgreImporter.i: AssetLib/Ogre/OgreImporter.cpp.i
@@ -2565,7 +2493,7 @@ AssetLib/Ogre/OgreImporter.i: AssetLib/Ogre/OgreImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ogre/OgreImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.i
 .PHONY : AssetLib/Ogre/OgreImporter.cpp.i
 
 AssetLib/Ogre/OgreImporter.s: AssetLib/Ogre/OgreImporter.cpp.s
@@ -2573,7 +2501,7 @@ AssetLib/Ogre/OgreImporter.s: AssetLib/Ogre/OgreImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ogre/OgreImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreImporter.cpp.s
 .PHONY : AssetLib/Ogre/OgreImporter.cpp.s
 
 AssetLib/Ogre/OgreMaterial.o: AssetLib/Ogre/OgreMaterial.cpp.o
@@ -2581,7 +2509,7 @@ AssetLib/Ogre/OgreMaterial.o: AssetLib/Ogre/OgreMaterial.cpp.o
 
 # target to build an object file
 AssetLib/Ogre/OgreMaterial.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.o
 .PHONY : AssetLib/Ogre/OgreMaterial.cpp.o
 
 AssetLib/Ogre/OgreMaterial.i: AssetLib/Ogre/OgreMaterial.cpp.i
@@ -2589,7 +2517,7 @@ AssetLib/Ogre/OgreMaterial.i: AssetLib/Ogre/OgreMaterial.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ogre/OgreMaterial.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.i
 .PHONY : AssetLib/Ogre/OgreMaterial.cpp.i
 
 AssetLib/Ogre/OgreMaterial.s: AssetLib/Ogre/OgreMaterial.cpp.s
@@ -2597,7 +2525,7 @@ AssetLib/Ogre/OgreMaterial.s: AssetLib/Ogre/OgreMaterial.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ogre/OgreMaterial.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreMaterial.cpp.s
 .PHONY : AssetLib/Ogre/OgreMaterial.cpp.s
 
 AssetLib/Ogre/OgreStructs.o: AssetLib/Ogre/OgreStructs.cpp.o
@@ -2605,7 +2533,7 @@ AssetLib/Ogre/OgreStructs.o: AssetLib/Ogre/OgreStructs.cpp.o
 
 # target to build an object file
 AssetLib/Ogre/OgreStructs.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.o
 .PHONY : AssetLib/Ogre/OgreStructs.cpp.o
 
 AssetLib/Ogre/OgreStructs.i: AssetLib/Ogre/OgreStructs.cpp.i
@@ -2613,7 +2541,7 @@ AssetLib/Ogre/OgreStructs.i: AssetLib/Ogre/OgreStructs.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ogre/OgreStructs.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.i
 .PHONY : AssetLib/Ogre/OgreStructs.cpp.i
 
 AssetLib/Ogre/OgreStructs.s: AssetLib/Ogre/OgreStructs.cpp.s
@@ -2621,7 +2549,7 @@ AssetLib/Ogre/OgreStructs.s: AssetLib/Ogre/OgreStructs.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ogre/OgreStructs.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreStructs.cpp.s
 .PHONY : AssetLib/Ogre/OgreStructs.cpp.s
 
 AssetLib/Ogre/OgreXmlSerializer.o: AssetLib/Ogre/OgreXmlSerializer.cpp.o
@@ -2629,7 +2557,7 @@ AssetLib/Ogre/OgreXmlSerializer.o: AssetLib/Ogre/OgreXmlSerializer.cpp.o
 
 # target to build an object file
 AssetLib/Ogre/OgreXmlSerializer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.o
 .PHONY : AssetLib/Ogre/OgreXmlSerializer.cpp.o
 
 AssetLib/Ogre/OgreXmlSerializer.i: AssetLib/Ogre/OgreXmlSerializer.cpp.i
@@ -2637,7 +2565,7 @@ AssetLib/Ogre/OgreXmlSerializer.i: AssetLib/Ogre/OgreXmlSerializer.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ogre/OgreXmlSerializer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.i
 .PHONY : AssetLib/Ogre/OgreXmlSerializer.cpp.i
 
 AssetLib/Ogre/OgreXmlSerializer.s: AssetLib/Ogre/OgreXmlSerializer.cpp.s
@@ -2645,7 +2573,7 @@ AssetLib/Ogre/OgreXmlSerializer.s: AssetLib/Ogre/OgreXmlSerializer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ogre/OgreXmlSerializer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ogre/OgreXmlSerializer.cpp.s
 .PHONY : AssetLib/Ogre/OgreXmlSerializer.cpp.s
 
 AssetLib/OpenGEX/OpenGEXExporter.o: AssetLib/OpenGEX/OpenGEXExporter.cpp.o
@@ -2653,7 +2581,7 @@ AssetLib/OpenGEX/OpenGEXExporter.o: AssetLib/OpenGEX/OpenGEXExporter.cpp.o
 
 # target to build an object file
 AssetLib/OpenGEX/OpenGEXExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.o
 .PHONY : AssetLib/OpenGEX/OpenGEXExporter.cpp.o
 
 AssetLib/OpenGEX/OpenGEXExporter.i: AssetLib/OpenGEX/OpenGEXExporter.cpp.i
@@ -2661,7 +2589,7 @@ AssetLib/OpenGEX/OpenGEXExporter.i: AssetLib/OpenGEX/OpenGEXExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/OpenGEX/OpenGEXExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.i
 .PHONY : AssetLib/OpenGEX/OpenGEXExporter.cpp.i
 
 AssetLib/OpenGEX/OpenGEXExporter.s: AssetLib/OpenGEX/OpenGEXExporter.cpp.s
@@ -2669,7 +2597,7 @@ AssetLib/OpenGEX/OpenGEXExporter.s: AssetLib/OpenGEX/OpenGEXExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/OpenGEX/OpenGEXExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXExporter.cpp.s
 .PHONY : AssetLib/OpenGEX/OpenGEXExporter.cpp.s
 
 AssetLib/OpenGEX/OpenGEXImporter.o: AssetLib/OpenGEX/OpenGEXImporter.cpp.o
@@ -2677,7 +2605,7 @@ AssetLib/OpenGEX/OpenGEXImporter.o: AssetLib/OpenGEX/OpenGEXImporter.cpp.o
 
 # target to build an object file
 AssetLib/OpenGEX/OpenGEXImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.o
 .PHONY : AssetLib/OpenGEX/OpenGEXImporter.cpp.o
 
 AssetLib/OpenGEX/OpenGEXImporter.i: AssetLib/OpenGEX/OpenGEXImporter.cpp.i
@@ -2685,7 +2613,7 @@ AssetLib/OpenGEX/OpenGEXImporter.i: AssetLib/OpenGEX/OpenGEXImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/OpenGEX/OpenGEXImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.i
 .PHONY : AssetLib/OpenGEX/OpenGEXImporter.cpp.i
 
 AssetLib/OpenGEX/OpenGEXImporter.s: AssetLib/OpenGEX/OpenGEXImporter.cpp.s
@@ -2693,7 +2621,7 @@ AssetLib/OpenGEX/OpenGEXImporter.s: AssetLib/OpenGEX/OpenGEXImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/OpenGEX/OpenGEXImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/OpenGEX/OpenGEXImporter.cpp.s
 .PHONY : AssetLib/OpenGEX/OpenGEXImporter.cpp.s
 
 AssetLib/Ply/PlyExporter.o: AssetLib/Ply/PlyExporter.cpp.o
@@ -2701,7 +2629,7 @@ AssetLib/Ply/PlyExporter.o: AssetLib/Ply/PlyExporter.cpp.o
 
 # target to build an object file
 AssetLib/Ply/PlyExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.o
 .PHONY : AssetLib/Ply/PlyExporter.cpp.o
 
 AssetLib/Ply/PlyExporter.i: AssetLib/Ply/PlyExporter.cpp.i
@@ -2709,7 +2637,7 @@ AssetLib/Ply/PlyExporter.i: AssetLib/Ply/PlyExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ply/PlyExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.i
 .PHONY : AssetLib/Ply/PlyExporter.cpp.i
 
 AssetLib/Ply/PlyExporter.s: AssetLib/Ply/PlyExporter.cpp.s
@@ -2717,7 +2645,7 @@ AssetLib/Ply/PlyExporter.s: AssetLib/Ply/PlyExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ply/PlyExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyExporter.cpp.s
 .PHONY : AssetLib/Ply/PlyExporter.cpp.s
 
 AssetLib/Ply/PlyLoader.o: AssetLib/Ply/PlyLoader.cpp.o
@@ -2725,7 +2653,7 @@ AssetLib/Ply/PlyLoader.o: AssetLib/Ply/PlyLoader.cpp.o
 
 # target to build an object file
 AssetLib/Ply/PlyLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.o
 .PHONY : AssetLib/Ply/PlyLoader.cpp.o
 
 AssetLib/Ply/PlyLoader.i: AssetLib/Ply/PlyLoader.cpp.i
@@ -2733,7 +2661,7 @@ AssetLib/Ply/PlyLoader.i: AssetLib/Ply/PlyLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ply/PlyLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.i
 .PHONY : AssetLib/Ply/PlyLoader.cpp.i
 
 AssetLib/Ply/PlyLoader.s: AssetLib/Ply/PlyLoader.cpp.s
@@ -2741,7 +2669,7 @@ AssetLib/Ply/PlyLoader.s: AssetLib/Ply/PlyLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ply/PlyLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyLoader.cpp.s
 .PHONY : AssetLib/Ply/PlyLoader.cpp.s
 
 AssetLib/Ply/PlyParser.o: AssetLib/Ply/PlyParser.cpp.o
@@ -2749,7 +2677,7 @@ AssetLib/Ply/PlyParser.o: AssetLib/Ply/PlyParser.cpp.o
 
 # target to build an object file
 AssetLib/Ply/PlyParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.o
 .PHONY : AssetLib/Ply/PlyParser.cpp.o
 
 AssetLib/Ply/PlyParser.i: AssetLib/Ply/PlyParser.cpp.i
@@ -2757,7 +2685,7 @@ AssetLib/Ply/PlyParser.i: AssetLib/Ply/PlyParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/Ply/PlyParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.i
 .PHONY : AssetLib/Ply/PlyParser.cpp.i
 
 AssetLib/Ply/PlyParser.s: AssetLib/Ply/PlyParser.cpp.s
@@ -2765,7 +2693,7 @@ AssetLib/Ply/PlyParser.s: AssetLib/Ply/PlyParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Ply/PlyParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Ply/PlyParser.cpp.s
 .PHONY : AssetLib/Ply/PlyParser.cpp.s
 
 AssetLib/Q3BSP/Q3BSPFileImporter.o: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o
@@ -2773,7 +2701,7 @@ AssetLib/Q3BSP/Q3BSPFileImporter.o: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o
 
 # target to build an object file
 AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o
 .PHONY : AssetLib/Q3BSP/Q3BSPFileImporter.cpp.o
 
 AssetLib/Q3BSP/Q3BSPFileImporter.i: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i
@@ -2781,7 +2709,7 @@ AssetLib/Q3BSP/Q3BSPFileImporter.i: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i
 .PHONY : AssetLib/Q3BSP/Q3BSPFileImporter.cpp.i
 
 AssetLib/Q3BSP/Q3BSPFileImporter.s: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s
@@ -2789,7 +2717,7 @@ AssetLib/Q3BSP/Q3BSPFileImporter.s: AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s
 .PHONY : AssetLib/Q3BSP/Q3BSPFileImporter.cpp.s
 
 AssetLib/Q3BSP/Q3BSPFileParser.o: AssetLib/Q3BSP/Q3BSPFileParser.cpp.o
@@ -2797,7 +2725,7 @@ AssetLib/Q3BSP/Q3BSPFileParser.o: AssetLib/Q3BSP/Q3BSPFileParser.cpp.o
 
 # target to build an object file
 AssetLib/Q3BSP/Q3BSPFileParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.o
 .PHONY : AssetLib/Q3BSP/Q3BSPFileParser.cpp.o
 
 AssetLib/Q3BSP/Q3BSPFileParser.i: AssetLib/Q3BSP/Q3BSPFileParser.cpp.i
@@ -2805,7 +2733,7 @@ AssetLib/Q3BSP/Q3BSPFileParser.i: AssetLib/Q3BSP/Q3BSPFileParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/Q3BSP/Q3BSPFileParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.i
 .PHONY : AssetLib/Q3BSP/Q3BSPFileParser.cpp.i
 
 AssetLib/Q3BSP/Q3BSPFileParser.s: AssetLib/Q3BSP/Q3BSPFileParser.cpp.s
@@ -2813,7 +2741,7 @@ AssetLib/Q3BSP/Q3BSPFileParser.s: AssetLib/Q3BSP/Q3BSPFileParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Q3BSP/Q3BSPFileParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3BSP/Q3BSPFileParser.cpp.s
 .PHONY : AssetLib/Q3BSP/Q3BSPFileParser.cpp.s
 
 AssetLib/Q3D/Q3DLoader.o: AssetLib/Q3D/Q3DLoader.cpp.o
@@ -2821,7 +2749,7 @@ AssetLib/Q3D/Q3DLoader.o: AssetLib/Q3D/Q3DLoader.cpp.o
 
 # target to build an object file
 AssetLib/Q3D/Q3DLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.o
 .PHONY : AssetLib/Q3D/Q3DLoader.cpp.o
 
 AssetLib/Q3D/Q3DLoader.i: AssetLib/Q3D/Q3DLoader.cpp.i
@@ -2829,7 +2757,7 @@ AssetLib/Q3D/Q3DLoader.i: AssetLib/Q3D/Q3DLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Q3D/Q3DLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.i
 .PHONY : AssetLib/Q3D/Q3DLoader.cpp.i
 
 AssetLib/Q3D/Q3DLoader.s: AssetLib/Q3D/Q3DLoader.cpp.s
@@ -2837,7 +2765,7 @@ AssetLib/Q3D/Q3DLoader.s: AssetLib/Q3D/Q3DLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Q3D/Q3DLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Q3D/Q3DLoader.cpp.s
 .PHONY : AssetLib/Q3D/Q3DLoader.cpp.s
 
 AssetLib/Raw/RawLoader.o: AssetLib/Raw/RawLoader.cpp.o
@@ -2845,7 +2773,7 @@ AssetLib/Raw/RawLoader.o: AssetLib/Raw/RawLoader.cpp.o
 
 # target to build an object file
 AssetLib/Raw/RawLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.o
 .PHONY : AssetLib/Raw/RawLoader.cpp.o
 
 AssetLib/Raw/RawLoader.i: AssetLib/Raw/RawLoader.cpp.i
@@ -2853,7 +2781,7 @@ AssetLib/Raw/RawLoader.i: AssetLib/Raw/RawLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Raw/RawLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.i
 .PHONY : AssetLib/Raw/RawLoader.cpp.i
 
 AssetLib/Raw/RawLoader.s: AssetLib/Raw/RawLoader.cpp.s
@@ -2861,7 +2789,7 @@ AssetLib/Raw/RawLoader.s: AssetLib/Raw/RawLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Raw/RawLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Raw/RawLoader.cpp.s
 .PHONY : AssetLib/Raw/RawLoader.cpp.s
 
 AssetLib/SIB/SIBImporter.o: AssetLib/SIB/SIBImporter.cpp.o
@@ -2869,7 +2797,7 @@ AssetLib/SIB/SIBImporter.o: AssetLib/SIB/SIBImporter.cpp.o
 
 # target to build an object file
 AssetLib/SIB/SIBImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.o
 .PHONY : AssetLib/SIB/SIBImporter.cpp.o
 
 AssetLib/SIB/SIBImporter.i: AssetLib/SIB/SIBImporter.cpp.i
@@ -2877,7 +2805,7 @@ AssetLib/SIB/SIBImporter.i: AssetLib/SIB/SIBImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/SIB/SIBImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.i
 .PHONY : AssetLib/SIB/SIBImporter.cpp.i
 
 AssetLib/SIB/SIBImporter.s: AssetLib/SIB/SIBImporter.cpp.s
@@ -2885,7 +2813,7 @@ AssetLib/SIB/SIBImporter.s: AssetLib/SIB/SIBImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/SIB/SIBImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SIB/SIBImporter.cpp.s
 .PHONY : AssetLib/SIB/SIBImporter.cpp.s
 
 AssetLib/SMD/SMDLoader.o: AssetLib/SMD/SMDLoader.cpp.o
@@ -2893,7 +2821,7 @@ AssetLib/SMD/SMDLoader.o: AssetLib/SMD/SMDLoader.cpp.o
 
 # target to build an object file
 AssetLib/SMD/SMDLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.o
 .PHONY : AssetLib/SMD/SMDLoader.cpp.o
 
 AssetLib/SMD/SMDLoader.i: AssetLib/SMD/SMDLoader.cpp.i
@@ -2901,7 +2829,7 @@ AssetLib/SMD/SMDLoader.i: AssetLib/SMD/SMDLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/SMD/SMDLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.i
 .PHONY : AssetLib/SMD/SMDLoader.cpp.i
 
 AssetLib/SMD/SMDLoader.s: AssetLib/SMD/SMDLoader.cpp.s
@@ -2909,7 +2837,7 @@ AssetLib/SMD/SMDLoader.s: AssetLib/SMD/SMDLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/SMD/SMDLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/SMD/SMDLoader.cpp.s
 .PHONY : AssetLib/SMD/SMDLoader.cpp.s
 
 AssetLib/STEPParser/STEPFileEncoding.o: AssetLib/STEPParser/STEPFileEncoding.cpp.o
@@ -2917,7 +2845,7 @@ AssetLib/STEPParser/STEPFileEncoding.o: AssetLib/STEPParser/STEPFileEncoding.cpp
 
 # target to build an object file
 AssetLib/STEPParser/STEPFileEncoding.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.o
 .PHONY : AssetLib/STEPParser/STEPFileEncoding.cpp.o
 
 AssetLib/STEPParser/STEPFileEncoding.i: AssetLib/STEPParser/STEPFileEncoding.cpp.i
@@ -2925,7 +2853,7 @@ AssetLib/STEPParser/STEPFileEncoding.i: AssetLib/STEPParser/STEPFileEncoding.cpp
 
 # target to preprocess a source file
 AssetLib/STEPParser/STEPFileEncoding.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.i
 .PHONY : AssetLib/STEPParser/STEPFileEncoding.cpp.i
 
 AssetLib/STEPParser/STEPFileEncoding.s: AssetLib/STEPParser/STEPFileEncoding.cpp.s
@@ -2933,7 +2861,7 @@ AssetLib/STEPParser/STEPFileEncoding.s: AssetLib/STEPParser/STEPFileEncoding.cpp
 
 # target to generate assembly for a file
 AssetLib/STEPParser/STEPFileEncoding.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileEncoding.cpp.s
 .PHONY : AssetLib/STEPParser/STEPFileEncoding.cpp.s
 
 AssetLib/STEPParser/STEPFileReader.o: AssetLib/STEPParser/STEPFileReader.cpp.o
@@ -2941,7 +2869,7 @@ AssetLib/STEPParser/STEPFileReader.o: AssetLib/STEPParser/STEPFileReader.cpp.o
 
 # target to build an object file
 AssetLib/STEPParser/STEPFileReader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.o
 .PHONY : AssetLib/STEPParser/STEPFileReader.cpp.o
 
 AssetLib/STEPParser/STEPFileReader.i: AssetLib/STEPParser/STEPFileReader.cpp.i
@@ -2949,7 +2877,7 @@ AssetLib/STEPParser/STEPFileReader.i: AssetLib/STEPParser/STEPFileReader.cpp.i
 
 # target to preprocess a source file
 AssetLib/STEPParser/STEPFileReader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.i
 .PHONY : AssetLib/STEPParser/STEPFileReader.cpp.i
 
 AssetLib/STEPParser/STEPFileReader.s: AssetLib/STEPParser/STEPFileReader.cpp.s
@@ -2957,7 +2885,7 @@ AssetLib/STEPParser/STEPFileReader.s: AssetLib/STEPParser/STEPFileReader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/STEPParser/STEPFileReader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STEPParser/STEPFileReader.cpp.s
 .PHONY : AssetLib/STEPParser/STEPFileReader.cpp.s
 
 AssetLib/STL/STLExporter.o: AssetLib/STL/STLExporter.cpp.o
@@ -2965,7 +2893,7 @@ AssetLib/STL/STLExporter.o: AssetLib/STL/STLExporter.cpp.o
 
 # target to build an object file
 AssetLib/STL/STLExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.o
 .PHONY : AssetLib/STL/STLExporter.cpp.o
 
 AssetLib/STL/STLExporter.i: AssetLib/STL/STLExporter.cpp.i
@@ -2973,7 +2901,7 @@ AssetLib/STL/STLExporter.i: AssetLib/STL/STLExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/STL/STLExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.i
 .PHONY : AssetLib/STL/STLExporter.cpp.i
 
 AssetLib/STL/STLExporter.s: AssetLib/STL/STLExporter.cpp.s
@@ -2981,7 +2909,7 @@ AssetLib/STL/STLExporter.s: AssetLib/STL/STLExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/STL/STLExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLExporter.cpp.s
 .PHONY : AssetLib/STL/STLExporter.cpp.s
 
 AssetLib/STL/STLLoader.o: AssetLib/STL/STLLoader.cpp.o
@@ -2989,7 +2917,7 @@ AssetLib/STL/STLLoader.o: AssetLib/STL/STLLoader.cpp.o
 
 # target to build an object file
 AssetLib/STL/STLLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.o
 .PHONY : AssetLib/STL/STLLoader.cpp.o
 
 AssetLib/STL/STLLoader.i: AssetLib/STL/STLLoader.cpp.i
@@ -2997,7 +2925,7 @@ AssetLib/STL/STLLoader.i: AssetLib/STL/STLLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/STL/STLLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.i
 .PHONY : AssetLib/STL/STLLoader.cpp.i
 
 AssetLib/STL/STLLoader.s: AssetLib/STL/STLLoader.cpp.s
@@ -3005,7 +2933,7 @@ AssetLib/STL/STLLoader.s: AssetLib/STL/STLLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/STL/STLLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/STL/STLLoader.cpp.s
 .PHONY : AssetLib/STL/STLLoader.cpp.s
 
 AssetLib/Step/StepExporter.o: AssetLib/Step/StepExporter.cpp.o
@@ -3013,7 +2941,7 @@ AssetLib/Step/StepExporter.o: AssetLib/Step/StepExporter.cpp.o
 
 # target to build an object file
 AssetLib/Step/StepExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.o
 .PHONY : AssetLib/Step/StepExporter.cpp.o
 
 AssetLib/Step/StepExporter.i: AssetLib/Step/StepExporter.cpp.i
@@ -3021,7 +2949,7 @@ AssetLib/Step/StepExporter.i: AssetLib/Step/StepExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/Step/StepExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.i
 .PHONY : AssetLib/Step/StepExporter.cpp.i
 
 AssetLib/Step/StepExporter.s: AssetLib/Step/StepExporter.cpp.s
@@ -3029,7 +2957,7 @@ AssetLib/Step/StepExporter.s: AssetLib/Step/StepExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Step/StepExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Step/StepExporter.cpp.s
 .PHONY : AssetLib/Step/StepExporter.cpp.s
 
 AssetLib/Terragen/TerragenLoader.o: AssetLib/Terragen/TerragenLoader.cpp.o
@@ -3037,7 +2965,7 @@ AssetLib/Terragen/TerragenLoader.o: AssetLib/Terragen/TerragenLoader.cpp.o
 
 # target to build an object file
 AssetLib/Terragen/TerragenLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.o
 .PHONY : AssetLib/Terragen/TerragenLoader.cpp.o
 
 AssetLib/Terragen/TerragenLoader.i: AssetLib/Terragen/TerragenLoader.cpp.i
@@ -3045,7 +2973,7 @@ AssetLib/Terragen/TerragenLoader.i: AssetLib/Terragen/TerragenLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Terragen/TerragenLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.i
 .PHONY : AssetLib/Terragen/TerragenLoader.cpp.i
 
 AssetLib/Terragen/TerragenLoader.s: AssetLib/Terragen/TerragenLoader.cpp.s
@@ -3053,7 +2981,7 @@ AssetLib/Terragen/TerragenLoader.s: AssetLib/Terragen/TerragenLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Terragen/TerragenLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Terragen/TerragenLoader.cpp.s
 .PHONY : AssetLib/Terragen/TerragenLoader.cpp.s
 
 AssetLib/Unreal/UnrealLoader.o: AssetLib/Unreal/UnrealLoader.cpp.o
@@ -3061,7 +2989,7 @@ AssetLib/Unreal/UnrealLoader.o: AssetLib/Unreal/UnrealLoader.cpp.o
 
 # target to build an object file
 AssetLib/Unreal/UnrealLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.o
 .PHONY : AssetLib/Unreal/UnrealLoader.cpp.o
 
 AssetLib/Unreal/UnrealLoader.i: AssetLib/Unreal/UnrealLoader.cpp.i
@@ -3069,7 +2997,7 @@ AssetLib/Unreal/UnrealLoader.i: AssetLib/Unreal/UnrealLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/Unreal/UnrealLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.i
 .PHONY : AssetLib/Unreal/UnrealLoader.cpp.i
 
 AssetLib/Unreal/UnrealLoader.s: AssetLib/Unreal/UnrealLoader.cpp.s
@@ -3077,15 +3005,39 @@ AssetLib/Unreal/UnrealLoader.s: AssetLib/Unreal/UnrealLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/Unreal/UnrealLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/Unreal/UnrealLoader.cpp.s
 .PHONY : AssetLib/Unreal/UnrealLoader.cpp.s
+
+AssetLib/VRML/VrmlConverter.o: AssetLib/VRML/VrmlConverter.cpp.o
+.PHONY : AssetLib/VRML/VrmlConverter.o
+
+# target to build an object file
+AssetLib/VRML/VrmlConverter.cpp.o:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/VRML/VrmlConverter.cpp.o
+.PHONY : AssetLib/VRML/VrmlConverter.cpp.o
+
+AssetLib/VRML/VrmlConverter.i: AssetLib/VRML/VrmlConverter.cpp.i
+.PHONY : AssetLib/VRML/VrmlConverter.i
+
+# target to preprocess a source file
+AssetLib/VRML/VrmlConverter.cpp.i:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/VRML/VrmlConverter.cpp.i
+.PHONY : AssetLib/VRML/VrmlConverter.cpp.i
+
+AssetLib/VRML/VrmlConverter.s: AssetLib/VRML/VrmlConverter.cpp.s
+.PHONY : AssetLib/VRML/VrmlConverter.s
+
+# target to generate assembly for a file
+AssetLib/VRML/VrmlConverter.cpp.s:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/VRML/VrmlConverter.cpp.s
+.PHONY : AssetLib/VRML/VrmlConverter.cpp.s
 
 AssetLib/X/XFileExporter.o: AssetLib/X/XFileExporter.cpp.o
 .PHONY : AssetLib/X/XFileExporter.o
 
 # target to build an object file
 AssetLib/X/XFileExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.o
 .PHONY : AssetLib/X/XFileExporter.cpp.o
 
 AssetLib/X/XFileExporter.i: AssetLib/X/XFileExporter.cpp.i
@@ -3093,7 +3045,7 @@ AssetLib/X/XFileExporter.i: AssetLib/X/XFileExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/X/XFileExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.i
 .PHONY : AssetLib/X/XFileExporter.cpp.i
 
 AssetLib/X/XFileExporter.s: AssetLib/X/XFileExporter.cpp.s
@@ -3101,7 +3053,7 @@ AssetLib/X/XFileExporter.s: AssetLib/X/XFileExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X/XFileExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileExporter.cpp.s
 .PHONY : AssetLib/X/XFileExporter.cpp.s
 
 AssetLib/X/XFileImporter.o: AssetLib/X/XFileImporter.cpp.o
@@ -3109,7 +3061,7 @@ AssetLib/X/XFileImporter.o: AssetLib/X/XFileImporter.cpp.o
 
 # target to build an object file
 AssetLib/X/XFileImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.o
 .PHONY : AssetLib/X/XFileImporter.cpp.o
 
 AssetLib/X/XFileImporter.i: AssetLib/X/XFileImporter.cpp.i
@@ -3117,7 +3069,7 @@ AssetLib/X/XFileImporter.i: AssetLib/X/XFileImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/X/XFileImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.i
 .PHONY : AssetLib/X/XFileImporter.cpp.i
 
 AssetLib/X/XFileImporter.s: AssetLib/X/XFileImporter.cpp.s
@@ -3125,7 +3077,7 @@ AssetLib/X/XFileImporter.s: AssetLib/X/XFileImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X/XFileImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileImporter.cpp.s
 .PHONY : AssetLib/X/XFileImporter.cpp.s
 
 AssetLib/X/XFileParser.o: AssetLib/X/XFileParser.cpp.o
@@ -3133,7 +3085,7 @@ AssetLib/X/XFileParser.o: AssetLib/X/XFileParser.cpp.o
 
 # target to build an object file
 AssetLib/X/XFileParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.o
 .PHONY : AssetLib/X/XFileParser.cpp.o
 
 AssetLib/X/XFileParser.i: AssetLib/X/XFileParser.cpp.i
@@ -3141,7 +3093,7 @@ AssetLib/X/XFileParser.i: AssetLib/X/XFileParser.cpp.i
 
 # target to preprocess a source file
 AssetLib/X/XFileParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.i
 .PHONY : AssetLib/X/XFileParser.cpp.i
 
 AssetLib/X/XFileParser.s: AssetLib/X/XFileParser.cpp.s
@@ -3149,7 +3101,7 @@ AssetLib/X/XFileParser.s: AssetLib/X/XFileParser.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X/XFileParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X/XFileParser.cpp.s
 .PHONY : AssetLib/X/XFileParser.cpp.s
 
 AssetLib/X3D/X3DExporter.o: AssetLib/X3D/X3DExporter.cpp.o
@@ -3157,7 +3109,7 @@ AssetLib/X3D/X3DExporter.o: AssetLib/X3D/X3DExporter.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.o
 .PHONY : AssetLib/X3D/X3DExporter.cpp.o
 
 AssetLib/X3D/X3DExporter.i: AssetLib/X3D/X3DExporter.cpp.i
@@ -3165,7 +3117,7 @@ AssetLib/X3D/X3DExporter.i: AssetLib/X3D/X3DExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.i
 .PHONY : AssetLib/X3D/X3DExporter.cpp.i
 
 AssetLib/X3D/X3DExporter.s: AssetLib/X3D/X3DExporter.cpp.s
@@ -3173,7 +3125,7 @@ AssetLib/X3D/X3DExporter.s: AssetLib/X3D/X3DExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DExporter.cpp.s
 .PHONY : AssetLib/X3D/X3DExporter.cpp.s
 
 AssetLib/X3D/X3DGeoHelper.o: AssetLib/X3D/X3DGeoHelper.cpp.o
@@ -3181,7 +3133,7 @@ AssetLib/X3D/X3DGeoHelper.o: AssetLib/X3D/X3DGeoHelper.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DGeoHelper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.o
 .PHONY : AssetLib/X3D/X3DGeoHelper.cpp.o
 
 AssetLib/X3D/X3DGeoHelper.i: AssetLib/X3D/X3DGeoHelper.cpp.i
@@ -3189,7 +3141,7 @@ AssetLib/X3D/X3DGeoHelper.i: AssetLib/X3D/X3DGeoHelper.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DGeoHelper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.i
 .PHONY : AssetLib/X3D/X3DGeoHelper.cpp.i
 
 AssetLib/X3D/X3DGeoHelper.s: AssetLib/X3D/X3DGeoHelper.cpp.s
@@ -3197,7 +3149,7 @@ AssetLib/X3D/X3DGeoHelper.s: AssetLib/X3D/X3DGeoHelper.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DGeoHelper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DGeoHelper.cpp.s
 .PHONY : AssetLib/X3D/X3DGeoHelper.cpp.s
 
 AssetLib/X3D/X3DImporter.o: AssetLib/X3D/X3DImporter.cpp.o
@@ -3205,7 +3157,7 @@ AssetLib/X3D/X3DImporter.o: AssetLib/X3D/X3DImporter.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter.cpp.o
 
 AssetLib/X3D/X3DImporter.i: AssetLib/X3D/X3DImporter.cpp.i
@@ -3213,7 +3165,7 @@ AssetLib/X3D/X3DImporter.i: AssetLib/X3D/X3DImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter.cpp.i
 
 AssetLib/X3D/X3DImporter.s: AssetLib/X3D/X3DImporter.cpp.s
@@ -3221,7 +3173,7 @@ AssetLib/X3D/X3DImporter.s: AssetLib/X3D/X3DImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter.cpp.s
 
 AssetLib/X3D/X3DImporter_Geometry2D.o: AssetLib/X3D/X3DImporter_Geometry2D.cpp.o
@@ -3229,7 +3181,7 @@ AssetLib/X3D/X3DImporter_Geometry2D.o: AssetLib/X3D/X3DImporter_Geometry2D.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Geometry2D.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Geometry2D.cpp.o
 
 AssetLib/X3D/X3DImporter_Geometry2D.i: AssetLib/X3D/X3DImporter_Geometry2D.cpp.i
@@ -3237,7 +3189,7 @@ AssetLib/X3D/X3DImporter_Geometry2D.i: AssetLib/X3D/X3DImporter_Geometry2D.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Geometry2D.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Geometry2D.cpp.i
 
 AssetLib/X3D/X3DImporter_Geometry2D.s: AssetLib/X3D/X3DImporter_Geometry2D.cpp.s
@@ -3245,7 +3197,7 @@ AssetLib/X3D/X3DImporter_Geometry2D.s: AssetLib/X3D/X3DImporter_Geometry2D.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Geometry2D.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry2D.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Geometry2D.cpp.s
 
 AssetLib/X3D/X3DImporter_Geometry3D.o: AssetLib/X3D/X3DImporter_Geometry3D.cpp.o
@@ -3253,7 +3205,7 @@ AssetLib/X3D/X3DImporter_Geometry3D.o: AssetLib/X3D/X3DImporter_Geometry3D.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Geometry3D.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Geometry3D.cpp.o
 
 AssetLib/X3D/X3DImporter_Geometry3D.i: AssetLib/X3D/X3DImporter_Geometry3D.cpp.i
@@ -3261,7 +3213,7 @@ AssetLib/X3D/X3DImporter_Geometry3D.i: AssetLib/X3D/X3DImporter_Geometry3D.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Geometry3D.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Geometry3D.cpp.i
 
 AssetLib/X3D/X3DImporter_Geometry3D.s: AssetLib/X3D/X3DImporter_Geometry3D.cpp.s
@@ -3269,7 +3221,7 @@ AssetLib/X3D/X3DImporter_Geometry3D.s: AssetLib/X3D/X3DImporter_Geometry3D.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Geometry3D.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Geometry3D.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Geometry3D.cpp.s
 
 AssetLib/X3D/X3DImporter_Group.o: AssetLib/X3D/X3DImporter_Group.cpp.o
@@ -3277,7 +3229,7 @@ AssetLib/X3D/X3DImporter_Group.o: AssetLib/X3D/X3DImporter_Group.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Group.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Group.cpp.o
 
 AssetLib/X3D/X3DImporter_Group.i: AssetLib/X3D/X3DImporter_Group.cpp.i
@@ -3285,7 +3237,7 @@ AssetLib/X3D/X3DImporter_Group.i: AssetLib/X3D/X3DImporter_Group.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Group.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Group.cpp.i
 
 AssetLib/X3D/X3DImporter_Group.s: AssetLib/X3D/X3DImporter_Group.cpp.s
@@ -3293,7 +3245,7 @@ AssetLib/X3D/X3DImporter_Group.s: AssetLib/X3D/X3DImporter_Group.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Group.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Group.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Group.cpp.s
 
 AssetLib/X3D/X3DImporter_Light.o: AssetLib/X3D/X3DImporter_Light.cpp.o
@@ -3301,7 +3253,7 @@ AssetLib/X3D/X3DImporter_Light.o: AssetLib/X3D/X3DImporter_Light.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Light.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Light.cpp.o
 
 AssetLib/X3D/X3DImporter_Light.i: AssetLib/X3D/X3DImporter_Light.cpp.i
@@ -3309,7 +3261,7 @@ AssetLib/X3D/X3DImporter_Light.i: AssetLib/X3D/X3DImporter_Light.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Light.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Light.cpp.i
 
 AssetLib/X3D/X3DImporter_Light.s: AssetLib/X3D/X3DImporter_Light.cpp.s
@@ -3317,7 +3269,7 @@ AssetLib/X3D/X3DImporter_Light.s: AssetLib/X3D/X3DImporter_Light.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Light.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Light.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Light.cpp.s
 
 AssetLib/X3D/X3DImporter_Metadata.o: AssetLib/X3D/X3DImporter_Metadata.cpp.o
@@ -3325,7 +3277,7 @@ AssetLib/X3D/X3DImporter_Metadata.o: AssetLib/X3D/X3DImporter_Metadata.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Metadata.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Metadata.cpp.o
 
 AssetLib/X3D/X3DImporter_Metadata.i: AssetLib/X3D/X3DImporter_Metadata.cpp.i
@@ -3333,7 +3285,7 @@ AssetLib/X3D/X3DImporter_Metadata.i: AssetLib/X3D/X3DImporter_Metadata.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Metadata.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Metadata.cpp.i
 
 AssetLib/X3D/X3DImporter_Metadata.s: AssetLib/X3D/X3DImporter_Metadata.cpp.s
@@ -3341,7 +3293,7 @@ AssetLib/X3D/X3DImporter_Metadata.s: AssetLib/X3D/X3DImporter_Metadata.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Metadata.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Metadata.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Metadata.cpp.s
 
 AssetLib/X3D/X3DImporter_Networking.o: AssetLib/X3D/X3DImporter_Networking.cpp.o
@@ -3349,7 +3301,7 @@ AssetLib/X3D/X3DImporter_Networking.o: AssetLib/X3D/X3DImporter_Networking.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Networking.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Networking.cpp.o
 
 AssetLib/X3D/X3DImporter_Networking.i: AssetLib/X3D/X3DImporter_Networking.cpp.i
@@ -3357,7 +3309,7 @@ AssetLib/X3D/X3DImporter_Networking.i: AssetLib/X3D/X3DImporter_Networking.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Networking.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Networking.cpp.i
 
 AssetLib/X3D/X3DImporter_Networking.s: AssetLib/X3D/X3DImporter_Networking.cpp.s
@@ -3365,7 +3317,7 @@ AssetLib/X3D/X3DImporter_Networking.s: AssetLib/X3D/X3DImporter_Networking.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Networking.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Networking.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Networking.cpp.s
 
 AssetLib/X3D/X3DImporter_Postprocess.o: AssetLib/X3D/X3DImporter_Postprocess.cpp.o
@@ -3373,7 +3325,7 @@ AssetLib/X3D/X3DImporter_Postprocess.o: AssetLib/X3D/X3DImporter_Postprocess.cpp
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Postprocess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Postprocess.cpp.o
 
 AssetLib/X3D/X3DImporter_Postprocess.i: AssetLib/X3D/X3DImporter_Postprocess.cpp.i
@@ -3381,7 +3333,7 @@ AssetLib/X3D/X3DImporter_Postprocess.i: AssetLib/X3D/X3DImporter_Postprocess.cpp
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Postprocess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Postprocess.cpp.i
 
 AssetLib/X3D/X3DImporter_Postprocess.s: AssetLib/X3D/X3DImporter_Postprocess.cpp.s
@@ -3389,7 +3341,7 @@ AssetLib/X3D/X3DImporter_Postprocess.s: AssetLib/X3D/X3DImporter_Postprocess.cpp
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Postprocess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Postprocess.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Postprocess.cpp.s
 
 AssetLib/X3D/X3DImporter_Rendering.o: AssetLib/X3D/X3DImporter_Rendering.cpp.o
@@ -3397,7 +3349,7 @@ AssetLib/X3D/X3DImporter_Rendering.o: AssetLib/X3D/X3DImporter_Rendering.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Rendering.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Rendering.cpp.o
 
 AssetLib/X3D/X3DImporter_Rendering.i: AssetLib/X3D/X3DImporter_Rendering.cpp.i
@@ -3405,7 +3357,7 @@ AssetLib/X3D/X3DImporter_Rendering.i: AssetLib/X3D/X3DImporter_Rendering.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Rendering.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Rendering.cpp.i
 
 AssetLib/X3D/X3DImporter_Rendering.s: AssetLib/X3D/X3DImporter_Rendering.cpp.s
@@ -3413,7 +3365,7 @@ AssetLib/X3D/X3DImporter_Rendering.s: AssetLib/X3D/X3DImporter_Rendering.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Rendering.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Rendering.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Rendering.cpp.s
 
 AssetLib/X3D/X3DImporter_Shape.o: AssetLib/X3D/X3DImporter_Shape.cpp.o
@@ -3421,7 +3373,7 @@ AssetLib/X3D/X3DImporter_Shape.o: AssetLib/X3D/X3DImporter_Shape.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Shape.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Shape.cpp.o
 
 AssetLib/X3D/X3DImporter_Shape.i: AssetLib/X3D/X3DImporter_Shape.cpp.i
@@ -3429,7 +3381,7 @@ AssetLib/X3D/X3DImporter_Shape.i: AssetLib/X3D/X3DImporter_Shape.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Shape.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Shape.cpp.i
 
 AssetLib/X3D/X3DImporter_Shape.s: AssetLib/X3D/X3DImporter_Shape.cpp.s
@@ -3437,7 +3389,7 @@ AssetLib/X3D/X3DImporter_Shape.s: AssetLib/X3D/X3DImporter_Shape.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Shape.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Shape.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Shape.cpp.s
 
 AssetLib/X3D/X3DImporter_Texturing.o: AssetLib/X3D/X3DImporter_Texturing.cpp.o
@@ -3445,7 +3397,7 @@ AssetLib/X3D/X3DImporter_Texturing.o: AssetLib/X3D/X3DImporter_Texturing.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DImporter_Texturing.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.o
 .PHONY : AssetLib/X3D/X3DImporter_Texturing.cpp.o
 
 AssetLib/X3D/X3DImporter_Texturing.i: AssetLib/X3D/X3DImporter_Texturing.cpp.i
@@ -3453,7 +3405,7 @@ AssetLib/X3D/X3DImporter_Texturing.i: AssetLib/X3D/X3DImporter_Texturing.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DImporter_Texturing.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.i
 .PHONY : AssetLib/X3D/X3DImporter_Texturing.cpp.i
 
 AssetLib/X3D/X3DImporter_Texturing.s: AssetLib/X3D/X3DImporter_Texturing.cpp.s
@@ -3461,7 +3413,7 @@ AssetLib/X3D/X3DImporter_Texturing.s: AssetLib/X3D/X3DImporter_Texturing.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DImporter_Texturing.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DImporter_Texturing.cpp.s
 .PHONY : AssetLib/X3D/X3DImporter_Texturing.cpp.s
 
 AssetLib/X3D/X3DXmlHelper.o: AssetLib/X3D/X3DXmlHelper.cpp.o
@@ -3469,7 +3421,7 @@ AssetLib/X3D/X3DXmlHelper.o: AssetLib/X3D/X3DXmlHelper.cpp.o
 
 # target to build an object file
 AssetLib/X3D/X3DXmlHelper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.o
 .PHONY : AssetLib/X3D/X3DXmlHelper.cpp.o
 
 AssetLib/X3D/X3DXmlHelper.i: AssetLib/X3D/X3DXmlHelper.cpp.i
@@ -3477,7 +3429,7 @@ AssetLib/X3D/X3DXmlHelper.i: AssetLib/X3D/X3DXmlHelper.cpp.i
 
 # target to preprocess a source file
 AssetLib/X3D/X3DXmlHelper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.i
 .PHONY : AssetLib/X3D/X3DXmlHelper.cpp.i
 
 AssetLib/X3D/X3DXmlHelper.s: AssetLib/X3D/X3DXmlHelper.cpp.s
@@ -3485,7 +3437,7 @@ AssetLib/X3D/X3DXmlHelper.s: AssetLib/X3D/X3DXmlHelper.cpp.s
 
 # target to generate assembly for a file
 AssetLib/X3D/X3DXmlHelper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/X3D/X3DXmlHelper.cpp.s
 .PHONY : AssetLib/X3D/X3DXmlHelper.cpp.s
 
 AssetLib/XGL/XGLLoader.o: AssetLib/XGL/XGLLoader.cpp.o
@@ -3493,7 +3445,7 @@ AssetLib/XGL/XGLLoader.o: AssetLib/XGL/XGLLoader.cpp.o
 
 # target to build an object file
 AssetLib/XGL/XGLLoader.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.o
 .PHONY : AssetLib/XGL/XGLLoader.cpp.o
 
 AssetLib/XGL/XGLLoader.i: AssetLib/XGL/XGLLoader.cpp.i
@@ -3501,7 +3453,7 @@ AssetLib/XGL/XGLLoader.i: AssetLib/XGL/XGLLoader.cpp.i
 
 # target to preprocess a source file
 AssetLib/XGL/XGLLoader.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.i
 .PHONY : AssetLib/XGL/XGLLoader.cpp.i
 
 AssetLib/XGL/XGLLoader.s: AssetLib/XGL/XGLLoader.cpp.s
@@ -3509,39 +3461,15 @@ AssetLib/XGL/XGLLoader.s: AssetLib/XGL/XGLLoader.cpp.s
 
 # target to generate assembly for a file
 AssetLib/XGL/XGLLoader.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/XGL/XGLLoader.cpp.s
 .PHONY : AssetLib/XGL/XGLLoader.cpp.s
-
-AssetLib/glTF/glTFCommon.o: AssetLib/glTF/glTFCommon.cpp.o
-.PHONY : AssetLib/glTF/glTFCommon.o
-
-# target to build an object file
-AssetLib/glTF/glTFCommon.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFCommon.cpp.o
-.PHONY : AssetLib/glTF/glTFCommon.cpp.o
-
-AssetLib/glTF/glTFCommon.i: AssetLib/glTF/glTFCommon.cpp.i
-.PHONY : AssetLib/glTF/glTFCommon.i
-
-# target to preprocess a source file
-AssetLib/glTF/glTFCommon.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFCommon.cpp.i
-.PHONY : AssetLib/glTF/glTFCommon.cpp.i
-
-AssetLib/glTF/glTFCommon.s: AssetLib/glTF/glTFCommon.cpp.s
-.PHONY : AssetLib/glTF/glTFCommon.s
-
-# target to generate assembly for a file
-AssetLib/glTF/glTFCommon.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFCommon.cpp.s
-.PHONY : AssetLib/glTF/glTFCommon.cpp.s
 
 AssetLib/glTF/glTFExporter.o: AssetLib/glTF/glTFExporter.cpp.o
 .PHONY : AssetLib/glTF/glTFExporter.o
 
 # target to build an object file
 AssetLib/glTF/glTFExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.o
 .PHONY : AssetLib/glTF/glTFExporter.cpp.o
 
 AssetLib/glTF/glTFExporter.i: AssetLib/glTF/glTFExporter.cpp.i
@@ -3549,7 +3477,7 @@ AssetLib/glTF/glTFExporter.i: AssetLib/glTF/glTFExporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/glTF/glTFExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.i
 .PHONY : AssetLib/glTF/glTFExporter.cpp.i
 
 AssetLib/glTF/glTFExporter.s: AssetLib/glTF/glTFExporter.cpp.s
@@ -3557,7 +3485,7 @@ AssetLib/glTF/glTFExporter.s: AssetLib/glTF/glTFExporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/glTF/glTFExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFExporter.cpp.s
 .PHONY : AssetLib/glTF/glTFExporter.cpp.s
 
 AssetLib/glTF/glTFImporter.o: AssetLib/glTF/glTFImporter.cpp.o
@@ -3565,7 +3493,7 @@ AssetLib/glTF/glTFImporter.o: AssetLib/glTF/glTFImporter.cpp.o
 
 # target to build an object file
 AssetLib/glTF/glTFImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.o
 .PHONY : AssetLib/glTF/glTFImporter.cpp.o
 
 AssetLib/glTF/glTFImporter.i: AssetLib/glTF/glTFImporter.cpp.i
@@ -3573,7 +3501,7 @@ AssetLib/glTF/glTFImporter.i: AssetLib/glTF/glTFImporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/glTF/glTFImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.i
 .PHONY : AssetLib/glTF/glTFImporter.cpp.i
 
 AssetLib/glTF/glTFImporter.s: AssetLib/glTF/glTFImporter.cpp.s
@@ -3581,7 +3509,7 @@ AssetLib/glTF/glTFImporter.s: AssetLib/glTF/glTFImporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/glTF/glTFImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF/glTFImporter.cpp.s
 .PHONY : AssetLib/glTF/glTFImporter.cpp.s
 
 AssetLib/glTF2/glTF2Exporter.o: AssetLib/glTF2/glTF2Exporter.cpp.o
@@ -3589,7 +3517,7 @@ AssetLib/glTF2/glTF2Exporter.o: AssetLib/glTF2/glTF2Exporter.cpp.o
 
 # target to build an object file
 AssetLib/glTF2/glTF2Exporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.o
 .PHONY : AssetLib/glTF2/glTF2Exporter.cpp.o
 
 AssetLib/glTF2/glTF2Exporter.i: AssetLib/glTF2/glTF2Exporter.cpp.i
@@ -3597,7 +3525,7 @@ AssetLib/glTF2/glTF2Exporter.i: AssetLib/glTF2/glTF2Exporter.cpp.i
 
 # target to preprocess a source file
 AssetLib/glTF2/glTF2Exporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.i
 .PHONY : AssetLib/glTF2/glTF2Exporter.cpp.i
 
 AssetLib/glTF2/glTF2Exporter.s: AssetLib/glTF2/glTF2Exporter.cpp.s
@@ -3605,7 +3533,7 @@ AssetLib/glTF2/glTF2Exporter.s: AssetLib/glTF2/glTF2Exporter.cpp.s
 
 # target to generate assembly for a file
 AssetLib/glTF2/glTF2Exporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Exporter.cpp.s
 .PHONY : AssetLib/glTF2/glTF2Exporter.cpp.s
 
 AssetLib/glTF2/glTF2Importer.o: AssetLib/glTF2/glTF2Importer.cpp.o
@@ -3613,7 +3541,7 @@ AssetLib/glTF2/glTF2Importer.o: AssetLib/glTF2/glTF2Importer.cpp.o
 
 # target to build an object file
 AssetLib/glTF2/glTF2Importer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.o
 .PHONY : AssetLib/glTF2/glTF2Importer.cpp.o
 
 AssetLib/glTF2/glTF2Importer.i: AssetLib/glTF2/glTF2Importer.cpp.i
@@ -3621,7 +3549,7 @@ AssetLib/glTF2/glTF2Importer.i: AssetLib/glTF2/glTF2Importer.cpp.i
 
 # target to preprocess a source file
 AssetLib/glTF2/glTF2Importer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.i
 .PHONY : AssetLib/glTF2/glTF2Importer.cpp.i
 
 AssetLib/glTF2/glTF2Importer.s: AssetLib/glTF2/glTF2Importer.cpp.s
@@ -3629,15 +3557,39 @@ AssetLib/glTF2/glTF2Importer.s: AssetLib/glTF2/glTF2Importer.cpp.s
 
 # target to generate assembly for a file
 AssetLib/glTF2/glTF2Importer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTF2/glTF2Importer.cpp.s
 .PHONY : AssetLib/glTF2/glTF2Importer.cpp.s
+
+AssetLib/glTFCommon/glTFCommon.o: AssetLib/glTFCommon/glTFCommon.cpp.o
+.PHONY : AssetLib/glTFCommon/glTFCommon.o
+
+# target to build an object file
+AssetLib/glTFCommon/glTFCommon.cpp.o:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTFCommon/glTFCommon.cpp.o
+.PHONY : AssetLib/glTFCommon/glTFCommon.cpp.o
+
+AssetLib/glTFCommon/glTFCommon.i: AssetLib/glTFCommon/glTFCommon.cpp.i
+.PHONY : AssetLib/glTFCommon/glTFCommon.i
+
+# target to preprocess a source file
+AssetLib/glTFCommon/glTFCommon.cpp.i:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTFCommon/glTFCommon.cpp.i
+.PHONY : AssetLib/glTFCommon/glTFCommon.cpp.i
+
+AssetLib/glTFCommon/glTFCommon.s: AssetLib/glTFCommon/glTFCommon.cpp.s
+.PHONY : AssetLib/glTFCommon/glTFCommon.s
+
+# target to generate assembly for a file
+AssetLib/glTFCommon/glTFCommon.cpp.s:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/AssetLib/glTFCommon/glTFCommon.cpp.s
+.PHONY : AssetLib/glTFCommon/glTFCommon.cpp.s
 
 CApi/AssimpCExport.o: CApi/AssimpCExport.cpp.o
 .PHONY : CApi/AssimpCExport.o
 
 # target to build an object file
 CApi/AssimpCExport.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.o
 .PHONY : CApi/AssimpCExport.cpp.o
 
 CApi/AssimpCExport.i: CApi/AssimpCExport.cpp.i
@@ -3645,7 +3597,7 @@ CApi/AssimpCExport.i: CApi/AssimpCExport.cpp.i
 
 # target to preprocess a source file
 CApi/AssimpCExport.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.i
 .PHONY : CApi/AssimpCExport.cpp.i
 
 CApi/AssimpCExport.s: CApi/AssimpCExport.cpp.s
@@ -3653,7 +3605,7 @@ CApi/AssimpCExport.s: CApi/AssimpCExport.cpp.s
 
 # target to generate assembly for a file
 CApi/AssimpCExport.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/AssimpCExport.cpp.s
 .PHONY : CApi/AssimpCExport.cpp.s
 
 CApi/CInterfaceIOWrapper.o: CApi/CInterfaceIOWrapper.cpp.o
@@ -3661,7 +3613,7 @@ CApi/CInterfaceIOWrapper.o: CApi/CInterfaceIOWrapper.cpp.o
 
 # target to build an object file
 CApi/CInterfaceIOWrapper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.o
 .PHONY : CApi/CInterfaceIOWrapper.cpp.o
 
 CApi/CInterfaceIOWrapper.i: CApi/CInterfaceIOWrapper.cpp.i
@@ -3669,7 +3621,7 @@ CApi/CInterfaceIOWrapper.i: CApi/CInterfaceIOWrapper.cpp.i
 
 # target to preprocess a source file
 CApi/CInterfaceIOWrapper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.i
 .PHONY : CApi/CInterfaceIOWrapper.cpp.i
 
 CApi/CInterfaceIOWrapper.s: CApi/CInterfaceIOWrapper.cpp.s
@@ -3677,7 +3629,7 @@ CApi/CInterfaceIOWrapper.s: CApi/CInterfaceIOWrapper.cpp.s
 
 # target to generate assembly for a file
 CApi/CInterfaceIOWrapper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/CApi/CInterfaceIOWrapper.cpp.s
 .PHONY : CApi/CInterfaceIOWrapper.cpp.s
 
 Common/AssertHandler.o: Common/AssertHandler.cpp.o
@@ -3685,7 +3637,7 @@ Common/AssertHandler.o: Common/AssertHandler.cpp.o
 
 # target to build an object file
 Common/AssertHandler.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.o
 .PHONY : Common/AssertHandler.cpp.o
 
 Common/AssertHandler.i: Common/AssertHandler.cpp.i
@@ -3693,7 +3645,7 @@ Common/AssertHandler.i: Common/AssertHandler.cpp.i
 
 # target to preprocess a source file
 Common/AssertHandler.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.i
 .PHONY : Common/AssertHandler.cpp.i
 
 Common/AssertHandler.s: Common/AssertHandler.cpp.s
@@ -3701,7 +3653,7 @@ Common/AssertHandler.s: Common/AssertHandler.cpp.s
 
 # target to generate assembly for a file
 Common/AssertHandler.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/AssertHandler.cpp.s
 .PHONY : Common/AssertHandler.cpp.s
 
 Common/Assimp.o: Common/Assimp.cpp.o
@@ -3709,7 +3661,7 @@ Common/Assimp.o: Common/Assimp.cpp.o
 
 # target to build an object file
 Common/Assimp.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.o
 .PHONY : Common/Assimp.cpp.o
 
 Common/Assimp.i: Common/Assimp.cpp.i
@@ -3717,7 +3669,7 @@ Common/Assimp.i: Common/Assimp.cpp.i
 
 # target to preprocess a source file
 Common/Assimp.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.i
 .PHONY : Common/Assimp.cpp.i
 
 Common/Assimp.s: Common/Assimp.cpp.s
@@ -3725,7 +3677,7 @@ Common/Assimp.s: Common/Assimp.cpp.s
 
 # target to generate assembly for a file
 Common/Assimp.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Assimp.cpp.s
 .PHONY : Common/Assimp.cpp.s
 
 Common/Base64.o: Common/Base64.cpp.o
@@ -3733,7 +3685,7 @@ Common/Base64.o: Common/Base64.cpp.o
 
 # target to build an object file
 Common/Base64.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.o
 .PHONY : Common/Base64.cpp.o
 
 Common/Base64.i: Common/Base64.cpp.i
@@ -3741,7 +3693,7 @@ Common/Base64.i: Common/Base64.cpp.i
 
 # target to preprocess a source file
 Common/Base64.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.i
 .PHONY : Common/Base64.cpp.i
 
 Common/Base64.s: Common/Base64.cpp.s
@@ -3749,7 +3701,7 @@ Common/Base64.s: Common/Base64.cpp.s
 
 # target to generate assembly for a file
 Common/Base64.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Base64.cpp.s
 .PHONY : Common/Base64.cpp.s
 
 Common/BaseImporter.o: Common/BaseImporter.cpp.o
@@ -3757,7 +3709,7 @@ Common/BaseImporter.o: Common/BaseImporter.cpp.o
 
 # target to build an object file
 Common/BaseImporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.o
 .PHONY : Common/BaseImporter.cpp.o
 
 Common/BaseImporter.i: Common/BaseImporter.cpp.i
@@ -3765,7 +3717,7 @@ Common/BaseImporter.i: Common/BaseImporter.cpp.i
 
 # target to preprocess a source file
 Common/BaseImporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.i
 .PHONY : Common/BaseImporter.cpp.i
 
 Common/BaseImporter.s: Common/BaseImporter.cpp.s
@@ -3773,7 +3725,7 @@ Common/BaseImporter.s: Common/BaseImporter.cpp.s
 
 # target to generate assembly for a file
 Common/BaseImporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseImporter.cpp.s
 .PHONY : Common/BaseImporter.cpp.s
 
 Common/BaseProcess.o: Common/BaseProcess.cpp.o
@@ -3781,7 +3733,7 @@ Common/BaseProcess.o: Common/BaseProcess.cpp.o
 
 # target to build an object file
 Common/BaseProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.o
 .PHONY : Common/BaseProcess.cpp.o
 
 Common/BaseProcess.i: Common/BaseProcess.cpp.i
@@ -3789,7 +3741,7 @@ Common/BaseProcess.i: Common/BaseProcess.cpp.i
 
 # target to preprocess a source file
 Common/BaseProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.i
 .PHONY : Common/BaseProcess.cpp.i
 
 Common/BaseProcess.s: Common/BaseProcess.cpp.s
@@ -3797,7 +3749,7 @@ Common/BaseProcess.s: Common/BaseProcess.cpp.s
 
 # target to generate assembly for a file
 Common/BaseProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/BaseProcess.cpp.s
 .PHONY : Common/BaseProcess.cpp.s
 
 Common/Bitmap.o: Common/Bitmap.cpp.o
@@ -3805,7 +3757,7 @@ Common/Bitmap.o: Common/Bitmap.cpp.o
 
 # target to build an object file
 Common/Bitmap.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.o
 .PHONY : Common/Bitmap.cpp.o
 
 Common/Bitmap.i: Common/Bitmap.cpp.i
@@ -3813,7 +3765,7 @@ Common/Bitmap.i: Common/Bitmap.cpp.i
 
 # target to preprocess a source file
 Common/Bitmap.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.i
 .PHONY : Common/Bitmap.cpp.i
 
 Common/Bitmap.s: Common/Bitmap.cpp.s
@@ -3821,7 +3773,7 @@ Common/Bitmap.s: Common/Bitmap.cpp.s
 
 # target to generate assembly for a file
 Common/Bitmap.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Bitmap.cpp.s
 .PHONY : Common/Bitmap.cpp.s
 
 Common/Compression.o: Common/Compression.cpp.o
@@ -3829,7 +3781,7 @@ Common/Compression.o: Common/Compression.cpp.o
 
 # target to build an object file
 Common/Compression.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.o
 .PHONY : Common/Compression.cpp.o
 
 Common/Compression.i: Common/Compression.cpp.i
@@ -3837,7 +3789,7 @@ Common/Compression.i: Common/Compression.cpp.i
 
 # target to preprocess a source file
 Common/Compression.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.i
 .PHONY : Common/Compression.cpp.i
 
 Common/Compression.s: Common/Compression.cpp.s
@@ -3845,7 +3797,7 @@ Common/Compression.s: Common/Compression.cpp.s
 
 # target to generate assembly for a file
 Common/Compression.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Compression.cpp.s
 .PHONY : Common/Compression.cpp.s
 
 Common/CreateAnimMesh.o: Common/CreateAnimMesh.cpp.o
@@ -3853,7 +3805,7 @@ Common/CreateAnimMesh.o: Common/CreateAnimMesh.cpp.o
 
 # target to build an object file
 Common/CreateAnimMesh.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.o
 .PHONY : Common/CreateAnimMesh.cpp.o
 
 Common/CreateAnimMesh.i: Common/CreateAnimMesh.cpp.i
@@ -3861,7 +3813,7 @@ Common/CreateAnimMesh.i: Common/CreateAnimMesh.cpp.i
 
 # target to preprocess a source file
 Common/CreateAnimMesh.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.i
 .PHONY : Common/CreateAnimMesh.cpp.i
 
 Common/CreateAnimMesh.s: Common/CreateAnimMesh.cpp.s
@@ -3869,7 +3821,7 @@ Common/CreateAnimMesh.s: Common/CreateAnimMesh.cpp.s
 
 # target to generate assembly for a file
 Common/CreateAnimMesh.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/CreateAnimMesh.cpp.s
 .PHONY : Common/CreateAnimMesh.cpp.s
 
 Common/DefaultIOStream.o: Common/DefaultIOStream.cpp.o
@@ -3877,7 +3829,7 @@ Common/DefaultIOStream.o: Common/DefaultIOStream.cpp.o
 
 # target to build an object file
 Common/DefaultIOStream.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.o
 .PHONY : Common/DefaultIOStream.cpp.o
 
 Common/DefaultIOStream.i: Common/DefaultIOStream.cpp.i
@@ -3885,7 +3837,7 @@ Common/DefaultIOStream.i: Common/DefaultIOStream.cpp.i
 
 # target to preprocess a source file
 Common/DefaultIOStream.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.i
 .PHONY : Common/DefaultIOStream.cpp.i
 
 Common/DefaultIOStream.s: Common/DefaultIOStream.cpp.s
@@ -3893,7 +3845,7 @@ Common/DefaultIOStream.s: Common/DefaultIOStream.cpp.s
 
 # target to generate assembly for a file
 Common/DefaultIOStream.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOStream.cpp.s
 .PHONY : Common/DefaultIOStream.cpp.s
 
 Common/DefaultIOSystem.o: Common/DefaultIOSystem.cpp.o
@@ -3901,7 +3853,7 @@ Common/DefaultIOSystem.o: Common/DefaultIOSystem.cpp.o
 
 # target to build an object file
 Common/DefaultIOSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.o
 .PHONY : Common/DefaultIOSystem.cpp.o
 
 Common/DefaultIOSystem.i: Common/DefaultIOSystem.cpp.i
@@ -3909,7 +3861,7 @@ Common/DefaultIOSystem.i: Common/DefaultIOSystem.cpp.i
 
 # target to preprocess a source file
 Common/DefaultIOSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.i
 .PHONY : Common/DefaultIOSystem.cpp.i
 
 Common/DefaultIOSystem.s: Common/DefaultIOSystem.cpp.s
@@ -3917,7 +3869,7 @@ Common/DefaultIOSystem.s: Common/DefaultIOSystem.cpp.s
 
 # target to generate assembly for a file
 Common/DefaultIOSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultIOSystem.cpp.s
 .PHONY : Common/DefaultIOSystem.cpp.s
 
 Common/DefaultLogger.o: Common/DefaultLogger.cpp.o
@@ -3925,7 +3877,7 @@ Common/DefaultLogger.o: Common/DefaultLogger.cpp.o
 
 # target to build an object file
 Common/DefaultLogger.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.o
 .PHONY : Common/DefaultLogger.cpp.o
 
 Common/DefaultLogger.i: Common/DefaultLogger.cpp.i
@@ -3933,7 +3885,7 @@ Common/DefaultLogger.i: Common/DefaultLogger.cpp.i
 
 # target to preprocess a source file
 Common/DefaultLogger.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.i
 .PHONY : Common/DefaultLogger.cpp.i
 
 Common/DefaultLogger.s: Common/DefaultLogger.cpp.s
@@ -3941,7 +3893,7 @@ Common/DefaultLogger.s: Common/DefaultLogger.cpp.s
 
 # target to generate assembly for a file
 Common/DefaultLogger.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/DefaultLogger.cpp.s
 .PHONY : Common/DefaultLogger.cpp.s
 
 Common/Exceptional.o: Common/Exceptional.cpp.o
@@ -3949,7 +3901,7 @@ Common/Exceptional.o: Common/Exceptional.cpp.o
 
 # target to build an object file
 Common/Exceptional.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.o
 .PHONY : Common/Exceptional.cpp.o
 
 Common/Exceptional.i: Common/Exceptional.cpp.i
@@ -3957,7 +3909,7 @@ Common/Exceptional.i: Common/Exceptional.cpp.i
 
 # target to preprocess a source file
 Common/Exceptional.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.i
 .PHONY : Common/Exceptional.cpp.i
 
 Common/Exceptional.s: Common/Exceptional.cpp.s
@@ -3965,7 +3917,7 @@ Common/Exceptional.s: Common/Exceptional.cpp.s
 
 # target to generate assembly for a file
 Common/Exceptional.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exceptional.cpp.s
 .PHONY : Common/Exceptional.cpp.s
 
 Common/Exporter.o: Common/Exporter.cpp.o
@@ -3973,7 +3925,7 @@ Common/Exporter.o: Common/Exporter.cpp.o
 
 # target to build an object file
 Common/Exporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.o
 .PHONY : Common/Exporter.cpp.o
 
 Common/Exporter.i: Common/Exporter.cpp.i
@@ -3981,7 +3933,7 @@ Common/Exporter.i: Common/Exporter.cpp.i
 
 # target to preprocess a source file
 Common/Exporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.i
 .PHONY : Common/Exporter.cpp.i
 
 Common/Exporter.s: Common/Exporter.cpp.s
@@ -3989,7 +3941,7 @@ Common/Exporter.s: Common/Exporter.cpp.s
 
 # target to generate assembly for a file
 Common/Exporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Exporter.cpp.s
 .PHONY : Common/Exporter.cpp.s
 
 Common/IOSystem.o: Common/IOSystem.cpp.o
@@ -3997,7 +3949,7 @@ Common/IOSystem.o: Common/IOSystem.cpp.o
 
 # target to build an object file
 Common/IOSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.o
 .PHONY : Common/IOSystem.cpp.o
 
 Common/IOSystem.i: Common/IOSystem.cpp.i
@@ -4005,7 +3957,7 @@ Common/IOSystem.i: Common/IOSystem.cpp.i
 
 # target to preprocess a source file
 Common/IOSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.i
 .PHONY : Common/IOSystem.cpp.i
 
 Common/IOSystem.s: Common/IOSystem.cpp.s
@@ -4013,7 +3965,7 @@ Common/IOSystem.s: Common/IOSystem.cpp.s
 
 # target to generate assembly for a file
 Common/IOSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/IOSystem.cpp.s
 .PHONY : Common/IOSystem.cpp.s
 
 Common/Importer.o: Common/Importer.cpp.o
@@ -4021,7 +3973,7 @@ Common/Importer.o: Common/Importer.cpp.o
 
 # target to build an object file
 Common/Importer.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.o
 .PHONY : Common/Importer.cpp.o
 
 Common/Importer.i: Common/Importer.cpp.i
@@ -4029,7 +3981,7 @@ Common/Importer.i: Common/Importer.cpp.i
 
 # target to preprocess a source file
 Common/Importer.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.i
 .PHONY : Common/Importer.cpp.i
 
 Common/Importer.s: Common/Importer.cpp.s
@@ -4037,7 +3989,7 @@ Common/Importer.s: Common/Importer.cpp.s
 
 # target to generate assembly for a file
 Common/Importer.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Importer.cpp.s
 .PHONY : Common/Importer.cpp.s
 
 Common/ImporterRegistry.o: Common/ImporterRegistry.cpp.o
@@ -4045,7 +3997,7 @@ Common/ImporterRegistry.o: Common/ImporterRegistry.cpp.o
 
 # target to build an object file
 Common/ImporterRegistry.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.o
 .PHONY : Common/ImporterRegistry.cpp.o
 
 Common/ImporterRegistry.i: Common/ImporterRegistry.cpp.i
@@ -4053,7 +4005,7 @@ Common/ImporterRegistry.i: Common/ImporterRegistry.cpp.i
 
 # target to preprocess a source file
 Common/ImporterRegistry.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.i
 .PHONY : Common/ImporterRegistry.cpp.i
 
 Common/ImporterRegistry.s: Common/ImporterRegistry.cpp.s
@@ -4061,7 +4013,7 @@ Common/ImporterRegistry.s: Common/ImporterRegistry.cpp.s
 
 # target to generate assembly for a file
 Common/ImporterRegistry.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ImporterRegistry.cpp.s
 .PHONY : Common/ImporterRegistry.cpp.s
 
 Common/PostStepRegistry.o: Common/PostStepRegistry.cpp.o
@@ -4069,7 +4021,7 @@ Common/PostStepRegistry.o: Common/PostStepRegistry.cpp.o
 
 # target to build an object file
 Common/PostStepRegistry.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.o
 .PHONY : Common/PostStepRegistry.cpp.o
 
 Common/PostStepRegistry.i: Common/PostStepRegistry.cpp.i
@@ -4077,7 +4029,7 @@ Common/PostStepRegistry.i: Common/PostStepRegistry.cpp.i
 
 # target to preprocess a source file
 Common/PostStepRegistry.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.i
 .PHONY : Common/PostStepRegistry.cpp.i
 
 Common/PostStepRegistry.s: Common/PostStepRegistry.cpp.s
@@ -4085,7 +4037,7 @@ Common/PostStepRegistry.s: Common/PostStepRegistry.cpp.s
 
 # target to generate assembly for a file
 Common/PostStepRegistry.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/PostStepRegistry.cpp.s
 .PHONY : Common/PostStepRegistry.cpp.s
 
 Common/RemoveComments.o: Common/RemoveComments.cpp.o
@@ -4093,7 +4045,7 @@ Common/RemoveComments.o: Common/RemoveComments.cpp.o
 
 # target to build an object file
 Common/RemoveComments.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.o
 .PHONY : Common/RemoveComments.cpp.o
 
 Common/RemoveComments.i: Common/RemoveComments.cpp.i
@@ -4101,7 +4053,7 @@ Common/RemoveComments.i: Common/RemoveComments.cpp.i
 
 # target to preprocess a source file
 Common/RemoveComments.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.i
 .PHONY : Common/RemoveComments.cpp.i
 
 Common/RemoveComments.s: Common/RemoveComments.cpp.s
@@ -4109,7 +4061,7 @@ Common/RemoveComments.s: Common/RemoveComments.cpp.s
 
 # target to generate assembly for a file
 Common/RemoveComments.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/RemoveComments.cpp.s
 .PHONY : Common/RemoveComments.cpp.s
 
 Common/SGSpatialSort.o: Common/SGSpatialSort.cpp.o
@@ -4117,7 +4069,7 @@ Common/SGSpatialSort.o: Common/SGSpatialSort.cpp.o
 
 # target to build an object file
 Common/SGSpatialSort.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.o
 .PHONY : Common/SGSpatialSort.cpp.o
 
 Common/SGSpatialSort.i: Common/SGSpatialSort.cpp.i
@@ -4125,7 +4077,7 @@ Common/SGSpatialSort.i: Common/SGSpatialSort.cpp.i
 
 # target to preprocess a source file
 Common/SGSpatialSort.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.i
 .PHONY : Common/SGSpatialSort.cpp.i
 
 Common/SGSpatialSort.s: Common/SGSpatialSort.cpp.s
@@ -4133,7 +4085,7 @@ Common/SGSpatialSort.s: Common/SGSpatialSort.cpp.s
 
 # target to generate assembly for a file
 Common/SGSpatialSort.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SGSpatialSort.cpp.s
 .PHONY : Common/SGSpatialSort.cpp.s
 
 Common/SceneCombiner.o: Common/SceneCombiner.cpp.o
@@ -4141,7 +4093,7 @@ Common/SceneCombiner.o: Common/SceneCombiner.cpp.o
 
 # target to build an object file
 Common/SceneCombiner.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.o
 .PHONY : Common/SceneCombiner.cpp.o
 
 Common/SceneCombiner.i: Common/SceneCombiner.cpp.i
@@ -4149,7 +4101,7 @@ Common/SceneCombiner.i: Common/SceneCombiner.cpp.i
 
 # target to preprocess a source file
 Common/SceneCombiner.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.i
 .PHONY : Common/SceneCombiner.cpp.i
 
 Common/SceneCombiner.s: Common/SceneCombiner.cpp.s
@@ -4157,7 +4109,7 @@ Common/SceneCombiner.s: Common/SceneCombiner.cpp.s
 
 # target to generate assembly for a file
 Common/SceneCombiner.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SceneCombiner.cpp.s
 .PHONY : Common/SceneCombiner.cpp.s
 
 Common/ScenePreprocessor.o: Common/ScenePreprocessor.cpp.o
@@ -4165,7 +4117,7 @@ Common/ScenePreprocessor.o: Common/ScenePreprocessor.cpp.o
 
 # target to build an object file
 Common/ScenePreprocessor.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.o
 .PHONY : Common/ScenePreprocessor.cpp.o
 
 Common/ScenePreprocessor.i: Common/ScenePreprocessor.cpp.i
@@ -4173,7 +4125,7 @@ Common/ScenePreprocessor.i: Common/ScenePreprocessor.cpp.i
 
 # target to preprocess a source file
 Common/ScenePreprocessor.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.i
 .PHONY : Common/ScenePreprocessor.cpp.i
 
 Common/ScenePreprocessor.s: Common/ScenePreprocessor.cpp.s
@@ -4181,7 +4133,7 @@ Common/ScenePreprocessor.s: Common/ScenePreprocessor.cpp.s
 
 # target to generate assembly for a file
 Common/ScenePreprocessor.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ScenePreprocessor.cpp.s
 .PHONY : Common/ScenePreprocessor.cpp.s
 
 Common/SkeletonMeshBuilder.o: Common/SkeletonMeshBuilder.cpp.o
@@ -4189,7 +4141,7 @@ Common/SkeletonMeshBuilder.o: Common/SkeletonMeshBuilder.cpp.o
 
 # target to build an object file
 Common/SkeletonMeshBuilder.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.o
 .PHONY : Common/SkeletonMeshBuilder.cpp.o
 
 Common/SkeletonMeshBuilder.i: Common/SkeletonMeshBuilder.cpp.i
@@ -4197,7 +4149,7 @@ Common/SkeletonMeshBuilder.i: Common/SkeletonMeshBuilder.cpp.i
 
 # target to preprocess a source file
 Common/SkeletonMeshBuilder.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.i
 .PHONY : Common/SkeletonMeshBuilder.cpp.i
 
 Common/SkeletonMeshBuilder.s: Common/SkeletonMeshBuilder.cpp.s
@@ -4205,7 +4157,7 @@ Common/SkeletonMeshBuilder.s: Common/SkeletonMeshBuilder.cpp.s
 
 # target to generate assembly for a file
 Common/SkeletonMeshBuilder.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SkeletonMeshBuilder.cpp.s
 .PHONY : Common/SkeletonMeshBuilder.cpp.s
 
 Common/SpatialSort.o: Common/SpatialSort.cpp.o
@@ -4213,7 +4165,7 @@ Common/SpatialSort.o: Common/SpatialSort.cpp.o
 
 # target to build an object file
 Common/SpatialSort.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.o
 .PHONY : Common/SpatialSort.cpp.o
 
 Common/SpatialSort.i: Common/SpatialSort.cpp.i
@@ -4221,7 +4173,7 @@ Common/SpatialSort.i: Common/SpatialSort.cpp.i
 
 # target to preprocess a source file
 Common/SpatialSort.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.i
 .PHONY : Common/SpatialSort.cpp.i
 
 Common/SpatialSort.s: Common/SpatialSort.cpp.s
@@ -4229,7 +4181,7 @@ Common/SpatialSort.s: Common/SpatialSort.cpp.s
 
 # target to generate assembly for a file
 Common/SpatialSort.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/SpatialSort.cpp.s
 .PHONY : Common/SpatialSort.cpp.s
 
 Common/StandardShapes.o: Common/StandardShapes.cpp.o
@@ -4237,7 +4189,7 @@ Common/StandardShapes.o: Common/StandardShapes.cpp.o
 
 # target to build an object file
 Common/StandardShapes.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.o
 .PHONY : Common/StandardShapes.cpp.o
 
 Common/StandardShapes.i: Common/StandardShapes.cpp.i
@@ -4245,7 +4197,7 @@ Common/StandardShapes.i: Common/StandardShapes.cpp.i
 
 # target to preprocess a source file
 Common/StandardShapes.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.i
 .PHONY : Common/StandardShapes.cpp.i
 
 Common/StandardShapes.s: Common/StandardShapes.cpp.s
@@ -4253,7 +4205,7 @@ Common/StandardShapes.s: Common/StandardShapes.cpp.s
 
 # target to generate assembly for a file
 Common/StandardShapes.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/StandardShapes.cpp.s
 .PHONY : Common/StandardShapes.cpp.s
 
 Common/Subdivision.o: Common/Subdivision.cpp.o
@@ -4261,7 +4213,7 @@ Common/Subdivision.o: Common/Subdivision.cpp.o
 
 # target to build an object file
 Common/Subdivision.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.o
 .PHONY : Common/Subdivision.cpp.o
 
 Common/Subdivision.i: Common/Subdivision.cpp.i
@@ -4269,7 +4221,7 @@ Common/Subdivision.i: Common/Subdivision.cpp.i
 
 # target to preprocess a source file
 Common/Subdivision.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.i
 .PHONY : Common/Subdivision.cpp.i
 
 Common/Subdivision.s: Common/Subdivision.cpp.s
@@ -4277,7 +4229,7 @@ Common/Subdivision.s: Common/Subdivision.cpp.s
 
 # target to generate assembly for a file
 Common/Subdivision.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Subdivision.cpp.s
 .PHONY : Common/Subdivision.cpp.s
 
 Common/TargetAnimation.o: Common/TargetAnimation.cpp.o
@@ -4285,7 +4237,7 @@ Common/TargetAnimation.o: Common/TargetAnimation.cpp.o
 
 # target to build an object file
 Common/TargetAnimation.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.o
 .PHONY : Common/TargetAnimation.cpp.o
 
 Common/TargetAnimation.i: Common/TargetAnimation.cpp.i
@@ -4293,7 +4245,7 @@ Common/TargetAnimation.i: Common/TargetAnimation.cpp.i
 
 # target to preprocess a source file
 Common/TargetAnimation.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.i
 .PHONY : Common/TargetAnimation.cpp.i
 
 Common/TargetAnimation.s: Common/TargetAnimation.cpp.s
@@ -4301,7 +4253,7 @@ Common/TargetAnimation.s: Common/TargetAnimation.cpp.s
 
 # target to generate assembly for a file
 Common/TargetAnimation.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/TargetAnimation.cpp.s
 .PHONY : Common/TargetAnimation.cpp.s
 
 Common/Version.o: Common/Version.cpp.o
@@ -4309,7 +4261,7 @@ Common/Version.o: Common/Version.cpp.o
 
 # target to build an object file
 Common/Version.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.o
 .PHONY : Common/Version.cpp.o
 
 Common/Version.i: Common/Version.cpp.i
@@ -4317,7 +4269,7 @@ Common/Version.i: Common/Version.cpp.i
 
 # target to preprocess a source file
 Common/Version.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.i
 .PHONY : Common/Version.cpp.i
 
 Common/Version.s: Common/Version.cpp.s
@@ -4325,7 +4277,7 @@ Common/Version.s: Common/Version.cpp.s
 
 # target to generate assembly for a file
 Common/Version.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/Version.cpp.s
 .PHONY : Common/Version.cpp.s
 
 Common/VertexTriangleAdjacency.o: Common/VertexTriangleAdjacency.cpp.o
@@ -4333,7 +4285,7 @@ Common/VertexTriangleAdjacency.o: Common/VertexTriangleAdjacency.cpp.o
 
 # target to build an object file
 Common/VertexTriangleAdjacency.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.o
 .PHONY : Common/VertexTriangleAdjacency.cpp.o
 
 Common/VertexTriangleAdjacency.i: Common/VertexTriangleAdjacency.cpp.i
@@ -4341,7 +4293,7 @@ Common/VertexTriangleAdjacency.i: Common/VertexTriangleAdjacency.cpp.i
 
 # target to preprocess a source file
 Common/VertexTriangleAdjacency.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.i
 .PHONY : Common/VertexTriangleAdjacency.cpp.i
 
 Common/VertexTriangleAdjacency.s: Common/VertexTriangleAdjacency.cpp.s
@@ -4349,7 +4301,7 @@ Common/VertexTriangleAdjacency.s: Common/VertexTriangleAdjacency.cpp.s
 
 # target to generate assembly for a file
 Common/VertexTriangleAdjacency.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/VertexTriangleAdjacency.cpp.s
 .PHONY : Common/VertexTriangleAdjacency.cpp.s
 
 Common/ZipArchiveIOSystem.o: Common/ZipArchiveIOSystem.cpp.o
@@ -4357,7 +4309,7 @@ Common/ZipArchiveIOSystem.o: Common/ZipArchiveIOSystem.cpp.o
 
 # target to build an object file
 Common/ZipArchiveIOSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.o
 .PHONY : Common/ZipArchiveIOSystem.cpp.o
 
 Common/ZipArchiveIOSystem.i: Common/ZipArchiveIOSystem.cpp.i
@@ -4365,7 +4317,7 @@ Common/ZipArchiveIOSystem.i: Common/ZipArchiveIOSystem.cpp.i
 
 # target to preprocess a source file
 Common/ZipArchiveIOSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.i
 .PHONY : Common/ZipArchiveIOSystem.cpp.i
 
 Common/ZipArchiveIOSystem.s: Common/ZipArchiveIOSystem.cpp.s
@@ -4373,7 +4325,7 @@ Common/ZipArchiveIOSystem.s: Common/ZipArchiveIOSystem.cpp.s
 
 # target to generate assembly for a file
 Common/ZipArchiveIOSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/ZipArchiveIOSystem.cpp.s
 .PHONY : Common/ZipArchiveIOSystem.cpp.s
 
 Common/material.o: Common/material.cpp.o
@@ -4381,7 +4333,7 @@ Common/material.o: Common/material.cpp.o
 
 # target to build an object file
 Common/material.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.o
 .PHONY : Common/material.cpp.o
 
 Common/material.i: Common/material.cpp.i
@@ -4389,7 +4341,7 @@ Common/material.i: Common/material.cpp.i
 
 # target to preprocess a source file
 Common/material.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.i
 .PHONY : Common/material.cpp.i
 
 Common/material.s: Common/material.cpp.s
@@ -4397,7 +4349,7 @@ Common/material.s: Common/material.cpp.s
 
 # target to generate assembly for a file
 Common/material.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/material.cpp.s
 .PHONY : Common/material.cpp.s
 
 Common/scene.o: Common/scene.cpp.o
@@ -4405,7 +4357,7 @@ Common/scene.o: Common/scene.cpp.o
 
 # target to build an object file
 Common/scene.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.o
 .PHONY : Common/scene.cpp.o
 
 Common/scene.i: Common/scene.cpp.i
@@ -4413,7 +4365,7 @@ Common/scene.i: Common/scene.cpp.i
 
 # target to preprocess a source file
 Common/scene.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.i
 .PHONY : Common/scene.cpp.i
 
 Common/scene.s: Common/scene.cpp.s
@@ -4421,7 +4373,7 @@ Common/scene.s: Common/scene.cpp.s
 
 # target to generate assembly for a file
 Common/scene.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/scene.cpp.s
 .PHONY : Common/scene.cpp.s
 
 Common/simd.o: Common/simd.cpp.o
@@ -4429,7 +4381,7 @@ Common/simd.o: Common/simd.cpp.o
 
 # target to build an object file
 Common/simd.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.o
 .PHONY : Common/simd.cpp.o
 
 Common/simd.i: Common/simd.cpp.i
@@ -4437,7 +4389,7 @@ Common/simd.i: Common/simd.cpp.i
 
 # target to preprocess a source file
 Common/simd.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.i
 .PHONY : Common/simd.cpp.i
 
 Common/simd.s: Common/simd.cpp.s
@@ -4445,7 +4397,7 @@ Common/simd.s: Common/simd.cpp.s
 
 # target to generate assembly for a file
 Common/simd.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Common/simd.cpp.s
 .PHONY : Common/simd.cpp.s
 
 Geometry/GeometryUtils.o: Geometry/GeometryUtils.cpp.o
@@ -4453,7 +4405,7 @@ Geometry/GeometryUtils.o: Geometry/GeometryUtils.cpp.o
 
 # target to build an object file
 Geometry/GeometryUtils.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.o
 .PHONY : Geometry/GeometryUtils.cpp.o
 
 Geometry/GeometryUtils.i: Geometry/GeometryUtils.cpp.i
@@ -4461,7 +4413,7 @@ Geometry/GeometryUtils.i: Geometry/GeometryUtils.cpp.i
 
 # target to preprocess a source file
 Geometry/GeometryUtils.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.i
 .PHONY : Geometry/GeometryUtils.cpp.i
 
 Geometry/GeometryUtils.s: Geometry/GeometryUtils.cpp.s
@@ -4469,7 +4421,7 @@ Geometry/GeometryUtils.s: Geometry/GeometryUtils.cpp.s
 
 # target to generate assembly for a file
 Geometry/GeometryUtils.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Geometry/GeometryUtils.cpp.s
 .PHONY : Geometry/GeometryUtils.cpp.s
 
 Material/MaterialSystem.o: Material/MaterialSystem.cpp.o
@@ -4477,7 +4429,7 @@ Material/MaterialSystem.o: Material/MaterialSystem.cpp.o
 
 # target to build an object file
 Material/MaterialSystem.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.o
 .PHONY : Material/MaterialSystem.cpp.o
 
 Material/MaterialSystem.i: Material/MaterialSystem.cpp.i
@@ -4485,7 +4437,7 @@ Material/MaterialSystem.i: Material/MaterialSystem.cpp.i
 
 # target to preprocess a source file
 Material/MaterialSystem.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.i
 .PHONY : Material/MaterialSystem.cpp.i
 
 Material/MaterialSystem.s: Material/MaterialSystem.cpp.s
@@ -4493,7 +4445,7 @@ Material/MaterialSystem.s: Material/MaterialSystem.cpp.s
 
 # target to generate assembly for a file
 Material/MaterialSystem.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Material/MaterialSystem.cpp.s
 .PHONY : Material/MaterialSystem.cpp.s
 
 Pbrt/PbrtExporter.o: Pbrt/PbrtExporter.cpp.o
@@ -4501,7 +4453,7 @@ Pbrt/PbrtExporter.o: Pbrt/PbrtExporter.cpp.o
 
 # target to build an object file
 Pbrt/PbrtExporter.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.o
 .PHONY : Pbrt/PbrtExporter.cpp.o
 
 Pbrt/PbrtExporter.i: Pbrt/PbrtExporter.cpp.i
@@ -4509,7 +4461,7 @@ Pbrt/PbrtExporter.i: Pbrt/PbrtExporter.cpp.i
 
 # target to preprocess a source file
 Pbrt/PbrtExporter.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.i
 .PHONY : Pbrt/PbrtExporter.cpp.i
 
 Pbrt/PbrtExporter.s: Pbrt/PbrtExporter.cpp.s
@@ -4517,7 +4469,7 @@ Pbrt/PbrtExporter.s: Pbrt/PbrtExporter.cpp.s
 
 # target to generate assembly for a file
 Pbrt/PbrtExporter.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/Pbrt/PbrtExporter.cpp.s
 .PHONY : Pbrt/PbrtExporter.cpp.s
 
 PostProcessing/ArmaturePopulate.o: PostProcessing/ArmaturePopulate.cpp.o
@@ -4525,7 +4477,7 @@ PostProcessing/ArmaturePopulate.o: PostProcessing/ArmaturePopulate.cpp.o
 
 # target to build an object file
 PostProcessing/ArmaturePopulate.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.o
 .PHONY : PostProcessing/ArmaturePopulate.cpp.o
 
 PostProcessing/ArmaturePopulate.i: PostProcessing/ArmaturePopulate.cpp.i
@@ -4533,7 +4485,7 @@ PostProcessing/ArmaturePopulate.i: PostProcessing/ArmaturePopulate.cpp.i
 
 # target to preprocess a source file
 PostProcessing/ArmaturePopulate.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.i
 .PHONY : PostProcessing/ArmaturePopulate.cpp.i
 
 PostProcessing/ArmaturePopulate.s: PostProcessing/ArmaturePopulate.cpp.s
@@ -4541,7 +4493,7 @@ PostProcessing/ArmaturePopulate.s: PostProcessing/ArmaturePopulate.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/ArmaturePopulate.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ArmaturePopulate.cpp.s
 .PHONY : PostProcessing/ArmaturePopulate.cpp.s
 
 PostProcessing/CalcTangentsProcess.o: PostProcessing/CalcTangentsProcess.cpp.o
@@ -4549,7 +4501,7 @@ PostProcessing/CalcTangentsProcess.o: PostProcessing/CalcTangentsProcess.cpp.o
 
 # target to build an object file
 PostProcessing/CalcTangentsProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.o
 .PHONY : PostProcessing/CalcTangentsProcess.cpp.o
 
 PostProcessing/CalcTangentsProcess.i: PostProcessing/CalcTangentsProcess.cpp.i
@@ -4557,7 +4509,7 @@ PostProcessing/CalcTangentsProcess.i: PostProcessing/CalcTangentsProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/CalcTangentsProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.i
 .PHONY : PostProcessing/CalcTangentsProcess.cpp.i
 
 PostProcessing/CalcTangentsProcess.s: PostProcessing/CalcTangentsProcess.cpp.s
@@ -4565,7 +4517,7 @@ PostProcessing/CalcTangentsProcess.s: PostProcessing/CalcTangentsProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/CalcTangentsProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/CalcTangentsProcess.cpp.s
 .PHONY : PostProcessing/CalcTangentsProcess.cpp.s
 
 PostProcessing/ComputeUVMappingProcess.o: PostProcessing/ComputeUVMappingProcess.cpp.o
@@ -4573,7 +4525,7 @@ PostProcessing/ComputeUVMappingProcess.o: PostProcessing/ComputeUVMappingProcess
 
 # target to build an object file
 PostProcessing/ComputeUVMappingProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.o
 .PHONY : PostProcessing/ComputeUVMappingProcess.cpp.o
 
 PostProcessing/ComputeUVMappingProcess.i: PostProcessing/ComputeUVMappingProcess.cpp.i
@@ -4581,7 +4533,7 @@ PostProcessing/ComputeUVMappingProcess.i: PostProcessing/ComputeUVMappingProcess
 
 # target to preprocess a source file
 PostProcessing/ComputeUVMappingProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.i
 .PHONY : PostProcessing/ComputeUVMappingProcess.cpp.i
 
 PostProcessing/ComputeUVMappingProcess.s: PostProcessing/ComputeUVMappingProcess.cpp.s
@@ -4589,7 +4541,7 @@ PostProcessing/ComputeUVMappingProcess.s: PostProcessing/ComputeUVMappingProcess
 
 # target to generate assembly for a file
 PostProcessing/ComputeUVMappingProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ComputeUVMappingProcess.cpp.s
 .PHONY : PostProcessing/ComputeUVMappingProcess.cpp.s
 
 PostProcessing/ConvertToLHProcess.o: PostProcessing/ConvertToLHProcess.cpp.o
@@ -4597,7 +4549,7 @@ PostProcessing/ConvertToLHProcess.o: PostProcessing/ConvertToLHProcess.cpp.o
 
 # target to build an object file
 PostProcessing/ConvertToLHProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.o
 .PHONY : PostProcessing/ConvertToLHProcess.cpp.o
 
 PostProcessing/ConvertToLHProcess.i: PostProcessing/ConvertToLHProcess.cpp.i
@@ -4605,7 +4557,7 @@ PostProcessing/ConvertToLHProcess.i: PostProcessing/ConvertToLHProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/ConvertToLHProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.i
 .PHONY : PostProcessing/ConvertToLHProcess.cpp.i
 
 PostProcessing/ConvertToLHProcess.s: PostProcessing/ConvertToLHProcess.cpp.s
@@ -4613,7 +4565,7 @@ PostProcessing/ConvertToLHProcess.s: PostProcessing/ConvertToLHProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/ConvertToLHProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ConvertToLHProcess.cpp.s
 .PHONY : PostProcessing/ConvertToLHProcess.cpp.s
 
 PostProcessing/DeboneProcess.o: PostProcessing/DeboneProcess.cpp.o
@@ -4621,7 +4573,7 @@ PostProcessing/DeboneProcess.o: PostProcessing/DeboneProcess.cpp.o
 
 # target to build an object file
 PostProcessing/DeboneProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.o
 .PHONY : PostProcessing/DeboneProcess.cpp.o
 
 PostProcessing/DeboneProcess.i: PostProcessing/DeboneProcess.cpp.i
@@ -4629,7 +4581,7 @@ PostProcessing/DeboneProcess.i: PostProcessing/DeboneProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/DeboneProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.i
 .PHONY : PostProcessing/DeboneProcess.cpp.i
 
 PostProcessing/DeboneProcess.s: PostProcessing/DeboneProcess.cpp.s
@@ -4637,7 +4589,7 @@ PostProcessing/DeboneProcess.s: PostProcessing/DeboneProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/DeboneProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DeboneProcess.cpp.s
 .PHONY : PostProcessing/DeboneProcess.cpp.s
 
 PostProcessing/DropFaceNormalsProcess.o: PostProcessing/DropFaceNormalsProcess.cpp.o
@@ -4645,7 +4597,7 @@ PostProcessing/DropFaceNormalsProcess.o: PostProcessing/DropFaceNormalsProcess.c
 
 # target to build an object file
 PostProcessing/DropFaceNormalsProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.o
 .PHONY : PostProcessing/DropFaceNormalsProcess.cpp.o
 
 PostProcessing/DropFaceNormalsProcess.i: PostProcessing/DropFaceNormalsProcess.cpp.i
@@ -4653,7 +4605,7 @@ PostProcessing/DropFaceNormalsProcess.i: PostProcessing/DropFaceNormalsProcess.c
 
 # target to preprocess a source file
 PostProcessing/DropFaceNormalsProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.i
 .PHONY : PostProcessing/DropFaceNormalsProcess.cpp.i
 
 PostProcessing/DropFaceNormalsProcess.s: PostProcessing/DropFaceNormalsProcess.cpp.s
@@ -4661,7 +4613,7 @@ PostProcessing/DropFaceNormalsProcess.s: PostProcessing/DropFaceNormalsProcess.c
 
 # target to generate assembly for a file
 PostProcessing/DropFaceNormalsProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/DropFaceNormalsProcess.cpp.s
 .PHONY : PostProcessing/DropFaceNormalsProcess.cpp.s
 
 PostProcessing/EmbedTexturesProcess.o: PostProcessing/EmbedTexturesProcess.cpp.o
@@ -4669,7 +4621,7 @@ PostProcessing/EmbedTexturesProcess.o: PostProcessing/EmbedTexturesProcess.cpp.o
 
 # target to build an object file
 PostProcessing/EmbedTexturesProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.o
 .PHONY : PostProcessing/EmbedTexturesProcess.cpp.o
 
 PostProcessing/EmbedTexturesProcess.i: PostProcessing/EmbedTexturesProcess.cpp.i
@@ -4677,7 +4629,7 @@ PostProcessing/EmbedTexturesProcess.i: PostProcessing/EmbedTexturesProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/EmbedTexturesProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.i
 .PHONY : PostProcessing/EmbedTexturesProcess.cpp.i
 
 PostProcessing/EmbedTexturesProcess.s: PostProcessing/EmbedTexturesProcess.cpp.s
@@ -4685,7 +4637,7 @@ PostProcessing/EmbedTexturesProcess.s: PostProcessing/EmbedTexturesProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/EmbedTexturesProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/EmbedTexturesProcess.cpp.s
 .PHONY : PostProcessing/EmbedTexturesProcess.cpp.s
 
 PostProcessing/FindDegenerates.o: PostProcessing/FindDegenerates.cpp.o
@@ -4693,7 +4645,7 @@ PostProcessing/FindDegenerates.o: PostProcessing/FindDegenerates.cpp.o
 
 # target to build an object file
 PostProcessing/FindDegenerates.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.o
 .PHONY : PostProcessing/FindDegenerates.cpp.o
 
 PostProcessing/FindDegenerates.i: PostProcessing/FindDegenerates.cpp.i
@@ -4701,7 +4653,7 @@ PostProcessing/FindDegenerates.i: PostProcessing/FindDegenerates.cpp.i
 
 # target to preprocess a source file
 PostProcessing/FindDegenerates.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.i
 .PHONY : PostProcessing/FindDegenerates.cpp.i
 
 PostProcessing/FindDegenerates.s: PostProcessing/FindDegenerates.cpp.s
@@ -4709,7 +4661,7 @@ PostProcessing/FindDegenerates.s: PostProcessing/FindDegenerates.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/FindDegenerates.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindDegenerates.cpp.s
 .PHONY : PostProcessing/FindDegenerates.cpp.s
 
 PostProcessing/FindInstancesProcess.o: PostProcessing/FindInstancesProcess.cpp.o
@@ -4717,7 +4669,7 @@ PostProcessing/FindInstancesProcess.o: PostProcessing/FindInstancesProcess.cpp.o
 
 # target to build an object file
 PostProcessing/FindInstancesProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.o
 .PHONY : PostProcessing/FindInstancesProcess.cpp.o
 
 PostProcessing/FindInstancesProcess.i: PostProcessing/FindInstancesProcess.cpp.i
@@ -4725,7 +4677,7 @@ PostProcessing/FindInstancesProcess.i: PostProcessing/FindInstancesProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/FindInstancesProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.i
 .PHONY : PostProcessing/FindInstancesProcess.cpp.i
 
 PostProcessing/FindInstancesProcess.s: PostProcessing/FindInstancesProcess.cpp.s
@@ -4733,7 +4685,7 @@ PostProcessing/FindInstancesProcess.s: PostProcessing/FindInstancesProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/FindInstancesProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInstancesProcess.cpp.s
 .PHONY : PostProcessing/FindInstancesProcess.cpp.s
 
 PostProcessing/FindInvalidDataProcess.o: PostProcessing/FindInvalidDataProcess.cpp.o
@@ -4741,7 +4693,7 @@ PostProcessing/FindInvalidDataProcess.o: PostProcessing/FindInvalidDataProcess.c
 
 # target to build an object file
 PostProcessing/FindInvalidDataProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.o
 .PHONY : PostProcessing/FindInvalidDataProcess.cpp.o
 
 PostProcessing/FindInvalidDataProcess.i: PostProcessing/FindInvalidDataProcess.cpp.i
@@ -4749,7 +4701,7 @@ PostProcessing/FindInvalidDataProcess.i: PostProcessing/FindInvalidDataProcess.c
 
 # target to preprocess a source file
 PostProcessing/FindInvalidDataProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.i
 .PHONY : PostProcessing/FindInvalidDataProcess.cpp.i
 
 PostProcessing/FindInvalidDataProcess.s: PostProcessing/FindInvalidDataProcess.cpp.s
@@ -4757,7 +4709,7 @@ PostProcessing/FindInvalidDataProcess.s: PostProcessing/FindInvalidDataProcess.c
 
 # target to generate assembly for a file
 PostProcessing/FindInvalidDataProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FindInvalidDataProcess.cpp.s
 .PHONY : PostProcessing/FindInvalidDataProcess.cpp.s
 
 PostProcessing/FixNormalsStep.o: PostProcessing/FixNormalsStep.cpp.o
@@ -4765,7 +4717,7 @@ PostProcessing/FixNormalsStep.o: PostProcessing/FixNormalsStep.cpp.o
 
 # target to build an object file
 PostProcessing/FixNormalsStep.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.o
 .PHONY : PostProcessing/FixNormalsStep.cpp.o
 
 PostProcessing/FixNormalsStep.i: PostProcessing/FixNormalsStep.cpp.i
@@ -4773,7 +4725,7 @@ PostProcessing/FixNormalsStep.i: PostProcessing/FixNormalsStep.cpp.i
 
 # target to preprocess a source file
 PostProcessing/FixNormalsStep.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.i
 .PHONY : PostProcessing/FixNormalsStep.cpp.i
 
 PostProcessing/FixNormalsStep.s: PostProcessing/FixNormalsStep.cpp.s
@@ -4781,7 +4733,7 @@ PostProcessing/FixNormalsStep.s: PostProcessing/FixNormalsStep.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/FixNormalsStep.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/FixNormalsStep.cpp.s
 .PHONY : PostProcessing/FixNormalsStep.cpp.s
 
 PostProcessing/GenBoundingBoxesProcess.o: PostProcessing/GenBoundingBoxesProcess.cpp.o
@@ -4789,7 +4741,7 @@ PostProcessing/GenBoundingBoxesProcess.o: PostProcessing/GenBoundingBoxesProcess
 
 # target to build an object file
 PostProcessing/GenBoundingBoxesProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.o
 .PHONY : PostProcessing/GenBoundingBoxesProcess.cpp.o
 
 PostProcessing/GenBoundingBoxesProcess.i: PostProcessing/GenBoundingBoxesProcess.cpp.i
@@ -4797,7 +4749,7 @@ PostProcessing/GenBoundingBoxesProcess.i: PostProcessing/GenBoundingBoxesProcess
 
 # target to preprocess a source file
 PostProcessing/GenBoundingBoxesProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.i
 .PHONY : PostProcessing/GenBoundingBoxesProcess.cpp.i
 
 PostProcessing/GenBoundingBoxesProcess.s: PostProcessing/GenBoundingBoxesProcess.cpp.s
@@ -4805,7 +4757,7 @@ PostProcessing/GenBoundingBoxesProcess.s: PostProcessing/GenBoundingBoxesProcess
 
 # target to generate assembly for a file
 PostProcessing/GenBoundingBoxesProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenBoundingBoxesProcess.cpp.s
 .PHONY : PostProcessing/GenBoundingBoxesProcess.cpp.s
 
 PostProcessing/GenFaceNormalsProcess.o: PostProcessing/GenFaceNormalsProcess.cpp.o
@@ -4813,7 +4765,7 @@ PostProcessing/GenFaceNormalsProcess.o: PostProcessing/GenFaceNormalsProcess.cpp
 
 # target to build an object file
 PostProcessing/GenFaceNormalsProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.o
 .PHONY : PostProcessing/GenFaceNormalsProcess.cpp.o
 
 PostProcessing/GenFaceNormalsProcess.i: PostProcessing/GenFaceNormalsProcess.cpp.i
@@ -4821,7 +4773,7 @@ PostProcessing/GenFaceNormalsProcess.i: PostProcessing/GenFaceNormalsProcess.cpp
 
 # target to preprocess a source file
 PostProcessing/GenFaceNormalsProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.i
 .PHONY : PostProcessing/GenFaceNormalsProcess.cpp.i
 
 PostProcessing/GenFaceNormalsProcess.s: PostProcessing/GenFaceNormalsProcess.cpp.s
@@ -4829,7 +4781,7 @@ PostProcessing/GenFaceNormalsProcess.s: PostProcessing/GenFaceNormalsProcess.cpp
 
 # target to generate assembly for a file
 PostProcessing/GenFaceNormalsProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenFaceNormalsProcess.cpp.s
 .PHONY : PostProcessing/GenFaceNormalsProcess.cpp.s
 
 PostProcessing/GenVertexNormalsProcess.o: PostProcessing/GenVertexNormalsProcess.cpp.o
@@ -4837,7 +4789,7 @@ PostProcessing/GenVertexNormalsProcess.o: PostProcessing/GenVertexNormalsProcess
 
 # target to build an object file
 PostProcessing/GenVertexNormalsProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.o
 .PHONY : PostProcessing/GenVertexNormalsProcess.cpp.o
 
 PostProcessing/GenVertexNormalsProcess.i: PostProcessing/GenVertexNormalsProcess.cpp.i
@@ -4845,7 +4797,7 @@ PostProcessing/GenVertexNormalsProcess.i: PostProcessing/GenVertexNormalsProcess
 
 # target to preprocess a source file
 PostProcessing/GenVertexNormalsProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.i
 .PHONY : PostProcessing/GenVertexNormalsProcess.cpp.i
 
 PostProcessing/GenVertexNormalsProcess.s: PostProcessing/GenVertexNormalsProcess.cpp.s
@@ -4853,7 +4805,7 @@ PostProcessing/GenVertexNormalsProcess.s: PostProcessing/GenVertexNormalsProcess
 
 # target to generate assembly for a file
 PostProcessing/GenVertexNormalsProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/GenVertexNormalsProcess.cpp.s
 .PHONY : PostProcessing/GenVertexNormalsProcess.cpp.s
 
 PostProcessing/ImproveCacheLocality.o: PostProcessing/ImproveCacheLocality.cpp.o
@@ -4861,7 +4813,7 @@ PostProcessing/ImproveCacheLocality.o: PostProcessing/ImproveCacheLocality.cpp.o
 
 # target to build an object file
 PostProcessing/ImproveCacheLocality.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.o
 .PHONY : PostProcessing/ImproveCacheLocality.cpp.o
 
 PostProcessing/ImproveCacheLocality.i: PostProcessing/ImproveCacheLocality.cpp.i
@@ -4869,7 +4821,7 @@ PostProcessing/ImproveCacheLocality.i: PostProcessing/ImproveCacheLocality.cpp.i
 
 # target to preprocess a source file
 PostProcessing/ImproveCacheLocality.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.i
 .PHONY : PostProcessing/ImproveCacheLocality.cpp.i
 
 PostProcessing/ImproveCacheLocality.s: PostProcessing/ImproveCacheLocality.cpp.s
@@ -4877,7 +4829,7 @@ PostProcessing/ImproveCacheLocality.s: PostProcessing/ImproveCacheLocality.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/ImproveCacheLocality.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ImproveCacheLocality.cpp.s
 .PHONY : PostProcessing/ImproveCacheLocality.cpp.s
 
 PostProcessing/JoinVerticesProcess.o: PostProcessing/JoinVerticesProcess.cpp.o
@@ -4885,7 +4837,7 @@ PostProcessing/JoinVerticesProcess.o: PostProcessing/JoinVerticesProcess.cpp.o
 
 # target to build an object file
 PostProcessing/JoinVerticesProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.o
 .PHONY : PostProcessing/JoinVerticesProcess.cpp.o
 
 PostProcessing/JoinVerticesProcess.i: PostProcessing/JoinVerticesProcess.cpp.i
@@ -4893,7 +4845,7 @@ PostProcessing/JoinVerticesProcess.i: PostProcessing/JoinVerticesProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/JoinVerticesProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.i
 .PHONY : PostProcessing/JoinVerticesProcess.cpp.i
 
 PostProcessing/JoinVerticesProcess.s: PostProcessing/JoinVerticesProcess.cpp.s
@@ -4901,7 +4853,7 @@ PostProcessing/JoinVerticesProcess.s: PostProcessing/JoinVerticesProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/JoinVerticesProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/JoinVerticesProcess.cpp.s
 .PHONY : PostProcessing/JoinVerticesProcess.cpp.s
 
 PostProcessing/LimitBoneWeightsProcess.o: PostProcessing/LimitBoneWeightsProcess.cpp.o
@@ -4909,7 +4861,7 @@ PostProcessing/LimitBoneWeightsProcess.o: PostProcessing/LimitBoneWeightsProcess
 
 # target to build an object file
 PostProcessing/LimitBoneWeightsProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.o
 .PHONY : PostProcessing/LimitBoneWeightsProcess.cpp.o
 
 PostProcessing/LimitBoneWeightsProcess.i: PostProcessing/LimitBoneWeightsProcess.cpp.i
@@ -4917,7 +4869,7 @@ PostProcessing/LimitBoneWeightsProcess.i: PostProcessing/LimitBoneWeightsProcess
 
 # target to preprocess a source file
 PostProcessing/LimitBoneWeightsProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.i
 .PHONY : PostProcessing/LimitBoneWeightsProcess.cpp.i
 
 PostProcessing/LimitBoneWeightsProcess.s: PostProcessing/LimitBoneWeightsProcess.cpp.s
@@ -4925,7 +4877,7 @@ PostProcessing/LimitBoneWeightsProcess.s: PostProcessing/LimitBoneWeightsProcess
 
 # target to generate assembly for a file
 PostProcessing/LimitBoneWeightsProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/LimitBoneWeightsProcess.cpp.s
 .PHONY : PostProcessing/LimitBoneWeightsProcess.cpp.s
 
 PostProcessing/MakeVerboseFormat.o: PostProcessing/MakeVerboseFormat.cpp.o
@@ -4933,7 +4885,7 @@ PostProcessing/MakeVerboseFormat.o: PostProcessing/MakeVerboseFormat.cpp.o
 
 # target to build an object file
 PostProcessing/MakeVerboseFormat.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.o
 .PHONY : PostProcessing/MakeVerboseFormat.cpp.o
 
 PostProcessing/MakeVerboseFormat.i: PostProcessing/MakeVerboseFormat.cpp.i
@@ -4941,7 +4893,7 @@ PostProcessing/MakeVerboseFormat.i: PostProcessing/MakeVerboseFormat.cpp.i
 
 # target to preprocess a source file
 PostProcessing/MakeVerboseFormat.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.i
 .PHONY : PostProcessing/MakeVerboseFormat.cpp.i
 
 PostProcessing/MakeVerboseFormat.s: PostProcessing/MakeVerboseFormat.cpp.s
@@ -4949,7 +4901,7 @@ PostProcessing/MakeVerboseFormat.s: PostProcessing/MakeVerboseFormat.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/MakeVerboseFormat.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/MakeVerboseFormat.cpp.s
 .PHONY : PostProcessing/MakeVerboseFormat.cpp.s
 
 PostProcessing/OptimizeGraph.o: PostProcessing/OptimizeGraph.cpp.o
@@ -4957,7 +4909,7 @@ PostProcessing/OptimizeGraph.o: PostProcessing/OptimizeGraph.cpp.o
 
 # target to build an object file
 PostProcessing/OptimizeGraph.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.o
 .PHONY : PostProcessing/OptimizeGraph.cpp.o
 
 PostProcessing/OptimizeGraph.i: PostProcessing/OptimizeGraph.cpp.i
@@ -4965,7 +4917,7 @@ PostProcessing/OptimizeGraph.i: PostProcessing/OptimizeGraph.cpp.i
 
 # target to preprocess a source file
 PostProcessing/OptimizeGraph.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.i
 .PHONY : PostProcessing/OptimizeGraph.cpp.i
 
 PostProcessing/OptimizeGraph.s: PostProcessing/OptimizeGraph.cpp.s
@@ -4973,7 +4925,7 @@ PostProcessing/OptimizeGraph.s: PostProcessing/OptimizeGraph.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/OptimizeGraph.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeGraph.cpp.s
 .PHONY : PostProcessing/OptimizeGraph.cpp.s
 
 PostProcessing/OptimizeMeshes.o: PostProcessing/OptimizeMeshes.cpp.o
@@ -4981,7 +4933,7 @@ PostProcessing/OptimizeMeshes.o: PostProcessing/OptimizeMeshes.cpp.o
 
 # target to build an object file
 PostProcessing/OptimizeMeshes.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.o
 .PHONY : PostProcessing/OptimizeMeshes.cpp.o
 
 PostProcessing/OptimizeMeshes.i: PostProcessing/OptimizeMeshes.cpp.i
@@ -4989,7 +4941,7 @@ PostProcessing/OptimizeMeshes.i: PostProcessing/OptimizeMeshes.cpp.i
 
 # target to preprocess a source file
 PostProcessing/OptimizeMeshes.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.i
 .PHONY : PostProcessing/OptimizeMeshes.cpp.i
 
 PostProcessing/OptimizeMeshes.s: PostProcessing/OptimizeMeshes.cpp.s
@@ -4997,7 +4949,7 @@ PostProcessing/OptimizeMeshes.s: PostProcessing/OptimizeMeshes.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/OptimizeMeshes.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/OptimizeMeshes.cpp.s
 .PHONY : PostProcessing/OptimizeMeshes.cpp.s
 
 PostProcessing/PretransformVertices.o: PostProcessing/PretransformVertices.cpp.o
@@ -5005,7 +4957,7 @@ PostProcessing/PretransformVertices.o: PostProcessing/PretransformVertices.cpp.o
 
 # target to build an object file
 PostProcessing/PretransformVertices.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.o
 .PHONY : PostProcessing/PretransformVertices.cpp.o
 
 PostProcessing/PretransformVertices.i: PostProcessing/PretransformVertices.cpp.i
@@ -5013,7 +4965,7 @@ PostProcessing/PretransformVertices.i: PostProcessing/PretransformVertices.cpp.i
 
 # target to preprocess a source file
 PostProcessing/PretransformVertices.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.i
 .PHONY : PostProcessing/PretransformVertices.cpp.i
 
 PostProcessing/PretransformVertices.s: PostProcessing/PretransformVertices.cpp.s
@@ -5021,7 +4973,7 @@ PostProcessing/PretransformVertices.s: PostProcessing/PretransformVertices.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/PretransformVertices.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/PretransformVertices.cpp.s
 .PHONY : PostProcessing/PretransformVertices.cpp.s
 
 PostProcessing/ProcessHelper.o: PostProcessing/ProcessHelper.cpp.o
@@ -5029,7 +4981,7 @@ PostProcessing/ProcessHelper.o: PostProcessing/ProcessHelper.cpp.o
 
 # target to build an object file
 PostProcessing/ProcessHelper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.o
 .PHONY : PostProcessing/ProcessHelper.cpp.o
 
 PostProcessing/ProcessHelper.i: PostProcessing/ProcessHelper.cpp.i
@@ -5037,7 +4989,7 @@ PostProcessing/ProcessHelper.i: PostProcessing/ProcessHelper.cpp.i
 
 # target to preprocess a source file
 PostProcessing/ProcessHelper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.i
 .PHONY : PostProcessing/ProcessHelper.cpp.i
 
 PostProcessing/ProcessHelper.s: PostProcessing/ProcessHelper.cpp.s
@@ -5045,7 +4997,7 @@ PostProcessing/ProcessHelper.s: PostProcessing/ProcessHelper.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/ProcessHelper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ProcessHelper.cpp.s
 .PHONY : PostProcessing/ProcessHelper.cpp.s
 
 PostProcessing/RemoveRedundantMaterials.o: PostProcessing/RemoveRedundantMaterials.cpp.o
@@ -5053,7 +5005,7 @@ PostProcessing/RemoveRedundantMaterials.o: PostProcessing/RemoveRedundantMateria
 
 # target to build an object file
 PostProcessing/RemoveRedundantMaterials.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.o
 .PHONY : PostProcessing/RemoveRedundantMaterials.cpp.o
 
 PostProcessing/RemoveRedundantMaterials.i: PostProcessing/RemoveRedundantMaterials.cpp.i
@@ -5061,7 +5013,7 @@ PostProcessing/RemoveRedundantMaterials.i: PostProcessing/RemoveRedundantMateria
 
 # target to preprocess a source file
 PostProcessing/RemoveRedundantMaterials.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.i
 .PHONY : PostProcessing/RemoveRedundantMaterials.cpp.i
 
 PostProcessing/RemoveRedundantMaterials.s: PostProcessing/RemoveRedundantMaterials.cpp.s
@@ -5069,7 +5021,7 @@ PostProcessing/RemoveRedundantMaterials.s: PostProcessing/RemoveRedundantMateria
 
 # target to generate assembly for a file
 PostProcessing/RemoveRedundantMaterials.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveRedundantMaterials.cpp.s
 .PHONY : PostProcessing/RemoveRedundantMaterials.cpp.s
 
 PostProcessing/RemoveVCProcess.o: PostProcessing/RemoveVCProcess.cpp.o
@@ -5077,7 +5029,7 @@ PostProcessing/RemoveVCProcess.o: PostProcessing/RemoveVCProcess.cpp.o
 
 # target to build an object file
 PostProcessing/RemoveVCProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.o
 .PHONY : PostProcessing/RemoveVCProcess.cpp.o
 
 PostProcessing/RemoveVCProcess.i: PostProcessing/RemoveVCProcess.cpp.i
@@ -5085,7 +5037,7 @@ PostProcessing/RemoveVCProcess.i: PostProcessing/RemoveVCProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/RemoveVCProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.i
 .PHONY : PostProcessing/RemoveVCProcess.cpp.i
 
 PostProcessing/RemoveVCProcess.s: PostProcessing/RemoveVCProcess.cpp.s
@@ -5093,7 +5045,7 @@ PostProcessing/RemoveVCProcess.s: PostProcessing/RemoveVCProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/RemoveVCProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/RemoveVCProcess.cpp.s
 .PHONY : PostProcessing/RemoveVCProcess.cpp.s
 
 PostProcessing/ScaleProcess.o: PostProcessing/ScaleProcess.cpp.o
@@ -5101,7 +5053,7 @@ PostProcessing/ScaleProcess.o: PostProcessing/ScaleProcess.cpp.o
 
 # target to build an object file
 PostProcessing/ScaleProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.o
 .PHONY : PostProcessing/ScaleProcess.cpp.o
 
 PostProcessing/ScaleProcess.i: PostProcessing/ScaleProcess.cpp.i
@@ -5109,7 +5061,7 @@ PostProcessing/ScaleProcess.i: PostProcessing/ScaleProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/ScaleProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.i
 .PHONY : PostProcessing/ScaleProcess.cpp.i
 
 PostProcessing/ScaleProcess.s: PostProcessing/ScaleProcess.cpp.s
@@ -5117,7 +5069,7 @@ PostProcessing/ScaleProcess.s: PostProcessing/ScaleProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/ScaleProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ScaleProcess.cpp.s
 .PHONY : PostProcessing/ScaleProcess.cpp.s
 
 PostProcessing/SortByPTypeProcess.o: PostProcessing/SortByPTypeProcess.cpp.o
@@ -5125,7 +5077,7 @@ PostProcessing/SortByPTypeProcess.o: PostProcessing/SortByPTypeProcess.cpp.o
 
 # target to build an object file
 PostProcessing/SortByPTypeProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.o
 .PHONY : PostProcessing/SortByPTypeProcess.cpp.o
 
 PostProcessing/SortByPTypeProcess.i: PostProcessing/SortByPTypeProcess.cpp.i
@@ -5133,7 +5085,7 @@ PostProcessing/SortByPTypeProcess.i: PostProcessing/SortByPTypeProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/SortByPTypeProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.i
 .PHONY : PostProcessing/SortByPTypeProcess.cpp.i
 
 PostProcessing/SortByPTypeProcess.s: PostProcessing/SortByPTypeProcess.cpp.s
@@ -5141,7 +5093,7 @@ PostProcessing/SortByPTypeProcess.s: PostProcessing/SortByPTypeProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/SortByPTypeProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SortByPTypeProcess.cpp.s
 .PHONY : PostProcessing/SortByPTypeProcess.cpp.s
 
 PostProcessing/SplitByBoneCountProcess.o: PostProcessing/SplitByBoneCountProcess.cpp.o
@@ -5149,7 +5101,7 @@ PostProcessing/SplitByBoneCountProcess.o: PostProcessing/SplitByBoneCountProcess
 
 # target to build an object file
 PostProcessing/SplitByBoneCountProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.o
 .PHONY : PostProcessing/SplitByBoneCountProcess.cpp.o
 
 PostProcessing/SplitByBoneCountProcess.i: PostProcessing/SplitByBoneCountProcess.cpp.i
@@ -5157,7 +5109,7 @@ PostProcessing/SplitByBoneCountProcess.i: PostProcessing/SplitByBoneCountProcess
 
 # target to preprocess a source file
 PostProcessing/SplitByBoneCountProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.i
 .PHONY : PostProcessing/SplitByBoneCountProcess.cpp.i
 
 PostProcessing/SplitByBoneCountProcess.s: PostProcessing/SplitByBoneCountProcess.cpp.s
@@ -5165,7 +5117,7 @@ PostProcessing/SplitByBoneCountProcess.s: PostProcessing/SplitByBoneCountProcess
 
 # target to generate assembly for a file
 PostProcessing/SplitByBoneCountProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitByBoneCountProcess.cpp.s
 .PHONY : PostProcessing/SplitByBoneCountProcess.cpp.s
 
 PostProcessing/SplitLargeMeshes.o: PostProcessing/SplitLargeMeshes.cpp.o
@@ -5173,7 +5125,7 @@ PostProcessing/SplitLargeMeshes.o: PostProcessing/SplitLargeMeshes.cpp.o
 
 # target to build an object file
 PostProcessing/SplitLargeMeshes.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.o
 .PHONY : PostProcessing/SplitLargeMeshes.cpp.o
 
 PostProcessing/SplitLargeMeshes.i: PostProcessing/SplitLargeMeshes.cpp.i
@@ -5181,7 +5133,7 @@ PostProcessing/SplitLargeMeshes.i: PostProcessing/SplitLargeMeshes.cpp.i
 
 # target to preprocess a source file
 PostProcessing/SplitLargeMeshes.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.i
 .PHONY : PostProcessing/SplitLargeMeshes.cpp.i
 
 PostProcessing/SplitLargeMeshes.s: PostProcessing/SplitLargeMeshes.cpp.s
@@ -5189,7 +5141,7 @@ PostProcessing/SplitLargeMeshes.s: PostProcessing/SplitLargeMeshes.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/SplitLargeMeshes.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/SplitLargeMeshes.cpp.s
 .PHONY : PostProcessing/SplitLargeMeshes.cpp.s
 
 PostProcessing/TextureTransform.o: PostProcessing/TextureTransform.cpp.o
@@ -5197,7 +5149,7 @@ PostProcessing/TextureTransform.o: PostProcessing/TextureTransform.cpp.o
 
 # target to build an object file
 PostProcessing/TextureTransform.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.o
 .PHONY : PostProcessing/TextureTransform.cpp.o
 
 PostProcessing/TextureTransform.i: PostProcessing/TextureTransform.cpp.i
@@ -5205,7 +5157,7 @@ PostProcessing/TextureTransform.i: PostProcessing/TextureTransform.cpp.i
 
 # target to preprocess a source file
 PostProcessing/TextureTransform.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.i
 .PHONY : PostProcessing/TextureTransform.cpp.i
 
 PostProcessing/TextureTransform.s: PostProcessing/TextureTransform.cpp.s
@@ -5213,7 +5165,7 @@ PostProcessing/TextureTransform.s: PostProcessing/TextureTransform.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/TextureTransform.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TextureTransform.cpp.s
 .PHONY : PostProcessing/TextureTransform.cpp.s
 
 PostProcessing/TriangulateProcess.o: PostProcessing/TriangulateProcess.cpp.o
@@ -5221,7 +5173,7 @@ PostProcessing/TriangulateProcess.o: PostProcessing/TriangulateProcess.cpp.o
 
 # target to build an object file
 PostProcessing/TriangulateProcess.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.o
 .PHONY : PostProcessing/TriangulateProcess.cpp.o
 
 PostProcessing/TriangulateProcess.i: PostProcessing/TriangulateProcess.cpp.i
@@ -5229,7 +5181,7 @@ PostProcessing/TriangulateProcess.i: PostProcessing/TriangulateProcess.cpp.i
 
 # target to preprocess a source file
 PostProcessing/TriangulateProcess.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.i
 .PHONY : PostProcessing/TriangulateProcess.cpp.i
 
 PostProcessing/TriangulateProcess.s: PostProcessing/TriangulateProcess.cpp.s
@@ -5237,7 +5189,7 @@ PostProcessing/TriangulateProcess.s: PostProcessing/TriangulateProcess.cpp.s
 
 # target to generate assembly for a file
 PostProcessing/TriangulateProcess.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/TriangulateProcess.cpp.s
 .PHONY : PostProcessing/TriangulateProcess.cpp.s
 
 PostProcessing/ValidateDataStructure.o: PostProcessing/ValidateDataStructure.cpp.o
@@ -5245,7 +5197,7 @@ PostProcessing/ValidateDataStructure.o: PostProcessing/ValidateDataStructure.cpp
 
 # target to build an object file
 PostProcessing/ValidateDataStructure.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.o
 .PHONY : PostProcessing/ValidateDataStructure.cpp.o
 
 PostProcessing/ValidateDataStructure.i: PostProcessing/ValidateDataStructure.cpp.i
@@ -5253,7 +5205,7 @@ PostProcessing/ValidateDataStructure.i: PostProcessing/ValidateDataStructure.cpp
 
 # target to preprocess a source file
 PostProcessing/ValidateDataStructure.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.i
 .PHONY : PostProcessing/ValidateDataStructure.cpp.i
 
 PostProcessing/ValidateDataStructure.s: PostProcessing/ValidateDataStructure.cpp.s
@@ -5261,7 +5213,7 @@ PostProcessing/ValidateDataStructure.s: PostProcessing/ValidateDataStructure.cpp
 
 # target to generate assembly for a file
 PostProcessing/ValidateDataStructure.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/PostProcessing/ValidateDataStructure.cpp.s
 .PHONY : PostProcessing/ValidateDataStructure.cpp.s
 
 __/contrib/clipper/clipper.o: __/contrib/clipper/clipper.cpp.o
@@ -5269,7 +5221,7 @@ __/contrib/clipper/clipper.o: __/contrib/clipper/clipper.cpp.o
 
 # target to build an object file
 __/contrib/clipper/clipper.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.o
 .PHONY : __/contrib/clipper/clipper.cpp.o
 
 __/contrib/clipper/clipper.i: __/contrib/clipper/clipper.cpp.i
@@ -5277,7 +5229,7 @@ __/contrib/clipper/clipper.i: __/contrib/clipper/clipper.cpp.i
 
 # target to preprocess a source file
 __/contrib/clipper/clipper.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.i
 .PHONY : __/contrib/clipper/clipper.cpp.i
 
 __/contrib/clipper/clipper.s: __/contrib/clipper/clipper.cpp.s
@@ -5285,7 +5237,7 @@ __/contrib/clipper/clipper.s: __/contrib/clipper/clipper.cpp.s
 
 # target to generate assembly for a file
 __/contrib/clipper/clipper.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/clipper/clipper.cpp.s
 .PHONY : __/contrib/clipper/clipper.cpp.s
 
 __/contrib/openddlparser/code/DDLNode.o: __/contrib/openddlparser/code/DDLNode.cpp.o
@@ -5293,7 +5245,7 @@ __/contrib/openddlparser/code/DDLNode.o: __/contrib/openddlparser/code/DDLNode.c
 
 # target to build an object file
 __/contrib/openddlparser/code/DDLNode.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.o
 .PHONY : __/contrib/openddlparser/code/DDLNode.cpp.o
 
 __/contrib/openddlparser/code/DDLNode.i: __/contrib/openddlparser/code/DDLNode.cpp.i
@@ -5301,7 +5253,7 @@ __/contrib/openddlparser/code/DDLNode.i: __/contrib/openddlparser/code/DDLNode.c
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/DDLNode.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.i
 .PHONY : __/contrib/openddlparser/code/DDLNode.cpp.i
 
 __/contrib/openddlparser/code/DDLNode.s: __/contrib/openddlparser/code/DDLNode.cpp.s
@@ -5309,7 +5261,7 @@ __/contrib/openddlparser/code/DDLNode.s: __/contrib/openddlparser/code/DDLNode.c
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/DDLNode.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/DDLNode.cpp.s
 .PHONY : __/contrib/openddlparser/code/DDLNode.cpp.s
 
 __/contrib/openddlparser/code/OpenDDLCommon.o: __/contrib/openddlparser/code/OpenDDLCommon.cpp.o
@@ -5317,7 +5269,7 @@ __/contrib/openddlparser/code/OpenDDLCommon.o: __/contrib/openddlparser/code/Ope
 
 # target to build an object file
 __/contrib/openddlparser/code/OpenDDLCommon.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.o
 .PHONY : __/contrib/openddlparser/code/OpenDDLCommon.cpp.o
 
 __/contrib/openddlparser/code/OpenDDLCommon.i: __/contrib/openddlparser/code/OpenDDLCommon.cpp.i
@@ -5325,7 +5277,7 @@ __/contrib/openddlparser/code/OpenDDLCommon.i: __/contrib/openddlparser/code/Ope
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/OpenDDLCommon.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.i
 .PHONY : __/contrib/openddlparser/code/OpenDDLCommon.cpp.i
 
 __/contrib/openddlparser/code/OpenDDLCommon.s: __/contrib/openddlparser/code/OpenDDLCommon.cpp.s
@@ -5333,7 +5285,7 @@ __/contrib/openddlparser/code/OpenDDLCommon.s: __/contrib/openddlparser/code/Ope
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/OpenDDLCommon.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLCommon.cpp.s
 .PHONY : __/contrib/openddlparser/code/OpenDDLCommon.cpp.s
 
 __/contrib/openddlparser/code/OpenDDLExport.o: __/contrib/openddlparser/code/OpenDDLExport.cpp.o
@@ -5341,7 +5293,7 @@ __/contrib/openddlparser/code/OpenDDLExport.o: __/contrib/openddlparser/code/Ope
 
 # target to build an object file
 __/contrib/openddlparser/code/OpenDDLExport.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.o
 .PHONY : __/contrib/openddlparser/code/OpenDDLExport.cpp.o
 
 __/contrib/openddlparser/code/OpenDDLExport.i: __/contrib/openddlparser/code/OpenDDLExport.cpp.i
@@ -5349,7 +5301,7 @@ __/contrib/openddlparser/code/OpenDDLExport.i: __/contrib/openddlparser/code/Ope
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/OpenDDLExport.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.i
 .PHONY : __/contrib/openddlparser/code/OpenDDLExport.cpp.i
 
 __/contrib/openddlparser/code/OpenDDLExport.s: __/contrib/openddlparser/code/OpenDDLExport.cpp.s
@@ -5357,7 +5309,7 @@ __/contrib/openddlparser/code/OpenDDLExport.s: __/contrib/openddlparser/code/Ope
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/OpenDDLExport.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLExport.cpp.s
 .PHONY : __/contrib/openddlparser/code/OpenDDLExport.cpp.s
 
 __/contrib/openddlparser/code/OpenDDLParser.o: __/contrib/openddlparser/code/OpenDDLParser.cpp.o
@@ -5365,7 +5317,7 @@ __/contrib/openddlparser/code/OpenDDLParser.o: __/contrib/openddlparser/code/Ope
 
 # target to build an object file
 __/contrib/openddlparser/code/OpenDDLParser.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.o
 .PHONY : __/contrib/openddlparser/code/OpenDDLParser.cpp.o
 
 __/contrib/openddlparser/code/OpenDDLParser.i: __/contrib/openddlparser/code/OpenDDLParser.cpp.i
@@ -5373,7 +5325,7 @@ __/contrib/openddlparser/code/OpenDDLParser.i: __/contrib/openddlparser/code/Ope
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/OpenDDLParser.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.i
 .PHONY : __/contrib/openddlparser/code/OpenDDLParser.cpp.i
 
 __/contrib/openddlparser/code/OpenDDLParser.s: __/contrib/openddlparser/code/OpenDDLParser.cpp.s
@@ -5381,7 +5333,7 @@ __/contrib/openddlparser/code/OpenDDLParser.s: __/contrib/openddlparser/code/Ope
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/OpenDDLParser.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLParser.cpp.s
 .PHONY : __/contrib/openddlparser/code/OpenDDLParser.cpp.s
 
 __/contrib/openddlparser/code/OpenDDLStream.o: __/contrib/openddlparser/code/OpenDDLStream.cpp.o
@@ -5389,7 +5341,7 @@ __/contrib/openddlparser/code/OpenDDLStream.o: __/contrib/openddlparser/code/Ope
 
 # target to build an object file
 __/contrib/openddlparser/code/OpenDDLStream.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.o
 .PHONY : __/contrib/openddlparser/code/OpenDDLStream.cpp.o
 
 __/contrib/openddlparser/code/OpenDDLStream.i: __/contrib/openddlparser/code/OpenDDLStream.cpp.i
@@ -5397,7 +5349,7 @@ __/contrib/openddlparser/code/OpenDDLStream.i: __/contrib/openddlparser/code/Ope
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/OpenDDLStream.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.i
 .PHONY : __/contrib/openddlparser/code/OpenDDLStream.cpp.i
 
 __/contrib/openddlparser/code/OpenDDLStream.s: __/contrib/openddlparser/code/OpenDDLStream.cpp.s
@@ -5405,7 +5357,7 @@ __/contrib/openddlparser/code/OpenDDLStream.s: __/contrib/openddlparser/code/Ope
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/OpenDDLStream.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/OpenDDLStream.cpp.s
 .PHONY : __/contrib/openddlparser/code/OpenDDLStream.cpp.s
 
 __/contrib/openddlparser/code/Value.o: __/contrib/openddlparser/code/Value.cpp.o
@@ -5413,7 +5365,7 @@ __/contrib/openddlparser/code/Value.o: __/contrib/openddlparser/code/Value.cpp.o
 
 # target to build an object file
 __/contrib/openddlparser/code/Value.cpp.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.o
 .PHONY : __/contrib/openddlparser/code/Value.cpp.o
 
 __/contrib/openddlparser/code/Value.i: __/contrib/openddlparser/code/Value.cpp.i
@@ -5421,7 +5373,7 @@ __/contrib/openddlparser/code/Value.i: __/contrib/openddlparser/code/Value.cpp.i
 
 # target to preprocess a source file
 __/contrib/openddlparser/code/Value.cpp.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.i
 .PHONY : __/contrib/openddlparser/code/Value.cpp.i
 
 __/contrib/openddlparser/code/Value.s: __/contrib/openddlparser/code/Value.cpp.s
@@ -5429,7 +5381,7 @@ __/contrib/openddlparser/code/Value.s: __/contrib/openddlparser/code/Value.cpp.s
 
 # target to generate assembly for a file
 __/contrib/openddlparser/code/Value.cpp.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/openddlparser/code/Value.cpp.s
 .PHONY : __/contrib/openddlparser/code/Value.cpp.s
 
 __/contrib/poly2tri/poly2tri/common/shapes.o: __/contrib/poly2tri/poly2tri/common/shapes.cc.o
@@ -5437,7 +5389,7 @@ __/contrib/poly2tri/poly2tri/common/shapes.o: __/contrib/poly2tri/poly2tri/commo
 
 # target to build an object file
 __/contrib/poly2tri/poly2tri/common/shapes.cc.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.o
 .PHONY : __/contrib/poly2tri/poly2tri/common/shapes.cc.o
 
 __/contrib/poly2tri/poly2tri/common/shapes.i: __/contrib/poly2tri/poly2tri/common/shapes.cc.i
@@ -5445,7 +5397,7 @@ __/contrib/poly2tri/poly2tri/common/shapes.i: __/contrib/poly2tri/poly2tri/commo
 
 # target to preprocess a source file
 __/contrib/poly2tri/poly2tri/common/shapes.cc.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.i
 .PHONY : __/contrib/poly2tri/poly2tri/common/shapes.cc.i
 
 __/contrib/poly2tri/poly2tri/common/shapes.s: __/contrib/poly2tri/poly2tri/common/shapes.cc.s
@@ -5453,7 +5405,7 @@ __/contrib/poly2tri/poly2tri/common/shapes.s: __/contrib/poly2tri/poly2tri/commo
 
 # target to generate assembly for a file
 __/contrib/poly2tri/poly2tri/common/shapes.cc.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/common/shapes.cc.s
 .PHONY : __/contrib/poly2tri/poly2tri/common/shapes.cc.s
 
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.o: __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o
@@ -5461,7 +5413,7 @@ __/contrib/poly2tri/poly2tri/sweep/advancing_front.o: __/contrib/poly2tri/poly2t
 
 # target to build an object file
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.o
 
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.i: __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
@@ -5469,7 +5421,7 @@ __/contrib/poly2tri/poly2tri/sweep/advancing_front.i: __/contrib/poly2tri/poly2t
 
 # target to preprocess a source file
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.i
 
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.s: __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
@@ -5477,7 +5429,7 @@ __/contrib/poly2tri/poly2tri/sweep/advancing_front.s: __/contrib/poly2tri/poly2t
 
 # target to generate assembly for a file
 __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/advancing_front.cc.s
 
 __/contrib/poly2tri/poly2tri/sweep/cdt.o: __/contrib/poly2tri/poly2tri/sweep/cdt.cc.o
@@ -5485,7 +5437,7 @@ __/contrib/poly2tri/poly2tri/sweep/cdt.o: __/contrib/poly2tri/poly2tri/sweep/cdt
 
 # target to build an object file
 __/contrib/poly2tri/poly2tri/sweep/cdt.cc.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.o
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/cdt.cc.o
 
 __/contrib/poly2tri/poly2tri/sweep/cdt.i: __/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
@@ -5493,7 +5445,7 @@ __/contrib/poly2tri/poly2tri/sweep/cdt.i: __/contrib/poly2tri/poly2tri/sweep/cdt
 
 # target to preprocess a source file
 __/contrib/poly2tri/poly2tri/sweep/cdt.cc.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/cdt.cc.i
 
 __/contrib/poly2tri/poly2tri/sweep/cdt.s: __/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
@@ -5501,7 +5453,7 @@ __/contrib/poly2tri/poly2tri/sweep/cdt.s: __/contrib/poly2tri/poly2tri/sweep/cdt
 
 # target to generate assembly for a file
 __/contrib/poly2tri/poly2tri/sweep/cdt.cc.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/cdt.cc.s
 
 __/contrib/poly2tri/poly2tri/sweep/sweep.o: __/contrib/poly2tri/poly2tri/sweep/sweep.cc.o
@@ -5509,7 +5461,7 @@ __/contrib/poly2tri/poly2tri/sweep/sweep.o: __/contrib/poly2tri/poly2tri/sweep/s
 
 # target to build an object file
 __/contrib/poly2tri/poly2tri/sweep/sweep.cc.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.o
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep.cc.o
 
 __/contrib/poly2tri/poly2tri/sweep/sweep.i: __/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
@@ -5517,7 +5469,7 @@ __/contrib/poly2tri/poly2tri/sweep/sweep.i: __/contrib/poly2tri/poly2tri/sweep/s
 
 # target to preprocess a source file
 __/contrib/poly2tri/poly2tri/sweep/sweep.cc.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep.cc.i
 
 __/contrib/poly2tri/poly2tri/sweep/sweep.s: __/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
@@ -5525,7 +5477,7 @@ __/contrib/poly2tri/poly2tri/sweep/sweep.s: __/contrib/poly2tri/poly2tri/sweep/s
 
 # target to generate assembly for a file
 __/contrib/poly2tri/poly2tri/sweep/sweep.cc.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep.cc.s
 
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.o: __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o
@@ -5533,7 +5485,7 @@ __/contrib/poly2tri/poly2tri/sweep/sweep_context.o: __/contrib/poly2tri/poly2tri
 
 # target to build an object file
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.o
 
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.i: __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
@@ -5541,7 +5493,7 @@ __/contrib/poly2tri/poly2tri/sweep/sweep_context.i: __/contrib/poly2tri/poly2tri
 
 # target to preprocess a source file
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.i
 
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.s: __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
@@ -5549,39 +5501,39 @@ __/contrib/poly2tri/poly2tri/sweep/sweep_context.s: __/contrib/poly2tri/poly2tri
 
 # target to generate assembly for a file
 __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
 .PHONY : __/contrib/poly2tri/poly2tri/sweep/sweep_context.cc.s
 
-__/contrib/unzip/crypt.o: __/contrib/unzip/crypt.c.o
-.PHONY : __/contrib/unzip/crypt.o
+__/contrib/pugixml/src/pugixml.o: __/contrib/pugixml/src/pugixml.cpp.o
+.PHONY : __/contrib/pugixml/src/pugixml.o
 
 # target to build an object file
-__/contrib/unzip/crypt.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/crypt.c.o
-.PHONY : __/contrib/unzip/crypt.c.o
+__/contrib/pugixml/src/pugixml.cpp.o:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/pugixml/src/pugixml.cpp.o
+.PHONY : __/contrib/pugixml/src/pugixml.cpp.o
 
-__/contrib/unzip/crypt.i: __/contrib/unzip/crypt.c.i
-.PHONY : __/contrib/unzip/crypt.i
+__/contrib/pugixml/src/pugixml.i: __/contrib/pugixml/src/pugixml.cpp.i
+.PHONY : __/contrib/pugixml/src/pugixml.i
 
 # target to preprocess a source file
-__/contrib/unzip/crypt.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/crypt.c.i
-.PHONY : __/contrib/unzip/crypt.c.i
+__/contrib/pugixml/src/pugixml.cpp.i:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/pugixml/src/pugixml.cpp.i
+.PHONY : __/contrib/pugixml/src/pugixml.cpp.i
 
-__/contrib/unzip/crypt.s: __/contrib/unzip/crypt.c.s
-.PHONY : __/contrib/unzip/crypt.s
+__/contrib/pugixml/src/pugixml.s: __/contrib/pugixml/src/pugixml.cpp.s
+.PHONY : __/contrib/pugixml/src/pugixml.s
 
 # target to generate assembly for a file
-__/contrib/unzip/crypt.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/crypt.c.s
-.PHONY : __/contrib/unzip/crypt.c.s
+__/contrib/pugixml/src/pugixml.cpp.s:
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/pugixml/src/pugixml.cpp.s
+.PHONY : __/contrib/pugixml/src/pugixml.cpp.s
 
 __/contrib/unzip/ioapi.o: __/contrib/unzip/ioapi.c.o
 .PHONY : __/contrib/unzip/ioapi.o
 
 # target to build an object file
 __/contrib/unzip/ioapi.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.o
 .PHONY : __/contrib/unzip/ioapi.c.o
 
 __/contrib/unzip/ioapi.i: __/contrib/unzip/ioapi.c.i
@@ -5589,7 +5541,7 @@ __/contrib/unzip/ioapi.i: __/contrib/unzip/ioapi.c.i
 
 # target to preprocess a source file
 __/contrib/unzip/ioapi.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.i
 .PHONY : __/contrib/unzip/ioapi.c.i
 
 __/contrib/unzip/ioapi.s: __/contrib/unzip/ioapi.c.s
@@ -5597,7 +5549,7 @@ __/contrib/unzip/ioapi.s: __/contrib/unzip/ioapi.c.s
 
 # target to generate assembly for a file
 __/contrib/unzip/ioapi.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/ioapi.c.s
 .PHONY : __/contrib/unzip/ioapi.c.s
 
 __/contrib/unzip/unzip.o: __/contrib/unzip/unzip.c.o
@@ -5605,7 +5557,7 @@ __/contrib/unzip/unzip.o: __/contrib/unzip/unzip.c.o
 
 # target to build an object file
 __/contrib/unzip/unzip.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.o
 .PHONY : __/contrib/unzip/unzip.c.o
 
 __/contrib/unzip/unzip.i: __/contrib/unzip/unzip.c.i
@@ -5613,7 +5565,7 @@ __/contrib/unzip/unzip.i: __/contrib/unzip/unzip.c.i
 
 # target to preprocess a source file
 __/contrib/unzip/unzip.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.i
 .PHONY : __/contrib/unzip/unzip.c.i
 
 __/contrib/unzip/unzip.s: __/contrib/unzip/unzip.c.s
@@ -5621,7 +5573,7 @@ __/contrib/unzip/unzip.s: __/contrib/unzip/unzip.c.s
 
 # target to generate assembly for a file
 __/contrib/unzip/unzip.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/unzip/unzip.c.s
 .PHONY : __/contrib/unzip/unzip.c.s
 
 __/contrib/zip/src/zip.o: __/contrib/zip/src/zip.c.o
@@ -5629,7 +5581,7 @@ __/contrib/zip/src/zip.o: __/contrib/zip/src/zip.c.o
 
 # target to build an object file
 __/contrib/zip/src/zip.c.o:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.o
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.o
 .PHONY : __/contrib/zip/src/zip.c.o
 
 __/contrib/zip/src/zip.i: __/contrib/zip/src/zip.c.i
@@ -5637,7 +5589,7 @@ __/contrib/zip/src/zip.i: __/contrib/zip/src/zip.c.i
 
 # target to preprocess a source file
 __/contrib/zip/src/zip.c.i:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.i
 .PHONY : __/contrib/zip/src/zip.c.i
 
 __/contrib/zip/src/zip.s: __/contrib/zip/src/zip.c.s
@@ -5645,7 +5597,7 @@ __/contrib/zip/src/zip.s: __/contrib/zip/src/zip.c.s
 
 # target to generate assembly for a file
 __/contrib/zip/src/zip.c.s:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/build.make sandbox/3rdparty/assimp/code/CMakeFiles/assimp.dir/__/contrib/zip/src/zip.c.s
 .PHONY : __/contrib/zip/src/zip.c.s
 
 # Help Target
@@ -5889,15 +5841,6 @@ help:
 	@echo "... AssetLib/LWS/LWSLoader.o"
 	@echo "... AssetLib/LWS/LWSLoader.i"
 	@echo "... AssetLib/LWS/LWSLoader.s"
-	@echo "... AssetLib/M3D/M3DExporter.o"
-	@echo "... AssetLib/M3D/M3DExporter.i"
-	@echo "... AssetLib/M3D/M3DExporter.s"
-	@echo "... AssetLib/M3D/M3DImporter.o"
-	@echo "... AssetLib/M3D/M3DImporter.i"
-	@echo "... AssetLib/M3D/M3DImporter.s"
-	@echo "... AssetLib/M3D/M3DWrapper.o"
-	@echo "... AssetLib/M3D/M3DWrapper.i"
-	@echo "... AssetLib/M3D/M3DWrapper.s"
 	@echo "... AssetLib/MD2/MD2Loader.o"
 	@echo "... AssetLib/MD2/MD2Loader.i"
 	@echo "... AssetLib/MD2/MD2Loader.s"
@@ -6024,6 +5967,9 @@ help:
 	@echo "... AssetLib/Unreal/UnrealLoader.o"
 	@echo "... AssetLib/Unreal/UnrealLoader.i"
 	@echo "... AssetLib/Unreal/UnrealLoader.s"
+	@echo "... AssetLib/VRML/VrmlConverter.o"
+	@echo "... AssetLib/VRML/VrmlConverter.i"
+	@echo "... AssetLib/VRML/VrmlConverter.s"
 	@echo "... AssetLib/X/XFileExporter.o"
 	@echo "... AssetLib/X/XFileExporter.i"
 	@echo "... AssetLib/X/XFileExporter.s"
@@ -6078,9 +6024,6 @@ help:
 	@echo "... AssetLib/XGL/XGLLoader.o"
 	@echo "... AssetLib/XGL/XGLLoader.i"
 	@echo "... AssetLib/XGL/XGLLoader.s"
-	@echo "... AssetLib/glTF/glTFCommon.o"
-	@echo "... AssetLib/glTF/glTFCommon.i"
-	@echo "... AssetLib/glTF/glTFCommon.s"
 	@echo "... AssetLib/glTF/glTFExporter.o"
 	@echo "... AssetLib/glTF/glTFExporter.i"
 	@echo "... AssetLib/glTF/glTFExporter.s"
@@ -6093,6 +6036,9 @@ help:
 	@echo "... AssetLib/glTF2/glTF2Importer.o"
 	@echo "... AssetLib/glTF2/glTF2Importer.i"
 	@echo "... AssetLib/glTF2/glTF2Importer.s"
+	@echo "... AssetLib/glTFCommon/glTFCommon.o"
+	@echo "... AssetLib/glTFCommon/glTFCommon.i"
+	@echo "... AssetLib/glTFCommon/glTFCommon.s"
 	@echo "... CApi/AssimpCExport.o"
 	@echo "... CApi/AssimpCExport.i"
 	@echo "... CApi/AssimpCExport.s"
@@ -6333,9 +6279,9 @@ help:
 	@echo "... __/contrib/poly2tri/poly2tri/sweep/sweep_context.o"
 	@echo "... __/contrib/poly2tri/poly2tri/sweep/sweep_context.i"
 	@echo "... __/contrib/poly2tri/poly2tri/sweep/sweep_context.s"
-	@echo "... __/contrib/unzip/crypt.o"
-	@echo "... __/contrib/unzip/crypt.i"
-	@echo "... __/contrib/unzip/crypt.s"
+	@echo "... __/contrib/pugixml/src/pugixml.o"
+	@echo "... __/contrib/pugixml/src/pugixml.i"
+	@echo "... __/contrib/pugixml/src/pugixml.s"
 	@echo "... __/contrib/unzip/ioapi.o"
 	@echo "... __/contrib/unzip/ioapi.i"
 	@echo "... __/contrib/unzip/ioapi.s"
@@ -6356,7 +6302,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

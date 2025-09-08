@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend
 include sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src && /opt/homebrew/bin/cmake -P /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/src && /opt/homebrew/bin/cmake -P /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 .PHONY : sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/codegen
@@ -82,10 +82,10 @@ sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/build
 
 sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/src /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw/src /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/3rdparty/glfw/src/CMakeFiles/update_mappings.dir/depend
 

@@ -17,6 +17,7 @@ target_include_directories(
     ${3rd_root_dir}/glad/include
     # ${3rd_root_dir}/glew/include #glew
     # ${glm_DIR} #glm
+    # ${3rd_root_dir}/assimp/include
     ${GLM_INCLUDE_DIRS}
 )
 

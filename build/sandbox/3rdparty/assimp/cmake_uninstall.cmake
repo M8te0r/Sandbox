@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/assimp/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/assimp/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/assimp/install_manifest.txt")
+IF(NOT EXISTS "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/install_manifest.txt")
 
-FILE(READ "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/assimp/install_manifest.txt" files)
+FILE(READ "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Include any dependencies generated for this target.
 include sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/depend.make
@@ -73,18 +73,18 @@ sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/codegen:
 .PHONY : sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/codegen
 
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/flags.make
-sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp
+sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o: sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o -MF CMakeFiles/glm.dir/detail/glm.cpp.o.d -o CMakeFiles/glm.dir/detail/glm.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o -MF CMakeFiles/glm.dir/detail/glm.cpp.o.d -o CMakeFiles/glm.dir/detail/glm.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp
 
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/glm.dir/detail/glm.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp > CMakeFiles/glm.dir/detail/glm.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp > CMakeFiles/glm.dir/detail/glm.cpp.i
 
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/glm.dir/detail/glm.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp -o CMakeFiles/glm.dir/detail/glm.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp -o CMakeFiles/glm.dir/detail/glm.cpp.s
 
 # Object files for target glm
 glm_OBJECTS = \
@@ -96,19 +96,19 @@ glm_EXTERNAL_OBJECTS =
 sandbox/3rdparty/glm/glm/libglm.a: sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o
 sandbox/3rdparty/glm/glm/libglm.a: sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/build.make
 sandbox/3rdparty/glm/glm/libglm.a: sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libglm.a"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm.dir/cmake_clean_target.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libglm.a"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm.dir/cmake_clean_target.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/build: sandbox/3rdparty/glm/glm/libglm.a
 .PHONY : sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/build
 
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm.dir/cmake_clean.cmake
 .PHONY : sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/clean
 
 sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm/glm /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/depend
 

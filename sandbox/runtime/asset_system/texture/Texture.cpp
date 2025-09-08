@@ -40,7 +40,7 @@ namespace Elysian
         }
         else
         {
-            std::cout << "Texture failed to load at path: " << path << std::endl;
+            std::cout << ": " << path << std::endl;
             stbi_image_free(data);
         }
 

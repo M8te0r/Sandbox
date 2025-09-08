@@ -1,4 +1,4 @@
-# Install script for directory: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm
+# Install script for directory: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm/cmake_install.cmake")
+  include("/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/glm/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/install_local_manifest.txt"
+  file(WRITE "/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glm/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -53,12 +53,12 @@ namespace Elysian
         // TODO 这其实算作一个pipeline？？？？
         {
             // 载入资源
-            m_asset_sys->loadShader("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/test_camera.vs",
-                                    "/Users/crystalized/cpp_project/mySandbox/sandbox/assets/shaders/test_camera.fs",
+            m_asset_sys->loadShader("../sandbox/assets/shaders/test_camera.vs",
+                                    "../sandbox/assets/shaders/test_camera.fs",
                                     nullptr,
                                     "testShader");
 
-            m_asset_sys->loadTexture("/Users/crystalized/cpp_project/mySandbox/sandbox/assets/textures/textureTriangle/container.jpg",
+            m_asset_sys->loadTexture("../sandbox/assets/textures/textureTriangle/container.jpg",
                                      "testTexture");
 
             m_asset_sys->loadMesh(static_cube_mesh, "testCube");

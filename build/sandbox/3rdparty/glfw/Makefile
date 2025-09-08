@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -85,16 +85,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"assimp-dev\" \"libassimp6.0.2-dev\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw//CMakeFiles/progress.marks
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/glfw//CMakeFiles/progress.marks
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/clean
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,18 +148,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/preinstall
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sandbox/3rdparty/glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -124,6 +169,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 .PHONY : help
 
@@ -136,7 +185,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/mySandbox/build/CMakeFiles/VerifyGlobs.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -P /Users/crystalized/cpp_project/Sandbox/build/CMakeFiles/VerifyGlobs.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

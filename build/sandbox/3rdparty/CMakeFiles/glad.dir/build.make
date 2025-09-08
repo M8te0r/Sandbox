@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Include any dependencies generated for this target.
 include sandbox/3rdparty/CMakeFiles/glad.dir/depend.make
@@ -73,18 +73,18 @@ sandbox/3rdparty/CMakeFiles/glad.dir/codegen:
 .PHONY : sandbox/3rdparty/CMakeFiles/glad.dir/codegen
 
 sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o: sandbox/3rdparty/CMakeFiles/glad.dir/flags.make
-sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o: /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c
+sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o: /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src/glad.c
 sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o: sandbox/3rdparty/CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o -MF CMakeFiles/glad.dir/glad/src/glad.c.o.d -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o -MF CMakeFiles/glad.dir/glad/src/glad.c.o.d -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src/glad.c
 
 sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/glad/src/glad.c.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c > CMakeFiles/glad.dir/glad/src/glad.c.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src/glad.c > CMakeFiles/glad.dir/glad/src/glad.c.i
 
 sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/glad/src/glad.c.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c -o CMakeFiles/glad.dir/glad/src/glad.c.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src/glad.c -o CMakeFiles/glad.dir/glad/src/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -93,22 +93,22 @@ glad_OBJECTS = \
 # External object files for target glad
 glad_EXTERNAL_OBJECTS =
 
-sandbox/3rdparty/libglad.a: sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o
-sandbox/3rdparty/libglad.a: sandbox/3rdparty/CMakeFiles/glad.dir/build.make
-sandbox/3rdparty/libglad.a: sandbox/3rdparty/CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libglad.a"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
+sandbox/3rdparty/libgladd.a: sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o
+sandbox/3rdparty/libgladd.a: sandbox/3rdparty/CMakeFiles/glad.dir/build.make
+sandbox/3rdparty/libgladd.a: sandbox/3rdparty/CMakeFiles/glad.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgladd.a"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sandbox/3rdparty/CMakeFiles/glad.dir/build: sandbox/3rdparty/libglad.a
+sandbox/3rdparty/CMakeFiles/glad.dir/build: sandbox/3rdparty/libgladd.a
 .PHONY : sandbox/3rdparty/CMakeFiles/glad.dir/build
 
 sandbox/3rdparty/CMakeFiles/glad.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty && $(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean.cmake
 .PHONY : sandbox/3rdparty/CMakeFiles/glad.dir/clean
 
 sandbox/3rdparty/CMakeFiles/glad.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/CMakeFiles/glad.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty /Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/CMakeFiles/glad.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/3rdparty/CMakeFiles/glad.dir/depend
 

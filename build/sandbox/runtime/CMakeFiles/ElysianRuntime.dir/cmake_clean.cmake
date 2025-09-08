@@ -45,8 +45,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.o.d"
   "CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o"
   "CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o.d"
-  "libElysianRuntime.a"
-  "libElysianRuntime.pdb"
+  "libElysianRuntimed.a"
+  "libElysianRuntimed.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

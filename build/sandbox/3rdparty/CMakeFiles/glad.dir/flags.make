@@ -4,7 +4,7 @@
 # compile C with /usr/bin/clang
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+C_INCLUDES = -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/Sandbox/sandbox/3rdparty/assimp/code/../include -I/Users/crystalized/cpp_project/Sandbox/build/sandbox/3rdparty/assimp/code/../include
 
 C_FLAGSarm64 = -g -arch arm64
 

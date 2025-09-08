@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/mySandbox
+CMAKE_SOURCE_DIR = /Users/crystalized/cpp_project/Sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/mySandbox/build
+CMAKE_BINARY_DIR = /Users/crystalized/cpp_project/Sandbox/build
 
 # Include any dependencies generated for this target.
 include sandbox/app/CMakeFiles/ElysianSandbox.dir/depend.make
@@ -73,18 +73,18 @@ sandbox/app/CMakeFiles/ElysianSandbox.dir/codegen:
 .PHONY : sandbox/app/CMakeFiles/ElysianSandbox.dir/codegen
 
 sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o: sandbox/app/CMakeFiles/ElysianSandbox.dir/flags.make
-sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o: /Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp
+sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o: /Users/crystalized/cpp_project/Sandbox/sandbox/app/main.cpp
 sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o: sandbox/app/CMakeFiles/ElysianSandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o -MF CMakeFiles/ElysianSandbox.dir/main.cpp.o.d -o CMakeFiles/ElysianSandbox.dir/main.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o -MF CMakeFiles/ElysianSandbox.dir/main.cpp.o.d -o CMakeFiles/ElysianSandbox.dir/main.cpp.o -c /Users/crystalized/cpp_project/Sandbox/sandbox/app/main.cpp
 
 sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ElysianSandbox.dir/main.cpp.i"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp > CMakeFiles/ElysianSandbox.dir/main.cpp.i
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/crystalized/cpp_project/Sandbox/sandbox/app/main.cpp > CMakeFiles/ElysianSandbox.dir/main.cpp.i
 
 sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ElysianSandbox.dir/main.cpp.s"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp -o CMakeFiles/ElysianSandbox.dir/main.cpp.s
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/app && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/crystalized/cpp_project/Sandbox/sandbox/app/main.cpp -o CMakeFiles/ElysianSandbox.dir/main.cpp.s
 
 # Object files for target ElysianSandbox
 ElysianSandbox_OBJECTS = \
@@ -93,26 +93,28 @@ ElysianSandbox_OBJECTS = \
 # External object files for target ElysianSandbox
 ElysianSandbox_EXTERNAL_OBJECTS =
 
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/build.make
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/runtime/libElysianRuntime.a
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/3rdparty/libglad.a
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/3rdparty/glm/glm/libglm.a
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/3rdparty/libimgui.a
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/3rdparty/glfw/src/libglfw3.a
-/Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/mySandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox"
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ElysianSandbox.dir/link.txt --verbose=$(VERBOSE)
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/build.make
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/runtime/libElysianRuntimed.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/3rdparty/libgladd.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/3rdparty/glm/glm/libglm.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/3rdparty/libimguid.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/3rdparty/glfw/src/libglfw3.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/3rdparty/assimp/lib/libassimpd.a
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.tbd
+/Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox: sandbox/app/CMakeFiles/ElysianSandbox.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/crystalized/cpp_project/Sandbox/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox"
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ElysianSandbox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-sandbox/app/CMakeFiles/ElysianSandbox.dir/build: /Users/crystalized/cpp_project/mySandbox/bin/ElysianSandbox
+sandbox/app/CMakeFiles/ElysianSandbox.dir/build: /Users/crystalized/cpp_project/Sandbox/bin/ElysianSandbox
 .PHONY : sandbox/app/CMakeFiles/ElysianSandbox.dir/build
 
 sandbox/app/CMakeFiles/ElysianSandbox.dir/clean:
-	cd /Users/crystalized/cpp_project/mySandbox/build/sandbox/app && $(CMAKE_COMMAND) -P CMakeFiles/ElysianSandbox.dir/cmake_clean.cmake
+	cd /Users/crystalized/cpp_project/Sandbox/build/sandbox/app && $(CMAKE_COMMAND) -P CMakeFiles/ElysianSandbox.dir/cmake_clean.cmake
 .PHONY : sandbox/app/CMakeFiles/ElysianSandbox.dir/clean
 
 sandbox/app/CMakeFiles/ElysianSandbox.dir/depend:
-	cd /Users/crystalized/cpp_project/mySandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/mySandbox /Users/crystalized/cpp_project/mySandbox/sandbox/app /Users/crystalized/cpp_project/mySandbox/build /Users/crystalized/cpp_project/mySandbox/build/sandbox/app /Users/crystalized/cpp_project/mySandbox/build/sandbox/app/CMakeFiles/ElysianSandbox.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/crystalized/cpp_project/Sandbox/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/crystalized/cpp_project/Sandbox /Users/crystalized/cpp_project/Sandbox/sandbox/app /Users/crystalized/cpp_project/Sandbox/build /Users/crystalized/cpp_project/Sandbox/build/sandbox/app /Users/crystalized/cpp_project/Sandbox/build/sandbox/app/CMakeFiles/ElysianSandbox.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sandbox/app/CMakeFiles/ElysianSandbox.dir/depend
 

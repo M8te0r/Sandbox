@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/crystalized/cpp_project/mySandbox/build/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/app/cmake_install.cmake",
+		"/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,279 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "sandbox",
+					"childIndexes" : 
+					[
+						2,
+						7,
+						8
+					],
+					"jsonFile" : "directory-sandbox-Debug-08dc3d2aa00caa677077.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "sandbox"
+				},
+				{
+					"build" : "sandbox/3rdparty",
+					"childIndexes" : 
+					[
+						3,
+						5
+					],
+					"jsonFile" : "directory-sandbox.3rdparty-Debug-0acc928978cef6dbc9af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "sandbox/3rdparty",
+					"targetIndexes" : 
+					[
+						2,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "sandbox/3rdparty/glm",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-sandbox.3rdparty.glm-Debug-28b9dfc179fb0975b475.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 1,
+					"source" : "sandbox/3rdparty/glm"
+				},
+				{
+					"build" : "sandbox/3rdparty/glm/glm",
+					"jsonFile" : "directory-sandbox.3rdparty.glm.glm-Debug-26dfc74f258ad87cea3d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 1,
+					"source" : "sandbox/3rdparty/glm/glm",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "sandbox/3rdparty/glfw",
+					"childIndexes" : 
+					[
+						6
+					],
+					"jsonFile" : "directory-sandbox.3rdparty.glfw-Debug-a85ced3b1ce3097b377f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "sandbox/3rdparty/glfw"
+				},
+				{
+					"build" : "sandbox/3rdparty/glfw/src",
+					"jsonFile" : "directory-sandbox.3rdparty.glfw.src-Debug-af5b5b917eaaad99e875.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "sandbox/3rdparty/glfw/src",
+					"targetIndexes" : 
+					[
+						3,
+						7
+					]
+				},
+				{
+					"build" : "sandbox/app",
+					"jsonFile" : "directory-sandbox.app-Debug-1b170f853f89d183c58c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "sandbox/app",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "sandbox/runtime",
+					"jsonFile" : "directory-sandbox.runtime-Debug-ddede61c179f20f674e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "sandbox/runtime",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						7,
+						8
+					],
+					"name" : "CGSandbox",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3,
+						4
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "ElysianRuntime::@db1e0e7f9e8173c52e38",
+					"jsonFile" : "target-ElysianRuntime-Debug-23bde5dd3d1d2296002a.json",
+					"name" : "ElysianRuntime",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "ElysianSandbox::@61fc53d93256b130478c",
+					"jsonFile" : "target-ElysianSandbox-Debug-aaeafab4d5fdeafe8e7c.json",
+					"name" : "ElysianSandbox",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glad::@2531941a1a87b696227e",
+					"jsonFile" : "target-glad-Debug-e3c949cf6a610b04a2f8.json",
+					"name" : "glad",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "glfw::@fd9c1b2f6ce3bc5a66d7",
+					"jsonFile" : "target-glfw-Debug-19280f9194a67cf031da.json",
+					"name" : "glfw",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "glm::@b62949cd770311a0cc07",
+					"jsonFile" : "target-glm-Debug-1f00849f9f658edaffa7.json",
+					"name" : "glm",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "imgui::@2531941a1a87b696227e",
+					"jsonFile" : "target-imgui-Debug-ba3a88820a96708bb84a.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "stb::@2531941a1a87b696227e",
+					"jsonFile" : "target-stb-Debug-834a01c0af8baaf29d6c.json",
+					"name" : "stb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "update_mappings::@fd9c1b2f6ce3bc5a66d7",
+					"jsonFile" : "target-update_mappings-Debug-218f9f09a198e43cc9fb.json",
+					"name" : "update_mappings",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/crystalized/cpp_project/mySandbox/build",
+		"source" : "/Users/crystalized/cpp_project/mySandbox"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

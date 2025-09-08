@@ -1,0 +1,2 @@
+/usr/bin/ar qc libengine_runtimed.a CMakeFiles/engine_runtime.dir/EngineRuntime.cpp.o CMakeFiles/engine_runtime.dir/runtime_global/RuntimeGlobal.cpp.o
+/usr/bin/ranlib libengine_runtimed.a

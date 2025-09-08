@@ -1,0 +1,326 @@
+[
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_demo.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_draw.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_tables.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/imgui_widgets.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "sandbox/3rdparty/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty",
+  "command": "/usr/bin/clang  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -g -arch arm64 -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src/glad.c",
+  "output": "sandbox/3rdparty/CMakeFiles/glad.dir/glad/src/glad.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glm/glm",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm  -Wall  -g -std=c++17 -arch arm64 -Wno-c++98-compat -Wno-c++98-compat-pedantic -o CMakeFiles/glm.dir/detail/glm.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm/glm/detail/glm.cpp",
+  "output": "sandbox/3rdparty/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/context.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/context.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/init.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/init.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/input.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/input.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/monitor.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/monitor.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/platform.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/platform.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/vulkan.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/vulkan.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/window.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/window.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/egl_context.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/egl_context.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/osmesa_context.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/osmesa_context.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_init.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_init.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_monitor.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_monitor.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_window.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_window.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_joystick.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/null_joystick.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_time.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_time.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/posix_module.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/posix_module.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/posix_thread.c",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/posix_thread.c",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_init.m",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_init.m",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_joystick.m",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_joystick.m",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_monitor.m",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_monitor.m",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_window.m",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/cocoa_window.m",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src -I/Users/crystalized/cpp_project/mySandbox/build/sandbox/3rdparty/glfw/src -g -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/nsgl_context.m",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/src/nsgl_context.m",
+  "output": "sandbox/3rdparty/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/app",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianSandbox.dir/main.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/app/main.cpp",
+  "output": "sandbox/app/CMakeFiles/ElysianSandbox.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/EngineRuntime.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/EngineRuntime.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/EngineRuntime.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/AssetSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/AssetSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/AssetSystem.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/material/Material.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/material/Material.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/Material.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/material/PbrMaterial.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/material/PbrMaterial.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/material/PbrMaterial.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/Mesh.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/Mesh.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/Mesh.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Cube.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Cube.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Cube.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Quad.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Quad.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Quad.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Triangle.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/mesh/inner_mesh/Triangle.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/mesh/inner_mesh/Triangle.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/model/Model.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/model/Model.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/model/Model.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/shader/Shader.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/shader/Shader.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/shader/Shader.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/texture/Texture.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/asset_system/texture/Texture.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/asset_system/texture/Texture.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/camera_system/CameraSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/camera_system/CameraSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/camera_system/CameraSystem.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/core/log/LogSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/core/log/LogSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/core/log/LogSystem.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/input_system/InputSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/input_system/InputSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/input_system/InputSystem.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/RenderSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/RenderSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/RenderSystem.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/interface/opengl_rhi/RHI.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/interface/opengl_rhi/RHI.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/interface/opengl_rhi/RHI.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/Pipeline.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/Pipeline.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/Pipeline.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/passes/MainCameraPass.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/passes/MainCameraPass.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/MainCameraPass.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/passes/PassBase.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pipeline/passes/PassBase.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pipeline/passes/PassBase.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pool/RenderPool.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_pool/RenderPool.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_pool/RenderPool.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_target/RenderTarget.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/render_system/render_target/RenderTarget.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/render_system/render_target/RenderTarget.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/runtime_global/RuntimeGlobal.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/runtime_global/RuntimeGlobal.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/runtime_global/RuntimeGlobal.cpp.o"
+},
+{
+  "directory": "/Users/crystalized/cpp_project/mySandbox/build/sandbox/runtime",
+  "command": "/usr/bin/clang++  -I/Users/crystalized/cpp_project/mySandbox/sandbox/runtime -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb -I/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks  -Wall  -g -std=gnu++17 -arch arm64 -o CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o -c /Users/crystalized/cpp_project/mySandbox/sandbox/runtime/window_system/WindowSystem.cpp",
+  "file": "/Users/crystalized/cpp_project/mySandbox/sandbox/runtime/window_system/WindowSystem.cpp",
+  "output": "sandbox/runtime/CMakeFiles/ElysianRuntime.dir/window_system/WindowSystem.cpp.o"
+}
+]

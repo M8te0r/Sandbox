@@ -1,0 +1,162 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "sandbox/3rdparty/libglad.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"sandbox/3rdparty/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -arch arm64"
+				}
+			],
+			"frameworks" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glad/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glfw/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/glm"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/stb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/crystalized/cpp_project/mySandbox/sandbox/3rdparty/imgui"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "glm::@b62949cd770311a0cc07"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@fd9c1b2f6ce3bc5a66d7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "stb::@2531941a1a87b696227e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "imgui::@2531941a1a87b696227e"
+		}
+	],
+	"id" : "glad::@2531941a1a87b696227e",
+	"name" : "glad",
+	"nameOnDisk" : "libglad.a",
+	"paths" : 
+	{
+		"build" : "sandbox/3rdparty",
+		"source" : "sandbox/3rdparty"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "sandbox/3rdparty/glad/include/KHR/khrplatform.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "sandbox/3rdparty/glad/include/glad/glad.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "sandbox/3rdparty/glad/src/glad.c",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
